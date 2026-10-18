@@ -1,0 +1,110 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S1a4442ecf1",
+    "verdict": "suspicious",
+    "summary": "DCH0843 logged on to PC-8720 outside usual hours and accessed multiple documents, including a file from an unusual source.",
+    "claims": [
+      {
+        "text": "DCH0843 logged on to PC-8720 at 2011-02-08 01:05:05.",
+        "type": "factual",
+        "citations": [
+          "{O0B8-M0BF69IC-1019EJYT}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8720",
+          "date": "2011-02-08 01:05:05"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 86 minutes and included 5 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 86.0,
+          "n_usb_connect": 5.0
+        }
+      },
+      {
+        "text": "DCH0843 accessed 13 files, mostly .doc and .pdf documents.",
+        "type": "factual",
+        "citations": [
+          "{G7Z8-S9PU67QB-8144WORK}",
+          "{G9C2-Z2VN95MG-4992MSTM}",
+          "{H1X3-J9SP33KX-1657VNXS}",
+          "{A4E8-A5XZ11UK-8552IHTB}",
+          "{B6W4-N8DP99YD-8790KJWY}",
+          "{M4O0-D9WS45MV-0069BSOD}",
+          "{T0X8-X1VX08RV-1881VFFB}",
+          "{W9R8-M0AP74DV-7607AOIQ}",
+          "{N9B5-M9UZ45XA-9465LTCF}",
+          "{M9C9-I1GT63NW-4932KCIR}",
+          "{Y3S5-T1ZJ90ZF-5568WRYF}",
+          "{T7A3-U5DZ55PY-2856WZLM}",
+          "{B1Q3-J7IE70JB-9927FFCU}",
+          "{K0J3-L4IK18GB-3715HMQA}",
+          "{G6K8-P7FA03FC-0655DZWX}",
+          "{G1E2-I6LA09PM-5853JKGK}",
+          "{C9C1-P3FC14LB-0746LKPW}",
+          "{K5Q7-D7KC54VL-6664DVWU}",
+          "{S7O7-E3GF88DU-9937QYZJ}",
+          "{K2Z4-K9KH15RS-2918CNHV}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "pc": "PC-8720"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DCH0843 visited an unusual website at 2011-02-08 01:50:46.",
+        "type": "factual",
+        "citations": [
+          "{M9C9-I1GT63NW-4932KCIR}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "thepiratebay.org"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5237,
+        "completion_tokens": 896
+      },
+      "seconds": 19.0
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "session_id": "Sfea60da979",
+  "summary": {
+    "claims": 5,
+    "verified": 4,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "GHL0460 logged on to PC-6255 at 2010-11-03 02:19:05.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{T0A1-F6DJ47DW-6564WKXC}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 179 minutes and included 4 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "GHL0460 visited an unusual URL at 2010-11-03 03:38:19.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{S8L5-K1XK60WW-4480IALQ}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user's usual PC is PC-6255, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

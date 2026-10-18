@@ -1,0 +1,77 @@
+{
+  "session_id": "Sf29cd607ee",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.8,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "JLM0364 logged on to PC-8486 at 2011-04-28 20:40:04.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K0F9-W7LI17ZQ-8971LBZF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "A removable device was connected once during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {H3E5-K5MS58TR-7776OUHQ}: claimed 'Connect', log says 'Disconnect'",
+        "count says 1 but 2 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{F4X0-Z6QF97JJ-7137HLRB}",
+        "{H3E5-K5MS58TR-7776OUHQ}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "JLM0364 logged off at 2011-04-28 20:52:30.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Y0F3-L9OK95VF-7830FSJG}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 12 minutes and included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user normally uses PC-3791, but this session was on a foreign PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

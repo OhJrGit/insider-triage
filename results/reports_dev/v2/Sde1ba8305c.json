@@ -1,0 +1,112 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sde1ba8305c",
+    "verdict": "suspicious",
+    "summary": "MAS0025 accessed an unusual URL during an after-hours session on a foreign device.",
+    "claims": [
+      {
+        "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+        "type": "factual",
+        "citations": [
+          "{L4R5-G7JG33XZ-3927QMRT}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-2512",
+          "date": "2010-09-22 05:17:31"
+        },
+        "count": null
+      },
+      {
+        "text": "MAS0025 accessed an unusual URL (http://discovery.com/Japan/shikoku/gerrfgnaqergheabavairfgzrag2105221548.jsp) at 2010-09-22 05:25:17.",
+        "type": "factual",
+        "citations": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://discovery.com/Japan/shikoku/gerrfgnaqergheabavairfgzrag2105221548.jsp",
+          "date": "2010-09-22 05:25:17"
+        },
+        "count": null
+      },
+      {
+        "text": "The session was during after-hours (05:17-05:32).",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null
+      },
+      {
+        "text": "MAS0025 connected a foreign device 5 times during the session.",
+        "type": "factual",
+        "citations": [
+          "{R1Y8-T3LA16IM-6333XSRV}",
+          "{O9Z6-L0FE86DQ-2028ECQL}",
+          "{F7R5-J1VP39KO-4810KLEE}",
+          "{Y8K1-V5NM50RI-1184QDDD}",
+          "{T1P9-K5US70AH-2747VSJD}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 5
+      },
+      {
+        "text": "The user's typical activity during the 30 days before this session was 0.0 average file accesses and 142.95 average HTTP requests.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-22 05:17:31"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_user_events",
+      "args": {
+        "user": "MAS0025",
+        "start": "2010-09-22 05:17:31",
+        "end": "2010-09-22 05:32:53",
+        "source": "http"
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_events",
+      "args": {
+        "ids": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "final": true,
+      "normalized": [
+        "claim 3: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 19859,
+        "completion_tokens": 851
+      },
+      "seconds": 22.6
+    }
+  ]
+}

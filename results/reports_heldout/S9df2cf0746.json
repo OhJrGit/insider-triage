@@ -1,0 +1,159 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S9df2cf0746",
+    "verdict": "suspicious",
+    "summary": "CCL0068 spent most of the session browsing various websites, with occasional email sending and file activity.",
+    "claims": [
+      {
+        "text": "CCL0068 logged on to PC-7699 at 2010-12-30 08:07:00.",
+        "type": "factual",
+        "citations": [
+          "{M7U1-M0SI51OT-0035VVQL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-7699",
+          "date": "2010-12-30 08:07:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 580 minutes and included 3 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 580.0,
+          "n_usb_connect": 3.0
+        }
+      },
+      {
+        "text": "CCL0068 visited 105 different URLs, mostly job-related and social networking sites.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 105,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "CCL0068 sent 10 emails, mostly to internal addresses.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "email",
+          "activity": "Send"
+        },
+        "count": 10,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "CCL0068 connected a removable device twice during the session.",
+        "type": "factual",
+        "citations": [
+          "{B7F7-M1KD45BC-5666UOID}",
+          "{W6D5-U4AS41HO-9113RNZG}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included a file activity on 2010-12-30 16:00:27.",
+        "type": "factual",
+        "citations": [
+          "{C5W3-B5CK14NS-0633LTTY}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename": "4F0JKW4Y.doc"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-7699, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-7699"
+        },
+        "session": {}
+      },
+      {
+        "text": "The session included visits to job-related and social networking sites, which is unusual for the user.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual session duration is around 580 minutes, which matches this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_duration_min": 580.0
+        },
+        "session": {}
+      },
+      {
+        "text": "The user's usual number of USB connections per session is 2.05, which matches this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 2.05
+        },
+        "session": {}
+      },
+      {
+        "text": "The user's usual number of HTTP visits per session is 95.55, which is close to the 105 visits in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_http": 95.55
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 17644,
+        "completion_tokens": 888
+      },
+      "seconds": 20.8
+    }
+  ]
+}

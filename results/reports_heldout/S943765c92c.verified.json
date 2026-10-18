@@ -1,0 +1,105 @@
+{
+  "session_id": "S943765c92c",
+  "summary": {
+    "claims": 7,
+    "verified": 3,
+    "unsupported": 3,
+    "interpretive": 1,
+    "groundedness": 0.5,
+    "warnings": 3
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FTM0406 logged on to PC-1786 at 2010-11-25 06:35:11.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L1A0-X3OD03QV-9450KGJI}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "FTM0406 visited the same suspicious URL 4 times.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {C2R0-X7DU60VG-0769NYYR}: claimed 'ynoahgevgvbayrnqrefuvctencuvpnyhfrevagresnpr1176430042.jsp', log says 'http://inbox.com/Cheadle_Hulme/hulme/yrnqrefuvcnanylfvfselvat513824541.aspx'",
+        "url_contains mismatch on {N5G9-W9SS50SL-9399ZFUG}: claimed 'ynoahgevgvbayrnqrefuvctencuvpnyhfrevagresnpr1176430042.jsp', log says 'http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php'"
+      ],
+      "warnings": [
+        "asserted url_contains='ynoahgevgvbayrnqrefuvctencuvpnyhfrevagresnpr1176430042.jsp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Y0Z3-N4JD25UB-2356BFTE}",
+        "{C5L8-T1XT62YY-4378VZPV}",
+        "{C2R0-X7DU60VG-0769NYYR}",
+        "{N5G9-W9SS50SL-9399ZFUG}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "FTM0406 visited wikileaks.org once.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {Y5K5-C6AF28XA-5238BVTN}: claimed 'http', log says 'device'",
+        "field 'url' does not apply to a device event ({Y5K5-C6AF28XA-5238BVTN})"
+      ],
+      "warnings": [
+        "asserted url='http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Y5K5-C6AF28XA-5238BVTN}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "FTM0406 accessed mediafire.com and shareasale.com.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {S0F7-W2LZ64WJ-4108ZIKN}: claimed 'http', log says 'device'",
+        "activity mismatch on {S0F7-W2LZ64WJ-4108ZIKN}: claimed 'Visit', log says 'Disconnect'",
+        "field 'url' does not apply to a device event ({S0F7-W2LZ64WJ-4108ZIKN})",
+        "url_contains mismatch on {J7D3-B8XN53EY-7314XUUK}: claimed 'mediafire.com|shareasale.com', log says 'http://shareasale.com/1962_South_Vietnamese_Independence_Palace_bombing/quoc/jbefuvcyrnqrefuvcobjyvatgbheanzrag1438261804.php'"
+      ],
+      "warnings": [
+        "asserted url_contains='mediafire.com|shareasale.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{S0F7-W2LZ64WJ-4108ZIKN}",
+        "{J7D3-B8XN53EY-7314XUUK}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session lasted 16 minutes and included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The user's usual start hour is 08:48.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

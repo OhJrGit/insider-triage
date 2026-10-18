@@ -1,0 +1,78 @@
+{
+  "session_id": "S8720a76d39",
+  "summary": {
+    "claims": 6,
+    "verified": 5,
+    "unsupported": 1,
+    "interpretive": 0,
+    "groundedness": 0.833,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-19 20:25:05.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{D6J8-H0UM76OJ-0207DGLO}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 589 minutes, from 2011-01-19 20:25:05 to 2011-01-20 06:14:40.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session included 55 web visits, with an unusually high count of 1 visit to a known leak site.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='wikileaks.org' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Z7A0-J6YB21YH-4261AKSD}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user's usual working hours are 07:62 to 15:26, and this session was outside those hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user normally uses PC-8908, and this session was on the usual PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user visited 148 websites in this session, which is above the user's average of 133.15 per session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "asserted fields but no cited events to check them against",
+        "count says 55 but 0 distinct events are cited"
+      ],
+      "warnings": [
+        "count 55 is not mentioned in the claim text"
+      ],
+      "citations": []
+    }
+  ]
+}

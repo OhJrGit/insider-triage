@@ -1,0 +1,62 @@
+{
+  "session_id": "S8398d8691f",
+  "summary": {
+    "claims": 5,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 0,
+    "groundedness": 1.0,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "CIM0926 logged on to PC-7445 at 2010-11-12 18:27:38.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{M3Y0-W4TV82SU-4859CZNR}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "CIM0926 logged off from PC-7445 at 2010-11-12 18:37:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Y0F8-A8WD14OP-8208ZLTF}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 10 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session took place on a foreign PC, PC-7445, which is not the user's usual PC, PC-3201.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session started and ended within the usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

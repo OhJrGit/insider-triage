@@ -1,0 +1,177 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S8cf7af2de8",
+    "verdict": "suspicious",
+    "summary": "User EHD0584 accessed a known leak site and a suspicious reference site outside usual working hours on a weekend.",
+    "claims": [
+      {
+        "text": "EHD0584 logged on to PC-8669 at 2010-10-02 03:46:16.",
+        "type": "factual",
+        "citations": [
+          "{Q3Y6-O8EP88PV-2591XJWF}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8669",
+          "date": "2010-10-02 03:46:16"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 87 minutes and included 1 USB connection.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 87.0,
+          "n_usb_connect": 1.0
+        }
+      },
+      {
+        "text": "A removable device was connected 2 times during the session.",
+        "type": "factual",
+        "citations": [
+          "{J2M5-N9ZD97MC-2527HAPD}",
+          "{J9I5-B7LO36SN-6104HXYE}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited wikileaks.org 2 times.",
+        "type": "factual",
+        "citations": [
+          "{Z7M3-F0DQ35HB-9595ZHAO}",
+          "{Z8Y0-S0GY52MN-4759OFUZ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "wikileaks.org"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited a suspicious reference site.",
+        "type": "factual",
+        "citations": [
+          "{Z8Y0-S0GY52MN-4759OFUZ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "Take_Ichi_convoy"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session occurred on a weekend.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "weekend": 1
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "EHD0584",
+        "before": "2010-10-02 03:46:16"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S8cf7af2de8",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S8cf7af2de8",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S8cf7af2de8",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S8cf7af2de8",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S8cf7af2de8",
+        "source": "email",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 6,
+      "final": true,
+      "normalized": [
+        "claim 6: moved session field 'weekend' from 'asserted' to 'session'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 29434,
+        "completion_tokens": 958
+      },
+      "seconds": 30.1
+    }
+  ]
+}

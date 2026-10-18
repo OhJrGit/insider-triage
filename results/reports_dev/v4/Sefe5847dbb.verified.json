@@ -1,0 +1,77 @@
+{
+  "session_id": "Sefe5847dbb",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "BTL0226 logged on to PC-4534 at 2010-10-08 02:58:22.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L8A3-G5XF16QP-2283QGVC}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 163 minutes and included 2 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "BTL0226 visited a file-sharing site at 2010-10-08 03:41:59.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='hulu.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{R0Y6-K1MO11OY-9750PPAW}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user accessed three files during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G8W6-U0JA05WD-4285LGAF}",
+        "{Q2Z2-X6IJ14TN-4190PAIZ}",
+        "{V3G1-H6CV26LX-8546OYMM}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session did not involve any suspicious or malicious activities.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "session_id": "Sa837937482",
+  "summary": {
+    "claims": 10,
+    "verified": 8,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.889,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "NWT0098 logged on to PC-4667 at 2011-02-08 07:15:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K0G3-Q4DJ43LK-7614EKFZ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "NWT0098 logged off at 2011-02-08 17:21:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-4667' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{J7U3-D7PJ18GD-9469MFOH}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 606 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session included 104 web visits.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session included 9 email sends.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session included 3 visits to job-related sites.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session included 8 visits to potentially malicious sites.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The session included 1 file event.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {V6D4-L1FW91XO-8012ZVDR}: claimed 'file', log says 'http'",
+        "activity mismatch on {V6D4-L1FW91XO-8012ZVDR}: claimed 'File', log says 'Visit'",
+        "field 'filename' does not apply to a http event ({V6D4-L1FW91XO-8012ZVDR})"
+      ],
+      "warnings": [
+        "asserted filename='AJOOR1D3.pdf' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{V6D4-L1FW91XO-8012ZVDR}"
+      ]
+    },
+    {
+      "index": 8,
+      "text": "The session included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{I8Y3-B4IP30KW-5919JSXO}"
+      ]
+    },
+    {
+      "index": 9,
+      "text": "The user visited potentially malicious sites such as doubleclick.com and gizmodo.com.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{W9X6-F3ND42IF-1408QPYV}",
+        "{S2R0-O1JG33DV-8397QSRC}"
+      ]
+    }
+  ]
+}

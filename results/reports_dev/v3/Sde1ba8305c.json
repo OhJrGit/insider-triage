@@ -1,0 +1,117 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sde1ba8305c",
+    "verdict": "suspicious",
+    "summary": "MAS0025 accessed an unusual URL during an off-hours session on an unfamiliar PC.",
+    "claims": [
+      {
+        "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+        "type": "factual",
+        "citations": [
+          "{L4R5-G7JG33XZ-3927QMRT}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-2512",
+          "date": "2010-09-22 05:17:31"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.79,
+          "avg_end_hour": 17.72
+        }
+      },
+      {
+        "text": "MAS0025 accessed an unusual URL during the session.",
+        "type": "factual",
+        "citations": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "discovery.com"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The session involved 16 file operations, 5 USB connections, and 1 HTTP request.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 1,
+        "baseline": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 07:39.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_start_hour": 7.79
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-22 05:17:31"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_user_events",
+      "args": {
+        "user": "MAS0025",
+        "start": "2010-09-22 05:17:31",
+        "end": "2010-09-22 05:32:53",
+        "source": "http",
+        "contains": "discovery.com"
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_events",
+      "args": {
+        "ids": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "final": true,
+      "normalized": [
+        "claim 3: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 21257,
+        "completion_tokens": 740
+      },
+      "seconds": 21.2
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sffe1ef4568",
+    "verdict": "suspicious",
+    "summary": "AAM0658 logged on at 02:31 and accessed multiple documents, including archives, outside usual working hours.",
+    "claims": [
+      {
+        "text": "AAM0658 logged on to PC-9923 at 2010-11-02 02:31:32.",
+        "type": "factual",
+        "citations": [
+          "{B4H0-T0VS68NI-2874IXYP}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-9923",
+          "date": "2010-11-02 02:31:32"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 11 file events, with 1 archive file.",
+        "type": "factual",
+        "citations": [
+          "{M6C1-J5IC45EA-8196QTFF}",
+          "{F3F5-S1JH64OH-4320CRGI}",
+          "{N5A8-B5KS81OA-6643CNZV}",
+          "{W8P2-Z9UN51NC-7286DVKQ}",
+          "{Z5G8-V9BE60WG-5547IYFE}",
+          "{D9S5-I8AP98RJ-1303HBWK}",
+          "{P4L0-Q0AW57HF-8548HEYK}",
+          "{G9Q1-V8ER75KX-6740QZMN}",
+          "{I7E9-J0XH77JE-0925GDDZ}",
+          "{Z2F9-E2FA97ZS-7744EFDW}",
+          "{I6N8-W3EI66CP-7801QFOK}",
+          "{Z1O0-J1QH34XQ-4354CGWO}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "count": 11
+        },
+        "count": 11,
+        "baseline": {},
+        "session": {
+          "n_file": 11.0,
+          "n_file_exec_archive": 1.0
+        }
+      },
+      {
+        "text": "AAM0658 accessed a website at 02:49:47.",
+        "type": "factual",
+        "citations": [
+          "{D9S5-I8AP98RJ-1303HBWK}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://thefreedictionary.com/Ian_Chappell/wsc/bcraebnqercnveargjbex1044001982.html",
+          "date": "2010-11-02 02:49:47"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 31 minutes, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "session": {
+            "duration_min": 31.0,
+            "after_hours": 1
+          }
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are from 07:59 to 18:39, based on the 30-day baseline.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.99,
+          "avg_end_hour": 18.66
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 4322,
+        "completion_tokens": 846
+      },
+      "seconds": 17.4
+    }
+  ]
+}

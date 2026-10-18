@@ -1,0 +1,69 @@
+{
+  "session_id": "S5a3afaba3a",
+  "summary": {
+    "claims": 5,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 0,
+    "groundedness": 1.0,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "GHL0460 logged on to PC-6255 at 2010-11-12 22:51:26.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J6A8-V1GP82TI-3617KGVX}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "GHL0460 accessed the URL http://citibank.com/Ernest_Joyce/joyce/zlfgrelgragguebhtuchgurnegfpneqtnzr930968313.php.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J5Q3-V9MH28FH-6538RFQV}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "GHL0460 connected 6 removable devices during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A5P9-X0HE25LH-6158QNPU}",
+        "{M6Q3-F8YW70EJ-2694IQPQ}",
+        "{C8T6-T5JZ36AF-5752NYLI}",
+        "{B0I6-D8PX36HF-0365PCRK}",
+        "{D6L5-X0TA48ZD-4257KJDJ}",
+        "{A1Z8-C1TW58IS-6037DKPQ}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user's usual PC is PC-6255, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

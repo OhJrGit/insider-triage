@@ -1,0 +1,211 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_time": "2010-08-24 12:02:45",
+  "n_test": 235296,
+  "models": {
+    "iforest": {
+      "roc_auc": {
+        "mean": 0.8749,
+        "std": 0.0055
+      },
+      "pr_auc": {
+        "mean": 0.0188,
+        "std": 0.0005
+      },
+      "precision@10": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "recall@10": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "insiders_caught@10": {
+        "mean": 6.4,
+        "min": 5,
+        "max": 8,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.008,
+        "std": 0.011
+      },
+      "recall@50": {
+        "mean": 0.0005,
+        "std": 0.0007
+      },
+      "insiders_caught@50": {
+        "mean": 12.2,
+        "min": 11,
+        "max": 14,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.024,
+        "std": 0.0114
+      },
+      "recall@100": {
+        "mean": 0.0032,
+        "std": 0.0015
+      },
+      "insiders_caught@100": {
+        "mean": 14.4,
+        "min": 13,
+        "max": 15,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.031,
+        "std": 0.0108
+      },
+      "recall@200": {
+        "mean": 0.0082,
+        "std": 0.0029
+      },
+      "insiders_caught@200": {
+        "mean": 16.8,
+        "min": 15,
+        "max": 18,
+        "of": "54"
+      }
+    },
+    "ocsvm": {
+      "roc_auc": {
+        "mean": 0.7726,
+        "std": 0.0139
+      },
+      "pr_auc": {
+        "mean": 0.1115,
+        "std": 0.0083
+      },
+      "precision@10": {
+        "mean": 0.12,
+        "std": 0.0447
+      },
+      "recall@10": {
+        "mean": 0.0016,
+        "std": 0.0006
+      },
+      "insiders_caught@10": {
+        "mean": 9.4,
+        "min": 9,
+        "max": 10,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.22,
+        "std": 0.02
+      },
+      "recall@50": {
+        "mean": 0.0145,
+        "std": 0.0013
+      },
+      "insiders_caught@50": {
+        "mean": 23.2,
+        "min": 23,
+        "max": 24,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.498,
+        "std": 0.0192
+      },
+      "recall@100": {
+        "mean": 0.0656,
+        "std": 0.0025
+      },
+      "insiders_caught@100": {
+        "mean": 34.6,
+        "min": 32,
+        "max": 36,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.471,
+        "std": 0.0156
+      },
+      "recall@200": {
+        "mean": 0.1241,
+        "std": 0.0041
+      },
+      "insiders_caught@200": {
+        "mean": 45.0,
+        "min": 43,
+        "max": 47,
+        "of": "54"
+      }
+    },
+    "autoencoder": {
+      "roc_auc": {
+        "mean": 0.909,
+        "std": 0.0043
+      },
+      "pr_auc": {
+        "mean": 0.1405,
+        "std": 0.0073
+      },
+      "precision@10": {
+        "mean": 0.14,
+        "std": 0.0548
+      },
+      "recall@10": {
+        "mean": 0.0018,
+        "std": 0.0007
+      },
+      "insiders_caught@10": {
+        "mean": 10.0,
+        "min": 10,
+        "max": 10,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.392,
+        "std": 0.061
+      },
+      "recall@50": {
+        "mean": 0.0258,
+        "std": 0.004
+      },
+      "insiders_caught@50": {
+        "mean": 28.0,
+        "min": 26,
+        "max": 30,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.528,
+        "std": 0.0205
+      },
+      "recall@100": {
+        "mean": 0.0696,
+        "std": 0.0027
+      },
+      "insiders_caught@100": {
+        "mean": 35.6,
+        "min": 34,
+        "max": 37,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.505,
+        "std": 0.0267
+      },
+      "recall@200": {
+        "mean": 0.1331,
+        "std": 0.007
+      },
+      "insiders_caught@200": {
+        "mean": 42.0,
+        "min": 42,
+        "max": 42,
+        "of": "54"
+      }
+    }
+  }
+}

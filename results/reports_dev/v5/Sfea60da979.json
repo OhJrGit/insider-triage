@@ -1,0 +1,122 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sfea60da979",
+    "verdict": "suspicious",
+    "summary": "GHL0460 accessed an unusual URL outside usual working hours on a non-foreign PC.",
+    "claims": [
+      {
+        "text": "GHL0460 logged on to PC-6255 at 2010-11-03 02:19:05.",
+        "type": "factual",
+        "citations": [
+          "{T0A1-F6DJ47DW-6564WKXC}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6255",
+          "date": "2010-11-03 02:19:05"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 179 minutes and included 4 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 179.0,
+          "n_usb_connect": 4.0
+        }
+      },
+      {
+        "text": "GHL0460 visited an unusual URL at 2010-11-03 03:38:19.",
+        "type": "factual",
+        "citations": [
+          "{S8L5-K1XK60WW-4480IALQ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-6255, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-6255"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-03 02:19:05"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sfea60da979",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_events",
+      "args": {
+        "ids": [
+          "{S8L5-K1XK60WW-4480IALQ}"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-03 02:19:05"
+      }
+    },
+    {
+      "step": 4,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 31355,
+        "completion_tokens": 738
+      },
+      "seconds": 25.4
+    }
+  ]
+}

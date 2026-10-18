@@ -1,0 +1,160 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sad8b99c63b",
+    "verdict": "suspicious",
+    "summary": "FMG0527 accessed websites related to bokassa and fighting in ice hockey outside usual working hours.",
+    "claims": [
+      {
+        "text": "FMG0527 logged on to PC-4256 at 2010-12-30 21:16:01.",
+        "type": "factual",
+        "citations": [
+          "{R7L7-S0EW92WE-7675HNHG}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4256",
+          "date": "2010-12-30 21:16:01"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 231 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 231.0
+        }
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited a website related to bokassa at 2010-12-30 23:57:44.",
+        "type": "factual",
+        "citations": [
+          "{Z9L2-N5TK68KK-8295VFRZ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "bokassa"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited a website related to fighting in ice hockey at 2010-12-30 23:36:13.",
+        "type": "factual",
+        "citations": [
+          "{S5K5-A4FX59AU-0052CCWU}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "fisticuffs"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are from 08:12 to 17:03.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.95,
+          "avg_end_hour": 17.03
+        },
+        "session": {}
+      },
+      {
+        "text": "The user usually does not access websites outside their usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sad8b99c63b",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "FMG0527",
+        "before": "2010-12-30 21:16:01"
+      }
+    },
+    {
+      "step": 2,
+      "tool": "search_user_events",
+      "args": {
+        "user": "FMG0527",
+        "start": "2010-12-30 21:16:01",
+        "end": "2010-12-31 01:07:21",
+        "source": "http",
+        "contains": "wikileaks.org"
+      }
+    },
+    {
+      "step": 3,
+      "tool": "search_user_events",
+      "args": {
+        "user": "FMG0527",
+        "start": "2010-12-30 21:16:01",
+        "end": "2010-12-31 01:07:21",
+        "source": "http",
+        "contains": "bokassa"
+      }
+    },
+    {
+      "step": 4,
+      "tool": "search_user_events",
+      "args": {
+        "user": "FMG0527",
+        "start": "2010-12-30 21:16:01",
+        "end": "2010-12-31 01:07:21",
+        "source": "http",
+        "contains": "fisticuffs"
+      }
+    },
+    {
+      "step": 5,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 43152,
+        "completion_tokens": 978
+      },
+      "seconds": 35.3
+    }
+  ]
+}

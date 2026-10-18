@@ -1,0 +1,188 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sd9ad6fcde0",
+    "verdict": "suspicious",
+    "summary": "AJR0932 accessed a potentially malicious website and handled numerous documents, including archives, outside usual working hours.",
+    "claims": [
+      {
+        "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+        "type": "factual",
+        "citations": [
+          "{O9C7-Q1RV04YI-2039IQXA}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4748",
+          "date": "2010-09-10 04:27:44"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 107 minutes and included 8 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 107.0,
+          "n_usb_connect": 8.0
+        }
+      },
+      {
+        "text": "AJR0932 visited a potentially malicious website at 2010-09-10 05:40:20.",
+        "type": "factual",
+        "citations": [
+          "{I0R2-U1TQ25SQ-3537AFGU}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "AJR0932 accessed 24 files, including 1 archive, during the session.",
+        "type": "factual",
+        "citations": [
+          "{C7T5-L9XL29JR-1694MOZH}",
+          "{B2Q8-C3XQ25NR-1552ZWQJ}",
+          "{L7C6-A8HE79TO-5089HAYZ}",
+          "{Y2U8-X6VQ75IM-2931DALW}",
+          "{Y7V1-Z8OG17BA-8907PMDG}",
+          "{A6R6-C8RK96WT-8726WTQK}",
+          "{E6K8-E8UT65PX-1315BBCD}",
+          "{V8M9-A3PJ93LI-1478QQPH}",
+          "{I0T5-B8FV29SO-4498OZPF}",
+          "{A6B3-F9GM22IV-8519EOJB}",
+          "{Y4P1-L4DZ57XX-0045XLUI}",
+          "{H9X9-A3IE57VV-0465OSDL}",
+          "{J4D6-T5TB44OK-6491QWRM}",
+          "{V2D3-K0KK12DH-2978TWUX}",
+          "{D0D0-W8TV63UP-2886LZLN}",
+          "{V8J6-Y6ET67ED-1991SJKN}",
+          "{T9T5-D9SP76RI-8595ACWT}",
+          "{M5U5-N5FA17TY-1634SKKY}",
+          "{T0X8-N9UJ35ET-8460TMLP}",
+          "{O4B7-N0AD54XD-4669TEPQ}",
+          "{Z6G2-E0VJ89KI-1893QPVK}",
+          "{O3M9-G5YX42OS-4096TKDI}",
+          "{F2H8-P7TE17BO-4998KJNZ}",
+          "{S6L7-H8ZV50FO-9526CMLW}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "n_file_exec_archive": 1.0
+        },
+        "count": 24,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session occurred outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-4748, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-4748"
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 04:27 and ended at 06:14, which is 2 hours and 47 minutes after the user's average session start time of 07:24.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "AJR0932",
+        "before": "2010-09-10 04:27:44"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "repeated_tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "error": "invalid report: 25 validation errors for Report\nclaims.2.citations.0\n  Input should be a valid string [type=string_type, input_value={'id': '{I0R2-U1TQ25SQ-3537AFGU}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.0\n  Input should be a valid string [type=string_type, input_value={'id': '{C7T5-L9XL29JR-1694MOZH}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.1\n  Input should be a valid string [type=string_type, input_value={'id': '{B2Q8-C3XQ25NR-1552ZWQJ}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.2\n  Input should be a valid string [type=string_type, input_value={'id': '{L7C6-A8HE79TO-5089HAYZ}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.3\n  Input should be a valid string [type=string_type, input_value={'id': '{Y2U8-X6VQ75IM-2931DALW}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.4\n  Input should be a valid string [type=string_type, input_value={'id': '{Y7V1-Z8OG17BA-8907PMDG}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.5\n  Input should be a valid string [type=string_type, input_value={'id': '{A6R6-C8RK96WT-8726WTQK}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.6\n  Input should be a valid string [type=string_type, input_value={'id': '{E6K8-E8UT65PX-1315BBCD}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.7\n  Input should be a valid string [type=string_type, input_value={'id': '{V8M9-A3PJ93LI-1478QQPH}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.8\n  Input should be a valid string [type=string_type, input_value={'id': '{I0T5-B8FV29SO-4498OZPF}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.9\n  Input should be a valid string [type=string_type, input_value={'id': '{A6B3-F9GM22IV-8519EOJB}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.10\n  Input should be a valid string [type=string_type, input_value={'id': '{Y4P1-L4DZ57XX-0045XLUI}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.11\n  Input should be a valid string [type=string_type, input_value={'id': '{H9X9-A3IE57VV-0465OSDL}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.12\n  Input should be a valid string [type=string_type, input_value={'id': '{J4D6-T5TB44OK-6491QWRM}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.13\n  Input should be a valid string [type=string_type, input_value={'id': '{V2D3-K0KK12DH-2978TWUX}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.14\n  Input should be a valid string [type=string_type, input_value={'id': '{D0D0-W8TV63UP-2886LZLN}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.15\n  Input should be a valid string [type=string_type, input_value={'id': '{V8J6-Y6ET67ED-1991SJKN}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.16\n  Input should be a valid string [type=string_type, input_value={'id': '{T9T5-D9SP76RI-8595ACWT}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.17\n  Input should be a valid string [type=string_type, input_value={'id': '{M5U5-N5FA17TY-1634SKKY}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.18\n  Input should be a valid string [type=string_type, input_value={'id': '{T0X8-N9UJ35ET-8460TMLP}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.19\n  Input should be a valid string [type=string_type, input_value={'id': '{O4B7-N0AD54XD-4669TEPQ}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.20\n  Input should be a valid string [type=string_type, input_value={'id': '{Z6G2-E0VJ89KI-1893QPVK}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.21\n  Input should be a valid string [type=string_type, input_value={'id': '{O3M9-G5YX42OS-4096TKDI}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.22\n  Input should be a valid string [type=string_type, input_value={'id': '{F2H8-P7TE17BO-4998KJNZ}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.3.citations.23\n  Input should be a valid string [type=string_type, input_value={'id': '{S6L7-H8ZV50FO-9526CMLW}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type"
+    },
+    {
+      "step": 6,
+      "final": true,
+      "normalized": [
+        "claim 3: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 64401,
+        "completion_tokens": 2575
+      },
+      "seconds": 71.2
+    }
+  ]
+}

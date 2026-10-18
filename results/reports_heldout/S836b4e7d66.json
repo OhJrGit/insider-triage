@@ -1,0 +1,102 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S836b4e7d66",
+    "verdict": "suspicious",
+    "summary": "FMG0527 accessed multiple suspicious websites and connected a removable device multiple times outside usual working hours.",
+    "claims": [
+      {
+        "text": "FMG0527 logged on to PC-4256 at 2011-01-07 18:46:50.",
+        "type": "factual",
+        "citations": [
+          "{L7F6-Y1ZC43AO-7486NSKR}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4256",
+          "date": "2011-01-07 18:46:50"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 222 minutes, which is longer than usual.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 222.0
+        }
+      },
+      {
+        "text": "FMG0527 accessed multiple suspicious websites, including 'americanexpress.com', 'ign.com', and 'officedepot.com'.",
+        "type": "factual",
+        "citations": [
+          "{J3D7-I9KE42SS-2461ZKQM}",
+          "{I2M8-I8VH76QE-5167KONV}",
+          "{I8P8-D4ZL69CQ-5989QCRU}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "americanexpress.com|ign.com|officedepot.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FMG0527 connected a removable device 5 times, which is more than usual.",
+        "type": "factual",
+        "citations": [
+          "{V4J3-R3UW42JG-8057HUGG}",
+          "{J5J7-E6VC62SQ-5263DMRA}",
+          "{Q0L1-J2KK48MJ-6095FENY}",
+          "{P4S4-I8MR01UD-3637TKVR}",
+          "{B0D6-D7NT36TI-6346BQTD}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 5,
+        "baseline": {
+          "avg_usb_connects": 0.286
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 18:46:50, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 10.16
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 3: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5803,
+        "completion_tokens": 658
+      },
+      "seconds": 14.1
+    }
+  ]
+}

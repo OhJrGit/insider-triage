@@ -1,0 +1,49 @@
+{
+  "session_id": "Sf53d595656",
+  "summary": {
+    "claims": 3,
+    "verified": 1,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.5
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "LQC0479 logged on to PC-6380 at 2010-09-14 01:37:21.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{C5V2-B5KM15IX-7095SXZK}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "LQC0479 accessed ups.com and vistaprint.com during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {F0G2-X9ZO10NE-5831GAEX}: claimed 'ups.com|vistaprint.com', log says 'http://ups.com/Posting_system/irabu/uver1176479899.aspx'",
+        "url_contains mismatch on {W1O1-U3TS01FY-2846ULBG}: claimed 'ups.com|vistaprint.com', log says 'http://vistaprint.com/Theoren_Fleury/piestany/puhepushaqenvfrerznvyfhccbeguverpnzcpbbxvat1912115484.html'"
+      ],
+      "warnings": [
+        "asserted url_contains='ups.com|vistaprint.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{F0G2-X9ZO10NE-5831GAEX}",
+        "{W1O1-U3TS01FY-2846ULBG}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The user's typical activity does not include HTTP events, especially not during non-working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

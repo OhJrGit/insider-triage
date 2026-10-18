@@ -1,0 +1,134 @@
+{
+  "session_id": "S9df2cf0746",
+  "summary": {
+    "claims": 11,
+    "verified": 6,
+    "unsupported": 4,
+    "interpretive": 1,
+    "groundedness": 0.6,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "CCL0068 logged on to PC-7699 at 2010-12-30 08:07:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{M7U1-M0SI51OT-0035VVQL}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 580 minutes and included 3 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "CCL0068 visited 105 different URLs, mostly job-related and social networking sites.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "asserted fields but no cited events to check them against",
+        "count says 105 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "CCL0068 sent 10 emails, mostly to internal addresses.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "asserted fields but no cited events to check them against",
+        "count says 10 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "CCL0068 connected a removable device twice during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {B7F7-M1KD45BC-5666UOID}: claimed 'device', log says 'http'",
+        "activity mismatch on {B7F7-M1KD45BC-5666UOID}: claimed 'Connect', log says 'Visit'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{B7F7-M1KD45BC-5666UOID}",
+        "{W6D5-U4AS41HO-9113RNZG}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session included a file activity on 2010-12-30 16:00:27.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted filename='4F0JKW4Y.doc' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{C5W3-B5CK14NS-0633LTTY}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The user's usual PC is PC-7699, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The session included visits to job-related and social networking sites, which is unusual for the user.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user's usual session duration is around 580 minutes, which matches this session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "unknown baseline field 'avg_duration_min'"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 9,
+      "text": "The user's usual number of USB connections per session is 2.05, which matches this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 10,
+      "text": "The user's usual number of HTTP visits per session is 95.55, which is close to the 105 visits in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

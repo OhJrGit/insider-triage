@@ -1,0 +1,119 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sf33fcc5ef0",
+    "verdict": "suspicious",
+    "summary": "JRG0207 logged in after hours and accessed multiple websites, including potentially malicious ones.",
+    "claims": [
+      {
+        "text": "JRG0207 logged on to PC-8908 at 2011-01-20 19:07:57.",
+        "type": "factual",
+        "citations": [
+          "{W5O1-S1FU87AR-0940NHSH}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8908",
+          "date": "2011-01-20 19:07:57"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 178 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 178.0
+        }
+      },
+      {
+        "text": "JRG0207 visited multiple suspicious websites, including 'cracked.com' and 'adobe.com'.",
+        "type": "interpretive",
+        "citations": [
+          "{G4U7-B9GR17VW-5395UPVI}",
+          "{D9I7-R2EU51SQ-9779NMKY}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user accessed 49 web pages in total.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http": 49.0
+        }
+      },
+      {
+        "text": "The user accessed 2 potentially malicious websites.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http_hack": 2.0
+        }
+      },
+      {
+        "text": "The user's usual working hours are from 8:23 to 14:84, and this session was outside those hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.23,
+          "avg_end_hour": 14.84
+        },
+        "session": {
+          "after_hours": 1
+        }
+      },
+      {
+        "text": "The user accessed 10 files, including documents and a compressed file.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_file": 10.0,
+          "n_file_exec_archive": 2.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "JRG0207",
+        "before": "2011-01-20 19:07:57"
+      }
+    },
+    {
+      "step": 1,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 22947,
+        "completion_tokens": 563
+      },
+      "seconds": 18.3
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sc3294a386b",
+    "verdict": "suspicious",
+    "summary": "PPF0435 spent 555 minutes on PC-1809 outside usual hours, visiting multiple job and career-related sites.",
+    "claims": [
+      {
+        "text": "PPF0435 logged on to PC-1809 at 2011-02-02 19:23:43.",
+        "type": "factual",
+        "citations": [
+          "{L5Q8-S1AH64DZ-0740GXXX}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-1809",
+          "date": "2011-02-02 19:23:43"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 555 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 555.0
+        }
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited multiple job and career-related sites.",
+        "type": "factual",
+        "citations": [
+          "{M8Z3-P3MS67GM-8618JLZY}",
+          "{Z5S5-K2JJ94NJ-0406UIHJ}",
+          "{W9D3-X7UE38YS-3386TFFS}",
+          "{Q0R1-L5JG58SJ-3788XPBG}",
+          "{F0V3-A7EW23AU-1596VOPO}",
+          "{G6B0-I9GI61WT-3828STKB}",
+          "{T7H3-V3ZM77PX-4676ZZQK}",
+          "{G7R4-J4GI37XF-7034QEZR}",
+          "{O9Q2-F7EU43ZN-1336UZQR}",
+          "{W4D4-C2OD63TG-9508UQDH}",
+          "{M4A5-T1VI53VT-4453OWXQ}",
+          "{A5T9-N7LX82JD-2907GUPK}",
+          "{K3U3-K2QH17JK-2712LELF}",
+          "{A6J0-O7RB63UX-1684EKGW}",
+          "{G9U4-U7MN93CD-8709JHWQ}",
+          "{A6J0-O7RB63UX-1684EKGW}",
+          "{D7E6-A8HA91FD-7159UGTY}",
+          "{S7N3-U6NW32YO-6472IRIR}",
+          "{O6D0-Q5QK65RF-4557EIBX}",
+          "{U8W6-H2IP10ZQ-4102RKGJ}",
+          "{W1C9-R8VM17NZ-7896OWXP}",
+          "{W8V8-K6CA18GQ-8011DOZB}",
+          "{V3E1-N3ZS51VZ-4184YFSA}",
+          "{D6J0-K1MC17OK-6935CYPI}",
+          "{R7U5-B9HX46CY-8092UJGB}",
+          "{I3U7-E9CX57FM-9010NNSN}",
+          "{C1C2-J5KJ14YT-7700LVFC}",
+          "{P7T6-W8MD76LQ-3201ZIED}",
+          "{C6M6-T8VZ31DX-9856AMTW}",
+          "{F9N8-J4NN12LA-6719EUXX}",
+          "{C6M6-T8VZ31DX-9856AMTW}",
+          "{H1L6-H4AX92PX-6882ZCMY}",
+          "{I3Q5-U7OU93VJ-8627WCKO}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are 8:57 AM to 4:40 PM.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.57,
+          "avg_end_hour": 16.4
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 7:23 PM, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "start_hour": 19.383333333333333
+        }
+      },
+      {
+        "text": "The session included 30 web visits.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http": 30.0
+        }
+      },
+      {
+        "text": "The user's usual number of web visits per session is 89.57.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_http": 89.57
+        },
+        "session": {}
+      },
+      {
+        "text": "The session's number of web visits is below the user's usual average.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "PPF0435",
+        "before": "2011-02-02 19:23:43"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sc3294a386b",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "PPF0435",
+        "before": "2011-02-02 19:23:43"
+      }
+    },
+    {
+      "step": 3,
+      "final": true,
+      "normalized": [
+        "claim 5: moved session field 'start_hour' from 'asserted' to 'session'",
+        "claim 6: moved session field 'n_http' from 'asserted' to 'session'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 40145,
+        "completion_tokens": 1489
+      },
+      "seconds": 38.8
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "session_id": "S9ce71c79d2",
+  "summary": {
+    "claims": 8,
+    "verified": 5,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.714,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-09 02:40:01.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B8I3-O6UF77JB-4746YDLF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 12 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "MAR0955 visited two suspicious websites outside usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {B5P8-Z0MQ62FH-5273YDCQ}: claimed 'citibank.com', log says 'http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php'"
+      ],
+      "warnings": [
+        "asserted url_contains='citibank.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{B5P8-Z0MQ62FH-5273YDCQ}",
+        "{Q2H8-S8AF61WD-0973MCIF}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "A removable device was connected 2 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {V6V5-O2ST82KF-0038GIWI}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{S9I0-G2CB55MT-6207GTQG}",
+        "{V6V5-O2ST82KF-0038GIWI}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are 07:00 to 15:36.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session started at 02:40, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user averaged 0.25 USB connections per session over the last 30 days.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

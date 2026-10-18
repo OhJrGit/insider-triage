@@ -1,0 +1,83 @@
+{
+  "session_id": "Sf33fcc5ef0",
+  "summary": {
+    "claims": 7,
+    "verified": 6,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-20 19:07:57.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{W5O1-S1FU87AR-0940NHSH}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 178 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "JRG0207 visited multiple suspicious websites, including 'cracked.com' and 'adobe.com'.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [
+        "interpretive claim states specific numbers/times that nobody checks; make it factual"
+      ],
+      "citations": [
+        "{G4U7-B9GR17VW-5395UPVI}",
+        "{D9I7-R2EU51SQ-9779NMKY}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user accessed 49 web pages in total.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user accessed 2 potentially malicious websites.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are from 8:23 to 14:84, and this session was outside those hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The user accessed 10 files, including documents and a compressed file.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

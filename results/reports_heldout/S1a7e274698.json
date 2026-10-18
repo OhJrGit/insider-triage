@@ -1,0 +1,202 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S1a7e274698",
+    "verdict": "suspicious",
+    "summary": "PPF0435 accessed job-hunt.org multiple times outside usual working hours, and connected a removable device frequently.",
+    "claims": [
+      {
+        "text": "PPF0435 logged on to PC-1809 at 2011-02-04 18:35:12.",
+        "type": "factual",
+        "citations": [
+          "{H6Z0-N3SS37LM-4634XYMJ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-1809",
+          "date": "2011-02-04 18:35:12"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 102 minutes and included 9 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 102.0,
+          "n_usb_connect": 9.0
+        }
+      },
+      {
+        "text": "The session included 1 file event, downloading FX6BOC70.pdf.",
+        "type": "factual",
+        "citations": [
+          "{D1M8-E5EP41TB-6076RRFC}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename": "FX6BOC70.pdf"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited job-hunt.org 7 times over the last 30 days, outside usual working hours.",
+        "type": "factual",
+        "citations": [
+          "{F9B8-D7GT91QC-6058YPLW}",
+          "{X0P9-F7MS78GC-0105OQZI}",
+          "{E3M4-L3FV18RL-0065HFHQ}",
+          "{A3Q5-O3UM39MR-4532VNWA}",
+          "{S4V8-X0JO04IP-1439GKPN}",
+          "{Q2V1-G2HW83JZ-3286HKZF}",
+          "{A1P0-M9VJ58ME-7508QKHE}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_http": 86.33,
+          "avg_job_site_visits": 2.625
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 18:35, outside the user's usual working hours of 09:00-15:52.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 9.0,
+          "avg_end_hour": 15.92,
+          "frac_after_hours": 0.083
+        },
+        "session": {}
+      },
+      {
+        "text": "The session included 18 web visits, 1 of which was to job-hunt.org.",
+        "type": "factual",
+        "citations": [
+          "{L4P6-B0UK92GO-1480DVQR}",
+          "{U5E5-E9YE29XE-4390OJYV}",
+          "{O5T7-H1GX18LG-5650STPV}",
+          "{R8T4-H3JD90CC-0235WCKQ}",
+          "{Q1M9-L9EQ58SZ-7216NPHW}",
+          "{U2I4-J5EU01FV-6099CDPH}",
+          "{I4U3-R3EU62BS-3053EEFB}",
+          "{B4B4-Z6EN92MC-7655RGCJ}",
+          "{H0X7-W2IM86CX-8324TKTJ}",
+          "{Y2W6-S4VN39AG-9718DCBK}",
+          "{E3T4-F4PF64LJ-2868MLEX}",
+          "{J9Q5-Y5QJ06EK-0518OAEX}",
+          "{C8W0-B7TC94QL-6810ZZWF}",
+          "{A2P6-Y7RO39TI-6721UPMM}",
+          "{W7Q7-T3PQ05UT-8609YZAQ}",
+          "{A7Z3-P2HI04ZO-7871IXJY}",
+          "{D9I0-G5KP63TM-8879YWYQ}",
+          "{V8Q0-B8PL03BM-5773RIKS}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 18,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 1 visit to job-hunt.org, outside usual working hours.",
+        "type": "factual",
+        "citations": [
+          "{A7Z3-P2HI04ZO-7871IXJY}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_job_site_visits": 2.625
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "PPF0435",
+        "before": "2011-02-04 18:35:12"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1a7e274698",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1a7e274698",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1a7e274698",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "search_user_events",
+      "args": {
+        "user": "PPF0435",
+        "start": "2011-01-05",
+        "end": "2011-02-04",
+        "source": "http",
+        "contains": "job-hunt.org",
+        "limit": 50
+      }
+    },
+    {
+      "step": 5,
+      "error": "bad JSON: Expecting ',' delimiter: line 34 column 593 (char 5847)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"PPF0435 accessed job-hunt.org multiple times outside usual working hours, and connected a removable device frequently.\",\n    \"claims\": [\n      {\"text\": \"PPF0435 logged on to PC-1809 at 2011-02-04 18:35:12.\", \"type\": \"factual\",\n        \"citations\": [\"{H6Z0-N3SS37LM-4634XYMJ}\"], \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-1809\", \"date\": \"2011-02-04 18:35:12\"}},\n      {\"text\": \"The session lasted 10"
+    },
+    {
+      "step": 6,
+      "final": true,
+      "normalized": [
+        "claim 5: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 71479,
+        "completion_tokens": 4475
+      },
+      "seconds": 95.9
+    }
+  ]
+}

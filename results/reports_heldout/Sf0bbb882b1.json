@@ -1,0 +1,164 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sf0bbb882b1",
+    "verdict": "benign",
+    "summary": "DCH0843 logged on to PC-8720 outside usual hours and accessed multiple documents, but did not engage in suspicious activities.",
+    "claims": [
+      {
+        "text": "DCH0843 logged on to PC-8720 at 2011-01-29 06:19:56.",
+        "type": "factual",
+        "citations": [
+          "{B7H0-P8NJ37LP-9968NBNG}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8720",
+          "date": "2011-01-29 06:19:56"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 83 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 83.0
+        }
+      },
+      {
+        "text": "The session started outside usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DCH0843 accessed 11 documents during the session.",
+        "type": "factual",
+        "citations": [
+          "{L9E3-R2EC45BS-1988FGXP}",
+          "{H7R6-D2FU50AC-5632TSUG}",
+          "{S9X7-Q9TE41IZ-5027VFBP}",
+          "{E5R1-K2CL80CW-4641WXHH}",
+          "{H8N7-D8ST65SB-1024QRZN}",
+          "{O8S4-J5II03GM-8905PKAI}",
+          "{Z6S0-F4SD14DK-6306KTDF}",
+          "{F2O0-N1KZ41HI-3148JWWW}",
+          "{M7H4-O1AI94JJ-4327FDGM}",
+          "{L9C3-E7EM41ZT-0140CHBK}",
+          "{O6V6-N7CI28YB-7714BLCO}"
+        ],
+        "asserted": {},
+        "count": 11,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DCH0843 connected a removable device 5 times during the session.",
+        "type": "factual",
+        "citations": [
+          "{W6V7-S9NN31YN-9216RVMN}",
+          "{G8D5-X4IQ32CJ-2978UBVE}",
+          "{A4F0-J1IJ12RC-7251PPCD}",
+          "{M8N6-Q8IL78IL-4638SJPT}",
+          "{M0N6-O6YL56HF-5780CHCL}"
+        ],
+        "asserted": {},
+        "count": 5,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DCH0843 visited a website at 2011-01-29 06:58:18.",
+        "type": "factual",
+        "citations": [
+          "{N0D4-T1FV23VM-8817EXMX}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://buzzfeed.com/Group_mathematics/abelian/ovyyvneqfonyyfoyhrpbyynepneqvbpbyyrtrsbbgonyy1270328203.html"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session ended with a logoff at 2011-01-29 07:42:03.",
+        "type": "factual",
+        "citations": [
+          "{E1W5-V8ED60RE-0542USVW}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2011-01-29 07:42:03"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "DCH0843",
+        "before": "2011-01-29 06:19:56"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf0bbb882b1",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf0bbb882b1",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf0bbb882b1",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 29540,
+        "completion_tokens": 1158
+      },
+      "seconds": 35.9
+    }
+  ]
+}

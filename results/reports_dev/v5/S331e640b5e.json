@@ -1,0 +1,202 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S331e640b5e",
+    "verdict": "benign",
+    "summary": "MYD0978 logged on to PC-3401 at 00:12 and performed file operations and web browsing until 06:00, mostly outside usual working hours.",
+    "claims": [
+      {
+        "text": "MYD0978 logged on to PC-3401 at 2010-12-08 00:12:18.",
+        "type": "factual",
+        "citations": [
+          "{F6G9-C1JJ31XX-1125DHRJ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-3401",
+          "date": "2010-12-08 00:12:18"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 348 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 348.0
+        }
+      },
+      {
+        "text": "MYD0978 performed 15 file operations, mostly involving .doc, .zip, and .pdf files.",
+        "type": "factual",
+        "citations": [
+          "{B7C2-H8BW43MJ-0340BTFL}",
+          "{K5J2-E8OK57LY-9365YESZ}",
+          "{U7B1-Q8VY45XV-7424RJHQ}",
+          "{L0N5-Q6VF68LR-0484NOOS}",
+          "{B5N9-S2AW45XA-3177GMMA}",
+          "{G4R9-J1CA45DP-1910AYVU}",
+          "{O9T3-B0NE01EG-8053SRCQ}",
+          "{P3P6-V4CR76QH-6091EBKX}",
+          "{U3W5-H1NY53VH-5467ZFTS}",
+          "{L3B6-N9JL69YN-2257BVGI}",
+          "{D1B0-M3PX84LY-2036KYIE}",
+          "{P1A9-C0KD36ON-7402QOTX}",
+          "{L6J2-P1FB58HH-2109QGKM}",
+          "{C9K4-S5TH66BL-2828MRNR}",
+          "{X9F4-D3UU30JS-1300VYNJ}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 15,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MYD0978 connected and disconnected a removable device 4 times.",
+        "type": "factual",
+        "citations": [
+          "{X3F0-Y0JN85MN-4020SJNL}",
+          "{J5J5-E9JR59AZ-0813OLXJ}",
+          "{U6S0-U8JC57NJ-1948KGMF}",
+          "{B7M6-B7LC14OU-3724EKZZ}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 4,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MYD0978 visited several websites, including outbrain.com, shareasale.com, and inbox.com.",
+        "type": "factual",
+        "citations": [
+          "{L9K7-N8YH22QC-1831CRQT}",
+          "{A9Q4-Z2DF87GC-2333GRTG}",
+          "{R1K3-X2KB59ZJ-9806KCAV}",
+          "{B5A3-V1AO34HZ-1851BRLS}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 4,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 15 file operations, which is above the user's usual average of 0 files per session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_files": 0.0
+        },
+        "session": {}
+      },
+      {
+        "text": "The session included 4 USB connections, which is above the user's usual average of 0 connections per session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 00:12, which is outside the user's usual working hours of 07:58 to 18:07.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.97,
+          "avg_end_hour": 18.07
+        },
+        "session": {}
+      },
+      {
+        "text": "The session ended at 06:00, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.97,
+          "avg_end_hour": 18.07
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MYD0978",
+        "before": "2010-12-08 00:00:00"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S331e640b5e",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S331e640b5e",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S331e640b5e",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'",
+        "claim 3: moved 'count' out of 'asserted'",
+        "claim 4: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 33719,
+        "completion_tokens": 1412
+      },
+      "seconds": 42.1
+    }
+  ]
+}

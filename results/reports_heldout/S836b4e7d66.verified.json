@@ -1,0 +1,80 @@
+{
+  "session_id": "S836b4e7d66",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 2,
+    "interpretive": 0,
+    "groundedness": 0.6,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FMG0527 logged on to PC-4256 at 2011-01-07 18:46:50.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L7F6-Y1ZC43AO-7486NSKR}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 222 minutes, which is longer than usual.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "FMG0527 accessed multiple suspicious websites, including 'americanexpress.com', 'ign.com', and 'officedepot.com'.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {J3D7-I9KE42SS-2461ZKQM}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://americanexpress.com/Storm_botnet/malware/fcrrqjnyxvatercnve1166039597.jsp'",
+        "url_contains mismatch on {I2M8-I8VH76QE-5167KONV}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://vistaprint.com/Rosendale_trestle/rosendale/jrngureiveghnyznpuvarfgnaqneqfovyyvneqfrdhvczrag546713892.php'",
+        "url_contains mismatch on {I8P8-D4ZL69CQ-5989QCRU}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://officedepot.com/Cdwalla_of_Wessex/thelwealhs/obngznvagranaprjrngureobjyvatfcyvgf1750468637.html'"
+      ],
+      "warnings": [
+        "asserted url_contains='americanexpress.com|ign.com|officedepot.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{J3D7-I9KE42SS-2461ZKQM}",
+        "{I2M8-I8VH76QE-5167KONV}",
+        "{I8P8-D4ZL69CQ-5989QCRU}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "FMG0527 connected a removable device 5 times, which is more than usual.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {B0D6-D7NT36TI-6346BQTD}: claimed 'device', log says 'file'",
+        "activity mismatch on {J5J7-E6VC62SQ-5263DMRA}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {B0D6-D7NT36TI-6346BQTD}: claimed 'Connect', log says 'File'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{V4J3-R3UW42JG-8057HUGG}",
+        "{J5J7-E6VC62SQ-5263DMRA}",
+        "{Q0L1-J2KK48MJ-6095FENY}",
+        "{P4S4-I8MR01UD-3637TKVR}",
+        "{B0D6-D7NT36TI-6346BQTD}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session started at 18:46:50, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

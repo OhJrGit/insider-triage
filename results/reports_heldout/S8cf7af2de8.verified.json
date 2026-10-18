@@ -1,0 +1,92 @@
+{
+  "session_id": "S8cf7af2de8",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.667,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-02 03:46:16.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Q3Y6-O8EP88PV-2591XJWF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 87 minutes and included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "A removable device was connected 2 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {J9I5-B7LO36SN-6104HXYE}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{J2M5-N9ZD97MC-2527HAPD}",
+        "{J9I5-B7LO36SN-6104HXYE}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user visited wikileaks.org 2 times.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {Z8Y0-S0GY52MN-4759OFUZ}: claimed 'wikileaks.org', log says 'http://reference.com/Take_Ichi_convoy/ichi/nffrzoylyvar310133008.html'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Z7M3-F0DQ35HB-9595ZHAO}",
+        "{Z8Y0-S0GY52MN-4759OFUZ}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user visited a suspicious reference site.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='Take_Ichi_convoy' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Z8Y0-S0GY52MN-4759OFUZ}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session occurred on a weekend.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

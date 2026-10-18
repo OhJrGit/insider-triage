@@ -1,0 +1,138 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S6a852450cb",
+    "verdict": "suspicious",
+    "summary": "DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.",
+    "claims": [
+      {
+        "text": "DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.",
+        "type": "factual",
+        "citations": [
+          "{L2Z7-T1AD62MG-7867HPVE}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-5168",
+          "date": "2010-11-15 07:03:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DRR0162 logged off from PC-5168 at 2010-11-15 16:13:00.",
+        "type": "factual",
+        "citations": [
+          "{P0F6-A9IR22AF-7370XGTL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "pc": "PC-5168",
+          "date": "2010-11-15 16:13:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 550 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 550.0
+        }
+      },
+      {
+        "text": "DRR0162 visited 124 websites during the session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http": 124.0
+        }
+      },
+      {
+        "text": "DRR0162 sent 11 emails during the session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_email": 11.0
+        }
+      },
+      {
+        "text": "DRR0162 visited job-related websites 5 times.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http_job": 5.0
+        }
+      },
+      {
+        "text": "The session included 1 USB connection.",
+        "type": "factual",
+        "citations": [
+          "{Q6M4-H9NL06OV-1423DFQS}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_usb_connect": 1
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "error": "bad JSON: Expecting ',' delimiter: line 90 column 8 (char 5698)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.\",\n    \"claims\": [\n      {\n        \"text\": \"DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.\",\n        \"type\": \"factual\",\n        \"citations\": [\"{L2Z7-T1AD62MG-7867HPVE}\"],\n        \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-5168\", \"date\": \"2010-11-15 07:03:00\"}\n      },\n      {"
+    },
+    {
+      "step": 1,
+      "error": "bad JSON: Unterminated string starting at: line 46 column 3383 (char 4926)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.\",\n    \"claims\": [\n      {\n        \"text\": \"DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.\",\n        \"type\": \"factual\",\n        \"citations\": [\"{L2Z7-T1AD62MG-7867HPVE}\"],\n        \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-5168\", \"date\": \"2010-11-15 07:03:00\"}\n      },\n      {"
+    },
+    {
+      "step": 2,
+      "error": "bad JSON: Unterminated string starting at: line 46 column 3383 (char 4926)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.\",\n    \"claims\": [\n      {\n        \"text\": \"DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.\",\n        \"type\": \"factual\",\n        \"citations\": [\"{L2Z7-T1AD62MG-7867HPVE}\"],\n        \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-5168\", \"date\": \"2010-11-15 07:03:00\"}\n      },\n      {"
+    },
+    {
+      "step": 3,
+      "error": "bad JSON: Unterminated string starting at: line 46 column 3383 (char 4926)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.\",\n    \"claims\": [\n      {\n        \"text\": \"DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.\",\n        \"type\": \"factual\",\n        \"citations\": [\"{L2Z7-T1AD62MG-7867HPVE}\"],\n        \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-5168\", \"date\": \"2010-11-15 07:03:00\"}\n      },\n      {"
+    },
+    {
+      "step": 4,
+      "error": "bad JSON: Unterminated string starting at: line 46 column 3383 (char 4926)",
+      "raw": "{\n  \"action\": \"final\",\n  \"report\": {\n    \"verdict\": \"suspicious\",\n    \"summary\": \"DRR0162 spent 550 minutes on PC-5168, visiting many websites and sending emails, mostly outside usual working hours.\",\n    \"claims\": [\n      {\n        \"text\": \"DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.\",\n        \"type\": \"factual\",\n        \"citations\": [\"{L2Z7-T1AD62MG-7867HPVE}\"],\n        \"asserted\": {\"source\": \"logon\", \"activity\": \"Logon\", \"pc\": \"PC-5168\", \"date\": \"2010-11-15 07:03:00\"}\n      },\n      {"
+    },
+    {
+      "step": 5,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 139956,
+        "completion_tokens": 15608
+      },
+      "seconds": 242.7
+    }
+  ]
+}

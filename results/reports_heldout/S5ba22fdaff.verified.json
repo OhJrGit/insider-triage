@@ -1,0 +1,94 @@
+{
+  "session_id": "S5ba22fdaff",
+  "summary": {
+    "claims": 7,
+    "verified": 6,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "User AAM0658 logged on to PC-9923 at 2010-10-27 04:31:52.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Q7J2-R0UY09AF-7403UNWV}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "A removable device was connected once.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G0R8-K2YH87AK-9571JLRM}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The user accessed 9 files, mostly documents and a PDF.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G0Q5-N0UW21VO-4948EJCU}",
+        "{W6R7-L5HC56RT-3206GSXI}",
+        "{C8J4-Y0MU84TC-0185HROY}",
+        "{X3W4-T3VN21FH-3889ISYA}",
+        "{I6H8-T9IQ99SB-0249LRTB}",
+        "{M1E2-M5BV54TM-8233PQBV}",
+        "{K4K2-N9YE23GA-1283WMYN}",
+        "{O2B9-P4GJ93TA-5079KFPZ}",
+        "{H1H3-P6XX99HI-4192PSDG}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user visited an unusual website at 05:16:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Z3Y7-I3OA88AP-9440ZAYH}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session lasted 83 minutes and included 1 web visit.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "Over the previous 30 days the user averaged 0.167 USB connections and started work around 08:51.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "session_id": "S1a7e274698",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 3,
+    "interpretive": 0,
+    "groundedness": 0.571,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-04 18:35:12.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{H6Z0-N3SS37LM-4634XYMJ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 102 minutes and included 9 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session included 1 file event, downloading FX6BOC70.pdf.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{D1M8-E5EP41TB-6076RRFC}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user visited job-hunt.org 7 times over the last 30 days, outside usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [
+        "cited event {F9B8-D7GT91QC-6058YPLW} is outside the investigated session",
+        "cited event {X0P9-F7MS78GC-0105OQZI} is outside the investigated session",
+        "cited event {E3M4-L3FV18RL-0065HFHQ} is outside the investigated session",
+        "cited event {A3Q5-O3UM39MR-4532VNWA} is outside the investigated session",
+        "cited event {S4V8-X0JO04IP-1439GKPN} is outside the investigated session",
+        "cited event {Q2V1-G2HW83JZ-3286HKZF} is outside the investigated session",
+        "cited event {A1P0-M9VJ58ME-7508QKHE} is outside the investigated session"
+      ],
+      "citations": [
+        "{F9B8-D7GT91QC-6058YPLW}",
+        "{X0P9-F7MS78GC-0105OQZI}",
+        "{E3M4-L3FV18RL-0065HFHQ}",
+        "{A3Q5-O3UM39MR-4532VNWA}",
+        "{S4V8-X0JO04IP-1439GKPN}",
+        "{Q2V1-G2HW83JZ-3286HKZF}",
+        "{A1P0-M9VJ58ME-7508QKHE}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session started at 18:35, outside the user's usual working hours of 09:00-15:52.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session included 18 web visits, 1 of which was to job-hunt.org.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {D9I0-G5KP63TM-8879YWYQ}: claimed 'http', log says 'device'",
+        "source mismatch on {V8Q0-B8PL03BM-5773RIKS}: claimed 'http', log says 'device'",
+        "activity mismatch on {D9I0-G5KP63TM-8879YWYQ}: claimed 'Visit', log says 'Connect'",
+        "activity mismatch on {V8Q0-B8PL03BM-5773RIKS}: claimed 'Visit', log says 'Connect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{L4P6-B0UK92GO-1480DVQR}",
+        "{U5E5-E9YE29XE-4390OJYV}",
+        "{O5T7-H1GX18LG-5650STPV}",
+        "{R8T4-H3JD90CC-0235WCKQ}",
+        "{Q1M9-L9EQ58SZ-7216NPHW}",
+        "{U2I4-J5EU01FV-6099CDPH}",
+        "{I4U3-R3EU62BS-3053EEFB}",
+        "{B4B4-Z6EN92MC-7655RGCJ}",
+        "{H0X7-W2IM86CX-8324TKTJ}",
+        "{Y2W6-S4VN39AG-9718DCBK}",
+        "{E3T4-F4PF64LJ-2868MLEX}",
+        "{J9Q5-Y5QJ06EK-0518OAEX}",
+        "{C8W0-B7TC94QL-6810ZZWF}",
+        "{A2P6-Y7RO39TI-6721UPMM}",
+        "{W7Q7-T3PQ05UT-8609YZAQ}",
+        "{A7Z3-P2HI04ZO-7871IXJY}",
+        "{D9I0-G5KP63TM-8879YWYQ}",
+        "{V8Q0-B8PL03BM-5773RIKS}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The session included 1 visit to job-hunt.org, outside usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{A7Z3-P2HI04ZO-7871IXJY}"
+      ]
+    }
+  ]
+}

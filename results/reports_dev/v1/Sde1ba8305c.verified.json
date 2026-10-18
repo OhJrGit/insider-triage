@@ -1,0 +1,34 @@
+{
+  "session_id": "Sde1ba8305c",
+  "summary": {
+    "claims": 2,
+    "verified": 1,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "The user accessed a suspicious URL during an after-hours session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://discovery.com/Japan/shikoku/gerrfgnaqergheabavairfgzrag2105221548.jsp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{T3D6-S1BR96LZ-0581LASF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The user's typical behavior does not include accessing suspicious URLs during after-hours sessions.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

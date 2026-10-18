@@ -1,0 +1,105 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S7632c87cc1",
+    "verdict": "suspicious",
+    "summary": "EHD0584 logged on to PC-8669 outside usual hours and accessed an unusual URL.",
+    "claims": [
+      {
+        "text": "EHD0584 logged on to PC-8669 at 2010-10-13 06:00:20.",
+        "type": "factual",
+        "citations": [
+          "{D9G5-H9CC32CC-5356VONH}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8669",
+          "date": "2010-10-13 06:00:20"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "EHD0584 accessed the URL http://optimum.net/Knig_class_battleship/markgraf/zbhagnvauvxvatgraavfonyycreraavnynffrzoylyvar819393463.jsp.",
+        "type": "factual",
+        "citations": [
+          "{G6Q3-O2OT82MR-7419PNKN}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://optimum.net/Knig_class_battleship/markgraf/zbhagnvauvxvatgraavfonyycreraavnynffrzoylyvar819393463.jsp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 18 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 18.0
+        }
+      },
+      {
+        "text": "The session involved 2 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_usb_connect": 2.0
+        }
+      },
+      {
+        "text": "The session involved 3 file events.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_file": 3.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3804,
+        "completion_tokens": 559
+      },
+      "seconds": 11.8
+    }
+  ]
+}

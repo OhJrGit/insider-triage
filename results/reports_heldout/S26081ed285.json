@@ -1,0 +1,168 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S26081ed285",
+    "verdict": "suspicious",
+    "summary": "MAR0955 logged on late at night and accessed multiple suspicious websites.",
+    "claims": [
+      {
+        "text": "MAR0955 logged on to PC-6793 at 2011-02-16 21:34:33.",
+        "type": "factual",
+        "citations": [
+          "{S0H9-K4HS73GN-1040OMBL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6793",
+          "date": "2011-02-16 21:34:33"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 163 minutes and included 5 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 163.0,
+          "n_usb_connect": 5.0
+        }
+      },
+      {
+        "text": "MAR0955 accessed three suspicious websites: lockheedmartin.com, sourceforge.net, and orbitz.com.",
+        "type": "factual",
+        "citations": [
+          "{B2L7-T3JH89JU-1143DRLC}",
+          "{Y7X4-W3IM36RS-9020LRJP}",
+          "{O5D8-P0IO59QN-8367FBAY}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "lockheedmartin.com|sourceforge.net|orbitz.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited websites outside office hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user accessed 21 files, including 4 archive files.",
+        "type": "factual",
+        "citations": [
+          "{C4J0-D1AP77GF-7706XOPA}",
+          "{Q7B0-T9UG48XU-1630EDUB}",
+          "{X0F7-B0RY01ZQ-7458LMYU}",
+          "{I1R4-D6GR08MU-4196QMKF}",
+          "{F9N8-T5JB43RF-2136MNXN}",
+          "{S6W5-K5QE65XB-6527AVXZ}",
+          "{O4C1-P0QQ63KH-7889HNER}",
+          "{R2X5-V0KS47DZ-3110UFWS}",
+          "{X5N9-D9YK52YU-9462DPZV}",
+          "{N2R3-Q0BJ69WB-0942MNDK}",
+          "{I1H4-A7HA83LC-3910FDRY}",
+          "{L3I0-J7GU42VF-5189IFLX}",
+          "{S7B7-C3VE58FU-6724XWCM}",
+          "{K1J8-L4VX09YM-0045GZEA}",
+          "{D6K9-C2YK96QR-8730VDUX}",
+          "{W3A5-Q9PK95IB-6908WRCH}",
+          "{U2E3-S4EZ21HT-5072ILZL}",
+          "{K9T2-U6MA55YC-5742XTWC}",
+          "{C0H3-U3ME12MM-4758DTAM}",
+          "{S3W6-D6OY58WS-6979LVRC}",
+          "{H6C5-T6QJ02IL-3280TOCS}",
+          "{I3A7-W9VY83IM-7762UNCZ}",
+          "{Q1M2-S7ZZ64UQ-8565UYHR}",
+          "{Q7Q4-P4WF38FX-8836UMSV}",
+          "{O5D8-P0IO59QN-8367FBAY}",
+          "{C3O0-C4NW63FJ-9961BHNN}",
+          "{Q3Q1-Y0TD22FB-8613KHCW}",
+          "{U4Z9-F3CE59BX-5258ROUY}",
+          "{I2T8-W4CI97JX-3572EGOU}",
+          "{S8N7-K8LM93KM-4665DAAF}",
+          "{L9O5-I1ON24LI-2009AGFO}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 21,
+        "baseline": {},
+        "session": {
+          "n_file": 21.0,
+          "n_file_exec_archive": 4.0
+        }
+      },
+      {
+        "text": "The user's average session duration is 122 minutes, and they usually start work around 07:44.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.74,
+          "avg_end_hour": 14.22,
+          "avg_duration_min": 122.0
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S26081ed285",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAR0955",
+        "before": "2011-02-17 00:17:15"
+      }
+    },
+    {
+      "step": 2,
+      "final": true,
+      "normalized": [
+        "claim 5: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 19581,
+        "completion_tokens": 1414
+      },
+      "seconds": 31.5
+    }
+  ]
+}

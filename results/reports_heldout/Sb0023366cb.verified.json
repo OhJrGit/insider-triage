@@ -1,0 +1,148 @@
+{
+  "session_id": "Sb0023366cb",
+  "summary": {
+    "claims": 7,
+    "verified": 3,
+    "unsupported": 3,
+    "interpretive": 1,
+    "groundedness": 0.5,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-28 19:04:25.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{W0P6-I1AD18AP-0207GLYB}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session included 56 HTTP visits, mostly to educational and general interest sites.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)",
+        "count says 56 but 45 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{H0D3-F6KJ58TX-5838OSFK}",
+        "{O2S4-I2NB70BH-4946GCSV}",
+        "{K2B7-V4FX02TC-1562THXA}",
+        "{S7T1-Q2CK54DB-3719WZNP}",
+        "{W5U6-X9QB36PJ-3152RUJA}",
+        "{D6Q7-B9LX76ID-3402EWWV}",
+        "{O0C5-I1XW73CY-3131QMEN}",
+        "{F2W0-A0LB51QE-5397KDPD}",
+        "{D9L5-T0WM73DU-8228YJGV}",
+        "{X6M6-H6AO52XS-5884JRZZ}",
+        "{R2E1-J1TL76AY-0691FKDW}",
+        "{Y8H1-K2XD73WW-8258WVYQ}",
+        "{Y7T5-G3WY58LP-2746IWMA}",
+        "{Y5G0-H5PT75UW-2577IKFI}",
+        "{N8Z9-G5CS37OJ-4773MMLN}",
+        "{O9T5-Z6KH29MB-7991PHRG}",
+        "{W2S6-W0PO83QV-1336ARKV}",
+        "{L2D1-Z9SS18NG-6434DELA}",
+        "{F1F0-L9SO27XW-3796BFFN}",
+        "{R6P9-G5UF52UJ-3203GACZ}",
+        "{G0X2-H6IB87MN-7159ZUBB}",
+        "{Z9Y9-P8BZ70PG-9302SQCZ}",
+        "{E9Y9-I4IY75BE-8938TXPG}",
+        "{Z4H4-T9OI65TR-2836HGGK}",
+        "{R0S3-O6FO81LX-8438KFEY}",
+        "{Q2U4-S3RM96LJ-7420OEZD}",
+        "{Z0W8-K7YE63II-7796EOPP}",
+        "{P9B6-B2ZR38OM-1909IQFG}",
+        "{M4M0-B8FV01IY-5873FENY}",
+        "{Y9G0-B5YM04PN-0466QVII}",
+        "{L8U7-C0TI04VT-2548NVLB}",
+        "{N8F9-Y9US05DJ-1063FUTF}",
+        "{V4J3-K6MM68LP-8465TGEW}",
+        "{H5O6-H4AR87LQ-3776MGEP}",
+        "{H3K0-F8VF06IB-8323BVUX}",
+        "{F8E1-L8IB46HA-2464PQCA}",
+        "{L9B2-G5JN12PQ-8131BXPA}",
+        "{G6I4-D9MX54GF-2431JUHI}",
+        "{F3Q6-J8XM49NC-0096YORN}",
+        "{P4M6-Q3ZY47MG-7985HUVK}",
+        "{G5N3-H2EK87RU-0586BOLL}",
+        "{T8B0-D1FQ17NY-3003UMGK}",
+        "{K5F9-D4BX90JM-3314ZVTW}",
+        "{G6P5-T4ZS83OG-0376SVYW}",
+        "{H8Z6-C7VW21LN-9966SBAD}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "JRG0207 connected and disconnected a removable device 7 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{E8G0-A6ES07WU-0364YNBQ}",
+        "{X0D0-I7MZ52ZZ-6035ECWW}",
+        "{I3Y7-N8US53VG-0176AKIJ}",
+        "{O0C5-I1XW73CY-3131QMEN}",
+        "{U4H3-L1MG58SK-5966JYCO}",
+        "{P1R6-A5DY69BZ-3824JNBO}",
+        "{K6S6-H6IU89RV-3581DSEY}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "JRG0207 handled 8 documents during the session, mostly .doc files.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{B2E2-C7EI92LH-7865CNWR}",
+        "{B7P8-H7BT25QM-0275WSQS}",
+        "{I1N6-Z7YZ82HP-1230GHZK}",
+        "{J5F9-J1MI56OO-1422PZVQ}",
+        "{U7D3-C6KX33YZ-4622TPIK}",
+        "{P9M2-J6CQ50HI-9026AOMI}",
+        "{Q0E6-K0FB79IM-4016UOEX}",
+        "{I0A0-J6GA08YA-0288NKEZ}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session lasted 622 minutes, which is longer than the user's usual session duration.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session started at 19:04 and ended at 05:26, outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session involved visits to various websites, mostly within the user's usual patterns.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

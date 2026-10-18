@@ -1,0 +1,83 @@
+{
+  "session_id": "S7632c87cc1",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 2,
+    "groundedness": 0.8,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-13 06:00:20.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{D9G5-H9CC32CC-5356VONH}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "EHD0584 accessed the URL http://optimum.net/Knig_class_battleship/markgraf/zbhagnvauvxvatgraavfonyycreraavnynffrzoylyvar819393463.jsp.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {G6Q3-O2OT82MR-7419PNKN}: claimed 'http', log says 'device'",
+        "field 'url' does not apply to a device event ({G6Q3-O2OT82MR-7419PNKN})"
+      ],
+      "warnings": [],
+      "citations": [
+        "{G6Q3-O2OT82MR-7419PNKN}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session lasted 18 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session involved 2 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session involved 3 file events.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

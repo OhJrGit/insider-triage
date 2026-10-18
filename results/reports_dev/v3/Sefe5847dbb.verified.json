@@ -1,0 +1,86 @@
+{
+  "session_id": "Sefe5847dbb",
+  "summary": {
+    "claims": 6,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "BTL0226 logged on to PC-4534 at 2010-10-08 02:58:22.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L8A3-G5XF16QP-2283QGVC}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "BTL0226 logged off from PC-4534 at 2010-10-08 05:41:17.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{R8K1-V4TL21KL-6516PEJR}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "BTL0226 visited Hulu.com multiple times outside usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "cited event {A0S7-E6JN43RI-4192VYGS} is outside the investigated session",
+        "cited event {Y5S6-Z2JH46FI-7352RPKW} is outside the investigated session",
+        "cited event {E6K4-S4KM67FT-5499XPGI} is outside the investigated session"
+      ],
+      "citations": [
+        "{R0Y6-K1MO11OY-9750PPAW}",
+        "{A0S7-E6JN43RI-4192VYGS}",
+        "{Y5S6-Z2JH46FI-7352RPKW}",
+        "{E6K4-S4KM67FT-5499XPGI}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "BTL0226 accessed files on PC-4534.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "count 3 is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{G8W6-U0JA05WD-4285LGAF}",
+        "{Q2Z2-X6IJ14TN-4190PAIZ}",
+        "{V3G1-H6CV26LX-8546OYMM}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "Over the previous 30 days the user averaged 0.093 USB connections and started work around 10:07.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

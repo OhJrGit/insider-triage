@@ -1,0 +1,152 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S9ce71c79d2",
+    "verdict": "suspicious",
+    "summary": "MAR0955 accessed two suspicious websites outside usual working hours and used a removable device.",
+    "claims": [
+      {
+        "text": "MAR0955 logged on to PC-6793 at 2011-02-09 02:40:01.",
+        "type": "factual",
+        "citations": [
+          "{B8I3-O6UF77JB-4746YDLF}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6793",
+          "date": "2011-02-09 02:40:01"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 12 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 12.0
+        }
+      },
+      {
+        "text": "MAR0955 visited two suspicious websites outside usual working hours.",
+        "type": "factual",
+        "citations": [
+          "{B5P8-Z0MQ62FH-5273YDCQ}",
+          "{Q2H8-S8AF61WD-0973MCIF}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "citibank.com"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "A removable device was connected 2 times during the session.",
+        "type": "factual",
+        "citations": [
+          "{S9I0-G2CB55MT-6207GTQG}",
+          "{V6V5-O2ST82KF-0038GIWI}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are 07:00 to 15:36.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.0,
+          "avg_end_hour": 15.36
+        },
+        "session": {}
+      },
+      {
+        "text": "The session started at 02:40, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "start_hour": 2.6666666666666665
+        }
+      },
+      {
+        "text": "The user averaged 0.25 USB connections per session over the last 30 days.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.25
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAR0955",
+        "before": "2011-02-09 02:40:01"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S9ce71c79d2",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S9ce71c79d2",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 15538,
+        "completion_tokens": 830
+      },
+      "seconds": 21.8
+    }
+  ]
+}

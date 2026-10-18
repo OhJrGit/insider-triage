@@ -1,0 +1,110 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sde1ba8305c",
+    "verdict": "suspicious",
+    "summary": "MAS0025 accessed an unusual URL outside usual working hours on a session lasting 15 minutes.",
+    "claims": [
+      {
+        "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+        "type": "factual",
+        "citations": [
+          "{L4R5-G7JG33XZ-3927QMRT}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-2512",
+          "date": "2010-09-22 05:17:31"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 15 minutes and included 5 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 15.0,
+          "n_usb_connect": 5.0
+        }
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAS0025 accessed an unusual URL outside usual working hours.",
+        "type": "interpretive",
+        "citations": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 07:39.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_start_hour": 7.79
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-22 05:17:31"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sde1ba8305c",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-22 05:17:31"
+      }
+    },
+    {
+      "step": 3,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 22908,
+        "completion_tokens": 613
+      },
+      "seconds": 24.3
+    }
+  ]
+}

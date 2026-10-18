@@ -1,0 +1,127 @@
+{
+  "session_id": "S14841c0e92",
+  "summary": {
+    "claims": 10,
+    "verified": 7,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.778,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "TAP0551 logged on to PC-7623 at 2010-10-23 02:55:51.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A4N8-L7CB53MP-7231EGQV}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "TAP0551 logged off at 2010-10-23 05:38:42.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{R0N9-C3CD80RL-4409BWBL}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 163 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session was outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user visited wikileaks.org 1 time.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Z3D8-G6RF94ZE-9439PMNH}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user visited linkedin.com 3 times.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A1J4-M6DT90ZM-1183CADB}",
+        "{F3T9-Q1GV32RA-9263VVHA}",
+        "{V8V4-K3RD70IO-9766WRZV}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The user visited eonline.com and shopathome.com.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {U1P0-L6ZA47GF-5533MSOD}: claimed 'eonline.com|shopathome.com', log says 'http://eonline.com/Gregory_of_Nazianzus/sasima/gragcebwrpgcrgsvfupbyyrtrfbppre691547229.htm'",
+        "url_contains mismatch on {M1W1-V5KD56OC-8643IGTX}: claimed 'eonline.com|shopathome.com', log says 'http://shopathome.com/Slavery_in_ancient_Greece/theognis/cebwrpgubgrypebffyvprafvatynjfhvg1676757978.aspx'"
+      ],
+      "warnings": [
+        "asserted url_contains='eonline.com|shopathome.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{U1P0-L6ZA47GF-5533MSOD}",
+        "{M1W1-V5KD56OC-8643IGTX}"
+      ]
+    },
+    {
+      "index": 7,
+      "text": "The session occurred on a weekend.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user's usual PC was PC-7623, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 9,
+      "text": "The user averaged 0.025 USB connections per session over the past 30 days, but had 1 connection in this session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {Z5F2-A0SU30LP-8630HIBI}: claimed 'Connect', log says 'Disconnect'",
+        "count says 1 but 2 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Y4M9-W9UP04TT-6557WXBK}",
+        "{Z5F2-A0SU30LP-8630HIBI}"
+      ]
+    }
+  ]
+}

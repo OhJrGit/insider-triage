@@ -1,0 +1,62 @@
+{
+  "session_id": "Sf8c893b78c",
+  "summary": {
+    "claims": 5,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 0,
+    "groundedness": 1.0,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MLL0598 logged on to PC-0189 at 2011-01-20 08:18:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{N5G6-U2NV65BS-1998WLPK}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MLL0598 logged off from PC-0189 at 2011-01-20 18:25:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{S2Y2-D1DF94HI-9957FRXA}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 607 minutes and included no file, USB or web activity.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "Over the previous 30 days the user averaged 8.526 USB connections and started work around 08:56.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session started and ended during regular working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

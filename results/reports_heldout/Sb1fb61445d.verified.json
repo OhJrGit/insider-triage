@@ -1,0 +1,88 @@
+{
+  "session_id": "Sb1fb61445d",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.667,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MSO0222 logged on to PC-5866 at 2010-12-09 19:02:50.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K1P4-V4NE37IA-7521SNUE}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "A removable device was connected once during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {M8H1-A9QB90UI-2979JPZM}: claimed 'Connect', log says 'Disconnect'",
+        "count says 1 but 2 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{A5B7-T4LK02LB-6499NUOO}",
+        "{M8H1-A9QB90UI-2979JPZM}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "MSO0222 logged off at 2010-12-09 19:14:26.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J7M2-G5FS02NA-6253OISB}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 12 minutes and included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual PC is PC-2524, but this session was on PC-5866.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "Over the previous 30 days the user averaged 0.012 USB connections per session, which is lower than usual.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "unknown session field 'dev_n_usb_connect'"
+      ],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

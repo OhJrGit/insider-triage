@@ -1,0 +1,170 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sd9ad6fcde0",
+    "verdict": "suspicious",
+    "summary": "AJR0932 logged on at 04:27 and off at 06:14, with frequent USB device connections and file activity outside usual hours.",
+    "claims": [
+      {
+        "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+        "type": "factual",
+        "citations": [
+          "{O9C7-Q1RV04YI-2039IQXA}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4748",
+          "date": "2010-09-10 04:27:44"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "AJR0932 logged off at 2010-09-10 06:14:26.",
+        "type": "factual",
+        "citations": [
+          "{J8N3-O5PH44IP-8418FUNE}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-09-10 06:14:26"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The session lasted 107 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "duration_min": 107.0
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The session started at 04:27, outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.24
+        }
+      },
+      {
+        "text": "The session ended at 06:14, outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_end_hour": 16.26
+        }
+      },
+      {
+        "text": "AJR0932 connected a removable device 8 times during the session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 8,
+        "baseline": {}
+      },
+      {
+        "text": "AJR0932 accessed 24 files during the session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 24,
+        "baseline": {}
+      },
+      {
+        "text": "AJR0932 visited a suspicious URL: http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp.",
+        "type": "factual",
+        "citations": [
+          "{I0R2-U1TQ25SQ-3537AFGU}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp"
+        },
+        "count": null,
+        "baseline": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "AJR0932",
+        "before": "2010-09-10 00:00:00"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "final": true,
+      "normalized": [
+        "claim 5: moved 'count' out of 'asserted'",
+        "claim 6: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 48256,
+        "completion_tokens": 1041
+      },
+      "seconds": 31.3
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "session_id": "Sad8b99c63b",
+  "summary": {
+    "claims": 7,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FMG0527 logged on to PC-4256 at 2010-12-30 21:16:01.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{R7L7-S0EW92WE-7675HNHG}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 231 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The user visited a website related to bokassa at 2010-12-30 23:57:44.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Z9L2-N5TK68KK-8295VFRZ}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user visited a website related to fighting in ice hockey at 2010-12-30 23:36:13.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='fisticuffs' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{S5K5-A4FX59AU-0052CCWU}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are from 08:12 to 17:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The user usually does not access websites outside their usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

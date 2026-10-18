@@ -1,0 +1,136 @@
+{
+  "session_id": "Sf53d595656",
+  "summary": {
+    "claims": 9,
+    "verified": 6,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.75,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "LQC0479 logged on to PC-6380 at 2010-09-14 01:37:21.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{C5V2-B5KM15IX-7095SXZK}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "LQC0479 logged off at 2010-09-14 03:30:33.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Q2C1-Y5CI88FY-0476IEHG}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 113 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session involved 6 USB device connections.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "count says 6 but 5 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I3J5-Z9UC33YB-2302LTVZ}",
+        "{M4C5-C9XP09QL-6301LRPY}",
+        "{F1P9-L7GW93AM-6243XDCR}",
+        "{O4Q5-B0UA56WB-6836ULLM}",
+        "{N5M6-E7OD61BJ-0162TKYD}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user accessed 22 files, including .doc and .pdf documents.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Y7S3-J3TD70WX-0300MFNU}",
+        "{N2T0-Z7YO67XX-1986MEFG}",
+        "{H7D7-J0GR52EE-8934QDQN}",
+        "{Y6L2-A0YR53UM-9608YXGD}",
+        "{H6F9-A7HG29GQ-6112OXWV}",
+        "{T8C4-C9LQ25PR-9968EPKA}",
+        "{L5E4-F1ED31MN-5050XOGW}",
+        "{U7N4-X3RM61PL-2978TIED}",
+        "{E0A3-E6YT94EJ-7306QISV}",
+        "{H0B8-V4AV29FA-7986FMWV}",
+        "{S7J5-G2OB97WU-4219FIPX}",
+        "{Z3O0-U9GN08AK-1680CXFF}",
+        "{D5H2-A4YF47LR-1242QERU}",
+        "{Z6U1-A7HU97YZ-3183XQPD}",
+        "{C3I6-X2SS28ST-9711HKGB}",
+        "{E9O7-X4IH37XJ-6797DWAW}",
+        "{T9I4-V3GR50QL-4588IMKQ}",
+        "{P7Z5-E1HF25MI-1599ATFN}",
+        "{K1L9-K5PG59OA-3369CYOP}",
+        "{V6Q5-A0AE81EM-3364XNUT}",
+        "{I6G3-R4PU88RT-9792KTQG}",
+        "{I0A6-X8FJ86OB-7467ZWKJ}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user visited two websites, including UPS and Vistaprint.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{F0G2-X9ZO10NE-5831GAEX}",
+        "{W1O1-U3TS01FY-2846ULBG}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The session was outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The session did not involve any emails.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation"
+      ],
+      "warnings": [
+        "count 0 is not mentioned in the claim text"
+      ],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user's usual PC is PC-6380, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

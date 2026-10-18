@@ -1,0 +1,98 @@
+{
+  "session_id": "Sf53d595656",
+  "summary": {
+    "claims": 3,
+    "verified": 0,
+    "unsupported": 3,
+    "interpretive": 0,
+    "groundedness": 0.0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "The session started at 01:37 and ended at 03:30, which is after regular working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "date mismatch on {C5V2-B5KM15IX-7095SXZK}: claimed 2010-09-14 03:30:33, log says 2010-09-14 01:37:21",
+        "time mismatch on {C5V2-B5KM15IX-7095SXZK}: claimed 03:30, log says 01:37:21"
+      ],
+      "warnings": [],
+      "citations": [
+        "{C5V2-B5KM15IX-7095SXZK}",
+        "{Q2C1-Y5CI88FY-0476IEHG}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The user accessed 22 files, mostly documents (.doc, .pdf), which is significantly higher than their usual activity of 0 files.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'",
+        "unknown field 'count'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Y7S3-J3TD70WX-0300MFNU}",
+        "{N2T0-Z7YO67XX-1986MEFG}",
+        "{H7D7-J0GR52EE-8934QDQN}",
+        "{Y6L2-A0YR53UM-9608YXGD}",
+        "{H6F9-A7HG29GQ-6112OXWV}",
+        "{T8C4-C9LQ25PR-9968EPKA}",
+        "{L5E4-F1ED31MN-5050XOGW}",
+        "{U7N4-X3RM61PL-2978TIED}",
+        "{E0A3-E6YT94EJ-7306QISV}",
+        "{H0B8-V4AV29FA-7986FMWV}",
+        "{S7J5-G2OB97WU-4219FIPX}",
+        "{Z3O0-U9GN08AK-1680CXFF}",
+        "{D5H2-A4YF47LR-1242QERU}",
+        "{Z6U1-A7HU97YZ-3183XQPD}",
+        "{C3I6-X2SS28ST-9711HKGB}",
+        "{E9O7-X4IH37XJ-6797DWAW}",
+        "{T9I4-V3GR50QL-4588IMKQ}",
+        "{P7Z5-E1HF25MI-1599ATFN}",
+        "{K1L9-K5PG59OA-3369CYOP}",
+        "{V6Q5-A0AE81EM-3364XNUT}",
+        "{I6G3-R4PU88RT-9792KTQG}",
+        "{I0A6-X8FJ86OB-7467ZWKJ}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The user visited two websites, UPS and Vistaprint, which is unusual for their typical behavior.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url mismatch on {F0G2-X9ZO10NE-5831GAEX}: claimed 'http://vistaprint.com/Theoren_Fleury/piestany/puhepushaqenvfrerznvyfhccbeguverpnzcpbbxvat1912115484.html', log says 'http://ups.com/Posting_system/irabu/uver1176479899.aspx'"
+      ],
+      "warnings": [
+        "asserted url='http://vistaprint.com/Theoren_Fleury/piestany/puhepushaqenvfrerznvyfhccbeguverpnzcpbbxvat1912115484.html' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{F0G2-X9ZO10NE-5831GAEX}",
+        "{W1O1-U3TS01FY-2846ULBG}"
+      ]
+    }
+  ]
+}

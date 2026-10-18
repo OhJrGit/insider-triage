@@ -1,0 +1,111 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S06a1cafd31",
+    "verdict": "suspicious",
+    "summary": "DCH0843 logged on to PC-8720 outside usual hours and accessed multiple files and a suspicious website.",
+    "claims": [
+      {
+        "text": "DCH0843 logged on to PC-8720 at 2011-01-27 21:35:19.",
+        "type": "factual",
+        "citations": [
+          "{B4R7-U0AI60PD-4749HJRE}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8720",
+          "date": "2011-01-27 21:35:19"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 127 minutes and included 6 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 127.0,
+          "n_usb_connect": 6.0
+        }
+      },
+      {
+        "text": "The user accessed 9 files, including a .zip archive.",
+        "type": "factual",
+        "citations": [
+          "{X4T3-M5CL53VN-6456KIQW}",
+          "{I7B2-R6US36UU-8721WMAO}",
+          "{P2M2-R9PL40XM-6410VZZ}",
+          "{V5D5-U8JO06YA-8096JVEC}",
+          "{I7P4-G5EI54PQ-9062WHQS}",
+          "{V3K2-Z8XD13ER-1606LKXO}",
+          "{H7I1-B7QY55MH-5436TOVZ}",
+          "{S1E4-D1UG62RE-6746QNFF}",
+          "{R5G2-K0WO95LS-9762RNUA}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 9,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited a suspicious website yfrog.com/Saffron/saffron.",
+        "type": "factual",
+        "citations": [
+          "{Y4M1-W9HZ40KT-5872IKIK}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "yfrog.com/Saffron/saffron"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-8720, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-8720"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5106,
+        "completion_tokens": 651
+      },
+      "seconds": 14.7
+    }
+  ]
+}

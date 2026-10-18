@@ -1,0 +1,113 @@
+{
+  "session_id": "Sd9ad6fcde0",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 2,
+    "groundedness": 0.8,
+    "warnings": 3
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O9C7-Q1RV04YI-2039IQXA}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 107 minutes and included 8 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "AJR0932 visited a potentially malicious website at 2010-09-10 05:40:20.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{I0R2-U1TQ25SQ-3537AFGU}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "AJR0932 accessed 24 files, including 1 archive, during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "unknown field 'n_file_exec_archive'"
+      ],
+      "warnings": [
+        "asserted n_file_exec_archive='1.0' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{C7T5-L9XL29JR-1694MOZH}",
+        "{B2Q8-C3XQ25NR-1552ZWQJ}",
+        "{L7C6-A8HE79TO-5089HAYZ}",
+        "{Y2U8-X6VQ75IM-2931DALW}",
+        "{Y7V1-Z8OG17BA-8907PMDG}",
+        "{A6R6-C8RK96WT-8726WTQK}",
+        "{E6K8-E8UT65PX-1315BBCD}",
+        "{V8M9-A3PJ93LI-1478QQPH}",
+        "{I0T5-B8FV29SO-4498OZPF}",
+        "{A6B3-F9GM22IV-8519EOJB}",
+        "{Y4P1-L4DZ57XX-0045XLUI}",
+        "{H9X9-A3IE57VV-0465OSDL}",
+        "{J4D6-T5TB44OK-6491QWRM}",
+        "{V2D3-K0KK12DH-2978TWUX}",
+        "{D0D0-W8TV63UP-2886LZLN}",
+        "{V8J6-Y6ET67ED-1991SJKN}",
+        "{T9T5-D9SP76RI-8595ACWT}",
+        "{M5U5-N5FA17TY-1634SKKY}",
+        "{T0X8-N9UJ35ET-8460TMLP}",
+        "{O4B7-N0AD54XD-4669TEPQ}",
+        "{Z6G2-E0VJ89KI-1893QPVK}",
+        "{O3M9-G5YX42OS-4096TKDI}",
+        "{F2H8-P7TE17BO-4998KJNZ}",
+        "{S6L7-H8ZV50FO-9526CMLW}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session occurred outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual PC is PC-4748, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session started at 04:27 and ended at 06:14, which is 2 hours and 47 minutes after the user's average session start time of 07:24.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [
+        "interpretive claim states specific numbers/times that nobody checks; make it factual"
+      ],
+      "citations": []
+    }
+  ]
+}

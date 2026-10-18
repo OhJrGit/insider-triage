@@ -1,0 +1,220 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S14841c0e92",
+    "verdict": "suspicious",
+    "summary": "TAP0551 accessed several websites outside usual working hours on a weekend, including wikileaks.org.",
+    "claims": [
+      {
+        "text": "TAP0551 logged on to PC-7623 at 2010-10-23 02:55:51.",
+        "type": "factual",
+        "citations": [
+          "{A4N8-L7CB53MP-7231EGQV}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-7623",
+          "date": "2010-10-23 02:55:51"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "TAP0551 logged off at 2010-10-23 05:38:42.",
+        "type": "factual",
+        "citations": [
+          "{R0N9-C3CD80RL-4409BWBL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-10-23 05:38:42"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 163 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 163.0
+        }
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited wikileaks.org 1 time.",
+        "type": "factual",
+        "citations": [
+          "{Z3D8-G6RF94ZE-9439PMNH}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "wikileaks.org"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited linkedin.com 3 times.",
+        "type": "factual",
+        "citations": [
+          "{A1J4-M6DT90ZM-1183CADB}",
+          "{F3T9-Q1GV32RA-9263VVHA}",
+          "{V8V4-K3RD70IO-9766WRZV}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "linkedin.com"
+        },
+        "count": 3,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited eonline.com and shopathome.com.",
+        "type": "factual",
+        "citations": [
+          "{U1P0-L6ZA47GF-5533MSOD}",
+          "{M1W1-V5KD56OC-8643IGTX}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "eonline.com|shopathome.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session occurred on a weekend.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "weekend": 1
+        }
+      },
+      {
+        "text": "The user's usual PC was PC-7623, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-7623"
+        },
+        "session": {}
+      },
+      {
+        "text": "The user averaged 0.025 USB connections per session over the past 30 days, but had 1 connection in this session.",
+        "type": "factual",
+        "citations": [
+          "{Y4M9-W9UP04TT-6557WXBK}",
+          "{Z5F2-A0SU30LP-8630HIBI}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 1,
+        "baseline": {
+          "avg_usb_connects": 0.025
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "TAP0551",
+        "before": "2010-10-23 02:55:51"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S14841c0e92",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S14841c0e92",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S14841c0e92",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S14841c0e92",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S14841c0e92",
+        "source": "email",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 6,
+      "final": true,
+      "normalized": [
+        "claim 7: moved session field 'weekend' from 'asserted' to 'session'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 35250,
+        "completion_tokens": 1262
+      },
+      "seconds": 36.1
+    }
+  ]
+}

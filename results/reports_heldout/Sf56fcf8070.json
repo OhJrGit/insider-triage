@@ -1,0 +1,147 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sf56fcf8070",
+    "verdict": "suspicious",
+    "summary": "KLH0596 logged on to PC-0132 outside usual hours and performed extensive file activity.",
+    "claims": [
+      {
+        "text": "KLH0596 logged on to PC-0132 at 2011-02-01 21:15:24.",
+        "type": "factual",
+        "citations": [
+          "{C6Z6-W9XG33YH-0066DUPA}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-0132",
+          "date": "2011-02-01 21:15:24"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 506 minutes, which is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "KLH0596 connected a removable device 9 times during the session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 9,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "KLH0596 performed 27 file operations, mostly with .doc and .pdf files.",
+        "type": "factual",
+        "citations": [
+          "{P7T0-Y3RB17MB-1386CBZD}",
+          "{U5R0-D3XW22YT-1131TNDY}",
+          "{W8B4-R4OV36DC-2570AHRJ}",
+          "{I5Z8-R6SJ62OJ-8696PEMR}",
+          "{S3U8-K5WK92QT-2132SCZM}",
+          "{Q1G2-Y2FX60PC-7159LWQW}",
+          "{Q3I1-O1WC57JO-1989RPOQ}",
+          "{M1O5-R6YW80MJ-0324VKIB}",
+          "{V6P9-M3QL34XI-5056BPSD}",
+          "{J5V9-J0TV34PK-0502XFOD}",
+          "{K7T9-G4BS42JC-9386PPXH}",
+          "{S5O6-X1LY91LI-9168SEJT}",
+          "{N0W5-U1MN44JY-5578DFFP}",
+          "{I7Y8-H2HB44JR-6078AHJC}",
+          "{F6T8-R2XQ87UV-3379LQZZ}",
+          "{X8U7-M2JA74SK-7124OAOH}",
+          "{I1A3-P4LH11AX-1057KNCL}",
+          "{D6I2-H8TG81AA-0855FOCV}",
+          "{R4M8-B2YC44UV-2100UADB}",
+          "{Z2B3-P6ZD51KA-5490FTGD}",
+          "{E8H3-R1PN96RW-9525DDNG}",
+          "{J3F8-L0PY45BR-0225LRIX}",
+          "{I1Q3-G6JW85JK-6320PKUW}",
+          "{E5W1-J5BS07NB-6836BHVY}",
+          "{G9W9-F3BC88IG-4028JUYK}",
+          "{S4X9-W3ZV48CI-6182YWNK}",
+          "{V6F6-H1RW15PV-4350HDUB}",
+          "{Q6X8-G6XW70FD-4101MYKB}",
+          "{E9L3-N1PY32IK-4326YIEP}",
+          "{E8W9-E6KT20LV-5559QKGT}",
+          "{Y9N1-L3LH91XK-6736JCSD}",
+          "{Z2Q7-G4WX04KG-6100UQAH}",
+          "{M3G4-W9KR07HJ-4132BWWR}",
+          "{R3W9-M3QE96IH-1350XXKZ}",
+          "{F2S8-C1GD48DS-5243PKAG}",
+          "{A9A1-J1BY81BD-3260WXJD}",
+          "{L0C5-G4VQ91OD-2676CQSO}",
+          "{F8I3-I5WP78EP-1799FLBQ}",
+          "{K3L4-M5IP37GV-1392JYQZ}"
+        ],
+        "asserted": {},
+        "count": 27,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited a suspicious URL: http://hp.com/Through_the_Looking_Glass_Lost/ariston/gbbyfcebsrffvbanyfbppreiveghnyznpuvar223685341.jsp.",
+        "type": "factual",
+        "citations": [
+          "{A5K7-O7VZ55GB-3630DWSI}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://hp.com/Through_the_Looking_Glass_Lost/ariston/gbbyfcebsrffvbanyfbppreiveghnyznpuvar223685341.jsp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days, the user averaged 0 USB connections and started work around 08:12.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_start_hour": 8.54
+        },
+        "session": {}
+      },
+      {
+        "text": "The session included 27 file operations, which is above the user's usual file activity.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_files": 0.0
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 7149,
+        "completion_tokens": 1465
+      },
+      "seconds": 34.0
+    }
+  ]
+}

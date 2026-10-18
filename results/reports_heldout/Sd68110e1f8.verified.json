@@ -1,0 +1,77 @@
+{
+  "session_id": "Sd68110e1f8",
+  "summary": {
+    "claims": 6,
+    "verified": 5,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AAM0658 logged on to PC-9923 at 2010-10-23 01:34:19.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K3V4-Y4OK65SI-1583GEOQ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 294 minutes and included 1 USB connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "AAM0658 visited the same URL (http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp) three times.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{N2Y8-M7QC66LK-0957HBRI}",
+        "{F0E9-O5DR10UB-9498WHKH}",
+        "{P9C3-N5CZ37JT-2840NKPC}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "AAM0658 visited wikileaks.org once.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Y4Q9-U5VQ11UG-1279ZPTL}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual start hour is around 08:12, but this session started at 01:34.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

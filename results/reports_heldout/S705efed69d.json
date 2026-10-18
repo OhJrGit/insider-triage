@@ -1,0 +1,112 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S705efed69d",
+    "verdict": "benign",
+    "summary": "The session involved no unusual activity and lasted the entire working day.",
+    "claims": [
+      {
+        "text": "OKC0107 logged on to PC-3932 at 2011-05-16 09:15:00.",
+        "type": "factual",
+        "citations": [
+          "{H4G2-H9QU51NE-6540MXXB}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-3932",
+          "date": "2011-05-16 09:15:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "OKC0107 logged off at 2011-05-16 18:14:00.",
+        "type": "factual",
+        "citations": [
+          "{M2Z7-T4UM33LR-3634DADF}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2011-05-16 18:14:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 539 minutes, which is the full working day.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 539.0
+        }
+      },
+      {
+        "text": "The session started and ended on the user's usual PC, PC-3932.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "pc": "PC-3932"
+        },
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-3932"
+        },
+        "session": {}
+      },
+      {
+        "text": "The session did not involve any USB connections, file events, web visits, or emails.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_usb_connect": 0.0,
+          "n_file": 0.0,
+          "n_http": 0.0,
+          "n_email": 0.0
+        }
+      },
+      {
+        "text": "The session started and ended within the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 9.22,
+          "avg_end_hour": 18.3
+        },
+        "session": {
+          "start_hour": 9.25,
+          "end_hour": 18.233333333333334
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 5: moved session field 'start_hour' from 'asserted' to 'session'",
+        "claim 5: moved session field 'end_hour' from 'asserted' to 'session'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3027,
+        "completion_tokens": 613
+      },
+      "seconds": 10.8
+    }
+  ]
+}

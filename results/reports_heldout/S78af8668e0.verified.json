@@ -1,0 +1,129 @@
+{
+  "session_id": "S78af8668e0",
+  "summary": {
+    "claims": 6,
+    "verified": 3,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.6,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "PPF0435 logged on to PC-1809 at 2011-01-27 19:54:51.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{X7L0-U2MU71VZ-0330OCHV}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 460 minutes, which is 7.67 hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The user visited 27 different websites.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)",
+        "count says 27 but 43 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{W4D7-M3EW61PT-3453NHAP}",
+        "{S2B2-Y8HY73IN-5948EJAX}",
+        "{F6P0-D8LU18WR-4376NEWK}",
+        "{O8F9-B9HH86QP-0167JZZN}",
+        "{Y8S9-M4MQ04GA-9280IZGQ}",
+        "{D1W7-J2BD67DV-8308HAIM}",
+        "{Z4V1-H6OL83BY-8314WUBF}",
+        "{Q4M9-B8IV69VN-3624EBKN}",
+        "{J7E7-C7LX82OB-5657ZWZM}",
+        "{O9R4-L1OD08VP-4586UIXY}",
+        "{X8P3-X7HI40DC-8654ZVOK}",
+        "{Y5B8-C9QZ69JM-8234DPBH}",
+        "{U1H2-H6MX42SR-1087LZZW}",
+        "{R2Y2-Q3SH51DX-4727YNKW}",
+        "{U1A4-Z6HQ17GS-6113CJIS}",
+        "{H9U0-N9ZR17NG-1752HAPH}",
+        "{M3H0-X3TA65ER-9294ANJE}",
+        "{B2D2-M1FI81KI-6251MPBI}",
+        "{R2E7-C6BV49TJ-4953XDRR}",
+        "{D9T4-J5GK22NT-4555AORA}",
+        "{C1M6-P1NK36CK-5199JPXD}",
+        "{M4P6-I7BH65CZ-8683AXTU}",
+        "{S9V0-O4XD06XW-2692YXTP}",
+        "{I6G6-H4OG18HL-9240VGZN}",
+        "{A3J6-A6XJ77KZ-5611XWPV}",
+        "{Y7B6-A5ZU17XB-0969IJNH}",
+        "{J2K4-J7SK81XI-6510QFTQ}",
+        "{J7W9-M0AQ17GG-3591URCE}",
+        "{O9S5-Y0YT63SB-2380LWCD}",
+        "{T6A7-M0EU32IZ-1976AWON}",
+        "{S3I3-X0OJ58ZP-6141QVBX}",
+        "{D1G0-S5FW83II-9425UWJA}",
+        "{G2X5-U1BA40HZ-7349LUXM}",
+        "{Y4Z7-N9GM91HW-5498YJGT}",
+        "{I0R6-M3RR49CX-5798RBKR}",
+        "{I7J1-G1YE18SQ-9313BRGD}",
+        "{D5X6-M6BI51DE-3573SZTI}",
+        "{X1D7-B2BB38BU-1648GEXA}",
+        "{G2I0-O5GC68HF-8875CFPH}",
+        "{F3Y2-U8LL38OF-9569FBCY}",
+        "{Z6P6-L2QW89HU-0744XKPE}",
+        "{V4Z1-U6AR87MQ-3234TNYI}",
+        "{Y7H1-P3SP98VB-9939FXBC}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user's usual working hours are 08:05 to 16:58, but this session started at 19:54 and ended at 03:34, outside usual hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [
+        "interpretive claim states specific numbers/times that nobody checks; make it factual"
+      ],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user connected a removable device 8 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Y8S9-M4MQ04GA-9280IZGQ}",
+        "{Q4M9-B8IV69VN-3624EBKN}",
+        "{J7E7-C7LX82OB-5657ZWZM}",
+        "{O9R4-L1OD08VP-4586UIXY}",
+        "{X8P3-X7HI40DC-8654ZVOK}",
+        "{Y5B8-C9QZ69JM-8234DPBH}",
+        "{U1H2-H6MX42SR-1087LZZW}",
+        "{R2Y2-Q3SH51DX-4727YNKW}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user's usual PC is PC-1809, which matches the session PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

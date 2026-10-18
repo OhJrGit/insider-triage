@@ -1,0 +1,64 @@
+{
+  "session_id": "Sde1ba8305c",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L4R5-G7JG33XZ-3927QMRT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 15 minutes and included 5 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "MAS0025 accessed an unusual URL outside usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [
+        "interpretive claim states specific numbers/times that nobody checks; make it factual"
+      ],
+      "citations": [
+        "{T3D6-S1BR96LZ-0581LASF}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 07:39.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

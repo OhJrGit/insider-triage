@@ -1,0 +1,104 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sefe5847dbb",
+    "verdict": "benign",
+    "summary": "BTL0226 logged on to PC-4534 outside usual hours and accessed a file-sharing site, but no malicious activity was observed.",
+    "claims": [
+      {
+        "text": "BTL0226 logged on to PC-4534 at 2010-10-08 02:58:22.",
+        "type": "factual",
+        "citations": [
+          "{L8A3-G5XF16QP-2283QGVC}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4534",
+          "date": "2010-10-08 02:58:22"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 163 minutes and included 2 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 163.0,
+          "n_usb_connect": 2.0
+        }
+      },
+      {
+        "text": "BTL0226 visited a file-sharing site at 2010-10-08 03:41:59.",
+        "type": "factual",
+        "citations": [
+          "{R0Y6-K1MO11OY-9750PPAW}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "hulu.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user accessed three files during the session.",
+        "type": "factual",
+        "citations": [
+          "{G8W6-U0JA05WD-4285LGAF}",
+          "{Q2Z2-X6IJ14TN-4190PAIZ}",
+          "{V3G1-H6CV26LX-8546OYMM}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 3,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session did not involve any suspicious or malicious activities.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 3: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3774,
+        "completion_tokens": 554
+      },
+      "seconds": 15.7
+    }
+  ]
+}

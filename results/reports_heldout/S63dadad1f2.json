@@ -1,0 +1,174 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S63dadad1f2",
+    "verdict": "benign",
+    "summary": "JRG0207 accessed several documents and visited two suspicious websites during the session.",
+    "claims": [
+      {
+        "text": "JRG0207 logged on to PC-8908 at 2011-01-18 05:15:57.",
+        "type": "factual",
+        "citations": [
+          "{B2E9-C1CI79KB-5053CEKO}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8908",
+          "date": "2011-01-18 05:15:57"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 42 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 42.0
+        }
+      },
+      {
+        "text": "JRG0207 accessed 9 files, mostly documents.",
+        "type": "factual",
+        "citations": [
+          "{K9T3-F6MP70FV-6267TTGK}",
+          "{Z3R7-Q0KD13JG-6399YWYK}",
+          "{M4W2-Z5BA24OZ-7050GUZQ}",
+          "{J5Y2-Z7NE76FN-4960TJNC}",
+          "{Y7S9-H8QW26YO-4452QOJM}",
+          "{J0P5-N0ZQ46GV-3156XBXN}",
+          "{P0E3-J5GK08DV-8712UEDK}",
+          "{Y8J8-N3OA15MP-7861CIRX}",
+          "{G6U4-D1RM82ZN-8435ZJAU}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 9,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "JRG0207 visited two suspicious websites.",
+        "type": "factual",
+        "citations": [
+          "{M4O0-C2HK77AC-5454AZRY}",
+          "{B3K3-H8TB99GU-4963RCTZ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "bluehost.com"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 7 USB device connections.",
+        "type": "factual",
+        "citations": [
+          "{U0C0-W8IK70PD-1406PELW}",
+          "{E5K6-E6NK11DK-5419ORKN}",
+          "{Z8N2-B5CZ81TH-0580MCRV}",
+          "{H8W1-U5UW04YN-5135BHIK}",
+          "{S0Y2-Z9OH77QJ-9242IOXJ}",
+          "{L1D7-U0QM61DV-1820AGLD}",
+          "{Z3L1-R0ZZ05CQ-0504BSEX}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 7,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.74
+        },
+        "session": {}
+      },
+      {
+        "text": "The session was on the user's usual PC.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-8908"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "JRG0207",
+        "before": "2011-01-18 05:15:57"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S63dadad1f2",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S63dadad1f2",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S63dadad1f2",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'",
+        "claim 3: moved 'count' out of 'asserted'",
+        "claim 4: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 31419,
+        "completion_tokens": 1092
+      },
+      "seconds": 30.1
+    }
+  ]
+}

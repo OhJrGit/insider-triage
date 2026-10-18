@@ -1,0 +1,94 @@
+{
+  "session_id": "S888319ff16",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.75,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "User AAM0658 logged on to PC-9923 at 2010-10-21 00:18:18.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{Y6R0-G0UT09SU-3761DVZN}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 62 minutes and included 3 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "A suspicious URL was visited at 2010-10-21 00:48:49.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='americanexpress.com/Storm_botnet/malware/fcrrqjnyxvatercnve1166039597.jsp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{I2G0-L4HU68OL-4772GPHL}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user performed 11 file operations, including 4 with filenames containing 'doc' or 'pdf'.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {G1K3-A7RJ76HE-1102PRZE}: claimed 'file', log says 'device'",
+        "source mismatch on {V5K4-B2PS79AF-7599SFAP}: claimed 'file', log says 'device'",
+        "activity mismatch on {G1K3-A7RJ76HE-1102PRZE}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {V5K4-B2PS79AF-7599SFAP}: claimed 'File', log says 'Disconnect'",
+        "filename_contains mismatch on {E1M5-V9TM12LE-0288SUCD}: claimed 'doc|pdf', log says 'YJFAUMKO.txt'",
+        "filename_contains mismatch on {Q9P1-H2TH10MS-1690BBGT}: claimed 'doc|pdf', log says 'WB78IZXZ.doc'",
+        "filename_contains mismatch on {T6G7-E6PI97DG-0136CWCZ}: claimed 'doc|pdf', log says 'V46ISJ64.pdf'",
+        "filename_contains mismatch on {W3N9-F0JE92EH-6125EYEK}: claimed 'doc|pdf', log says 'SDYFZFTG.doc'",
+        "filename_contains mismatch on {N0D6-P4WA87LR-4872XUXQ}: claimed 'doc|pdf', log says 'ST80G5JN.pdf'",
+        "filename_contains mismatch on {J3D7-X7HK61GE-4429IWXR}: claimed 'doc|pdf', log says 'MVKJ2SUP.doc'",
+        "field 'filename' does not apply to a device event ({G1K3-A7RJ76HE-1102PRZE})",
+        "filename_contains mismatch on {Q4S6-R0MT48VF-1195MJAK}: claimed 'doc|pdf', log says 'O0RBF194.pdf'",
+        "filename_contains mismatch on {M8U3-N0CD18UE-9067ZRKQ}: claimed 'doc|pdf', log says 'UOK8UBM2.doc'",
+        "filename_contains mismatch on {Q3V8-I1LU92MC-4067FTHN}: claimed 'doc|pdf', log says 'SAMXO4WP.doc'",
+        "field 'filename' does not apply to a device event ({V5K4-B2PS79AF-7599SFAP})"
+      ],
+      "warnings": [
+        "asserted filename_contains='doc|pdf' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{E1M5-V9TM12LE-0288SUCD}",
+        "{Q9P1-H2TH10MS-1690BBGT}",
+        "{T6G7-E6PI97DG-0136CWCZ}",
+        "{W3N9-F0JE92EH-6125EYEK}",
+        "{N0D6-P4WA87LR-4872XUXQ}",
+        "{J3D7-X7HK61GE-4429IWXR}",
+        "{G1K3-A7RJ76HE-1102PRZE}",
+        "{Q4S6-R0MT48VF-1195MJAK}",
+        "{M8U3-N0CD18UE-9067ZRKQ}",
+        "{Q3V8-I1LU92MC-4067FTHN}",
+        "{V5K4-B2PS79AF-7599SFAP}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

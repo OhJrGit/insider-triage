@@ -1,0 +1,95 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S8398d8691f",
+    "verdict": "benign",
+    "summary": "CIM0926 logged on and off from a foreign PC within the usual working hours.",
+    "claims": [
+      {
+        "text": "CIM0926 logged on to PC-7445 at 2010-11-12 18:27:38.",
+        "type": "factual",
+        "citations": [
+          "{M3Y0-W4TV82SU-4859CZNR}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-7445",
+          "date": "2010-11-12 18:27:38"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "CIM0926 logged off from PC-7445 at 2010-11-12 18:37:00.",
+        "type": "factual",
+        "citations": [
+          "{Y0F8-A8WD14OP-8208ZLTF}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "pc": "PC-7445",
+          "date": "2010-11-12 18:37:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 10 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 10.0
+        }
+      },
+      {
+        "text": "The session took place on a foreign PC, PC-7445, which is not the user's usual PC, PC-3201.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-3201"
+        },
+        "session": {
+          "pc": "PC-7445"
+        }
+      },
+      {
+        "text": "The session started and ended within the usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.46,
+          "avg_end_hour": 19.57
+        },
+        "session": {
+          "start_hour": 18.45,
+          "end_hour": 18.62
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3017,
+        "completion_tokens": 546
+      },
+      "seconds": 14.0
+    }
+  ]
+}

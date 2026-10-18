@@ -1,0 +1,77 @@
+{
+  "session_id": "S236e8d83a2",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.8,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FBA0348 logged on to PC-8486 at 2010-10-01 19:40:01.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{F2X9-N6CT67WV-0165DWKQ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "FBA0348 sent an email to 7 internal recipients at 2010-10-01 19:45:53.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "to mismatch on {A8K0-Q3DX55DM-3791QCFI}: claimed 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com', log says 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com'"
+      ],
+      "warnings": [
+        "asserted to='Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{A8K0-Q3DX55DM-3791QCFI}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "FBA0348 logged off at 2010-10-01 19:48:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B1I2-X3TE24CB-4083EMHJ}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 8 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session was on the user's usual PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

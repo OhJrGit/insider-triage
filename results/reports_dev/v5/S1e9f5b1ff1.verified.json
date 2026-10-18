@@ -1,0 +1,112 @@
+{
+  "session_id": "S1e9f5b1ff1",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.667,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FTM0406 logged on to PC-1786 at 2010-11-22 20:40:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K6E0-I5FW35HS-3934ICKL}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "FTM0406 logged off at 2010-11-23 03:24:38.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{V8G6-W9TS19EJ-6100DXTN}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 404 minutes and included 8 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "FTM0406 visited suspicious websites multiple times, including buy.com, logmein.com, and outbrain.com.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {F5Q4-I8WY38VJ-1327DXXO}: claimed 'http', log says 'device'",
+        "activity mismatch on {F5Q4-I8WY38VJ-1327DXXO}: claimed 'Visit', log says 'Connect'",
+        "url_contains mismatch on {B8U7-J8SG73LD-1942ITOD}: claimed 'buy.com|logmein.com|outbrain.com', log says 'http://msn.com/The_Human_Centipede_First_Sequence/katsuro/arjf309875127.htm'",
+        "url_contains mismatch on {H0L4-R9VW59OK-5936OZER}: claimed 'buy.com|logmein.com|outbrain.com', log says 'http://buy.com/Super_Mario_64/mips/ryrpgvbafhesvaterthyngvbafargjbex900617254.php'",
+        "field 'url' does not apply to a device event ({F5Q4-I8WY38VJ-1327DXXO})",
+        "url_contains mismatch on {F8V0-Y2HX22PL-1785RGAG}: claimed 'buy.com|logmein.com|outbrain.com', log says 'http://outbrain.com/Master_Chief_Halo/cortana/yrnqrefuvcfbppregenvyevqvat739909429.jsp'"
+      ],
+      "warnings": [
+        "asserted url_contains='buy.com|logmein.com|outbrain.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{B8U7-J8SG73LD-1942ITOD}",
+        "{H0L4-R9VW59OK-5936OZER}",
+        "{F5Q4-I8WY38VJ-1327DXXO}",
+        "{F8V0-Y2HX22PL-1785RGAG}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "FTM0406 downloaded files, including .zip archives, outside usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {X7C5-P0YQ86WY-8979CLHS}: claimed 'file', log says 'http'",
+        "source mismatch on {S9L2-V3BY74OR-3293TOPS}: claimed 'file', log says 'http'",
+        "source mismatch on {Z6R9-V4ZY79YF-9528JNVD}: claimed 'file', log says 'device'",
+        "activity mismatch on {X7C5-P0YQ86WY-8979CLHS}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {S9L2-V3BY74OR-3293TOPS}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {Z6R9-V4ZY79YF-9528JNVD}: claimed 'File', log says 'Disconnect'",
+        "filename_contains mismatch on {K3N2-A9VG09WI-3357KEAY}: claimed '.zip|pdf', log says 'G9PFU4WU.zip'",
+        "field 'filename' does not apply to a http event ({X7C5-P0YQ86WY-8979CLHS})",
+        "field 'filename' does not apply to a http event ({S9L2-V3BY74OR-3293TOPS})",
+        "field 'filename' does not apply to a device event ({Z6R9-V4ZY79YF-9528JNVD})"
+      ],
+      "warnings": [
+        "asserted filename_contains='.zip|pdf' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{K3N2-A9VG09WI-3357KEAY}",
+        "{X7C5-P0YQ86WY-8979CLHS}",
+        "{S9L2-V3BY74OR-3293TOPS}",
+        "{Z6R9-V4ZY79YF-9528JNVD}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The user's usual PC is PC-1786, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

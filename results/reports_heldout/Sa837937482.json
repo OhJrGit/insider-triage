@@ -1,0 +1,152 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sa837937482",
+    "verdict": "suspicious",
+    "summary": "The session involved extensive web browsing, multiple email sends, and visits to potentially malicious sites.",
+    "claims": [
+      {
+        "text": "NWT0098 logged on to PC-4667 at 2011-02-08 07:15:00.",
+        "type": "factual",
+        "citations": [
+          "{K0G3-Q4DJ43LK-7614EKFZ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4667",
+          "date": "2011-02-08 07:15:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "NWT0098 logged off at 2011-02-08 17:21:00.",
+        "type": "factual",
+        "citations": [
+          "{J7U3-D7PJ18GD-9469MFOH}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "pc": "PC-4667",
+          "date": "2011-02-08 17:21:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 606 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 606.0
+        }
+      },
+      {
+        "text": "The session included 104 web visits.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http": 104.0
+        }
+      },
+      {
+        "text": "The session included 9 email sends.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_email": 9.0
+        }
+      },
+      {
+        "text": "The session included 3 visits to job-related sites.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http_job": 3.0
+        }
+      },
+      {
+        "text": "The session included 8 visits to potentially malicious sites.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http_hack": 8.0
+        }
+      },
+      {
+        "text": "The session included 1 file event.",
+        "type": "factual",
+        "citations": [
+          "{V6D4-L1FW91XO-8012ZVDR}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename": "AJOOR1D3.pdf"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 1 USB connection.",
+        "type": "factual",
+        "citations": [
+          "{I8Y3-B4IP30KW-5919JSXO}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited potentially malicious sites such as doubleclick.com and gizmodo.com.",
+        "type": "interpretive",
+        "citations": [
+          "{W9X6-F3ND42IF-1408QPYV}",
+          "{S2R0-O1JG33DV-8397QSRC}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 17570,
+        "completion_tokens": 712
+      },
+      "seconds": 21.0
+    }
+  ]
+}

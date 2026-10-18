@@ -1,0 +1,91 @@
+{
+  "session_id": "S26fa38a5eb",
+  "summary": {
+    "claims": 6,
+    "verified": 3,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.6,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "HJB0742 logged on to PC-5635 at 2010-11-23 03:34:38.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O3H2-Z2JK47WH-3317SWXO}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "HJB0742 visited the same website twice.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {K5K4-G5UU17XE-9529CAXS}: claimed 'http', log says 'file'",
+        "field 'url' does not apply to a file event ({K5K4-G5UU17XE-9529CAXS})",
+        "count says 2 but 3 distinct events are cited"
+      ],
+      "warnings": [
+        "asserted url_contains='retailmenot.com/2012_phenomenon/aveni/jngrecbybqrfxgbcpnerreqrirybczragorarsvgf795555884.jsp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{J6Z9-N6RU56FD-0647RUCX}",
+        "{K5K4-G5UU17XE-9529CAXS}",
+        "{I9M1-L5BI48PJ-4393YARC}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "HJB0742 worked on two documents.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {J6Z9-N6RU56FD-0647RUCX}: claimed 'file', log says 'http'",
+        "source mismatch on {I9M1-L5BI48PJ-4393YARC}: claimed 'file', log says 'http'",
+        "activity mismatch on {J6Z9-N6RU56FD-0647RUCX}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {I9M1-L5BI48PJ-4393YARC}: claimed 'File', log says 'Visit'",
+        "field 'filename' does not apply to a http event ({J6Z9-N6RU56FD-0647RUCX})",
+        "field 'filename' does not apply to a http event ({I9M1-L5BI48PJ-4393YARC})"
+      ],
+      "warnings": [
+        "asserted filename_contains='0K6EWYLU.doc' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{J6Z9-N6RU56FD-0647RUCX}",
+        "{I9M1-L5BI48PJ-4393YARC}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 31 minutes and was on the user's usual PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is within the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user averaged 0.093 USB connections per session over the last 30 days, and this session had 1 connection.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S91458ace2d",
+    "verdict": "suspicious",
+    "summary": "MAR0955 accessed potentially sensitive websites outside usual working hours.",
+    "claims": [
+      {
+        "text": "MAR0955 logged on to PC-6793 at 2011-02-08 05:55:53.",
+        "type": "factual",
+        "citations": [
+          "{W7R2-J2OV82KT-8722JOBM}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6793",
+          "date": "2011-02-08 05:55:53"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 connected a removable device at 2011-02-08 05:57:58.",
+        "type": "factual",
+        "citations": [
+          "{M0G1-H8KI01SO-6191NZOD}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect",
+          "pc": "PC-6793",
+          "date": "2011-02-08 05:57:58"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 visited http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php at 2011-02-08 05:59:18.",
+        "type": "factual",
+        "citations": [
+          "{G2Z4-X8HH53WZ-0286NXWS}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php",
+          "pc": "PC-6793",
+          "date": "2011-02-08 05:59:18"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 visited http://filestube.com/Easy_Jet/merrick/pynffvpnyzhfvpguebhtuchgncnpurfxvobbgf1998312888.html at 2011-02-08 06:00:40.",
+        "type": "factual",
+        "citations": [
+          "{B4H5-U6KV96QQ-0752FJYI}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://filestube.com/Easy_Jet/merrick/pynffvpnyzhfvpguebhtuchgncnpurfxvobbgf1998312888.html",
+          "pc": "PC-6793",
+          "date": "2011-02-08 06:00:40"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 logged off at 2011-02-08 06:01:50.",
+        "type": "factual",
+        "citations": [
+          "{S7K9-G9AP28HN-1964QVZB}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "pc": "PC-6793",
+          "date": "2011-02-08 06:01:50"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 connected a removable device 1 time during the session.",
+        "type": "factual",
+        "citations": [
+          "{M0G1-H8KI01SO-6191NZOD}",
+          "{I1M1-G0FC29JQ-4144IAZN}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 visited 2 websites during the session.",
+        "type": "factual",
+        "citations": [
+          "{G2Z4-X8HH53WZ-0286NXWS}",
+          "{B4H5-U6KV96QQ-0752FJYI}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 6 minutes and included 2 HTTP visits.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 6.0,
+          "n_http": 2.0
+        }
+      },
+      {
+        "text": "The user visited wikileaks.org 1 time.",
+        "type": "factual",
+        "citations": [
+          "{G2Z4-X8HH53WZ-0286NXWS}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "wikileaks.org"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited filestube.com 1 time.",
+        "type": "factual",
+        "citations": [
+          "{B4H5-U6KV96QQ-0752FJYI}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "filestube.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0.227 USB connections and started work around 07:04.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.227,
+          "avg_start_hour": 7.04
+        },
+        "session": {}
+      },
+      {
+        "text": "The session lasted 6 minutes and included 2 HTTP visits.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 6.0,
+          "n_http": 2.0
+        }
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAR0955",
+        "before": "2011-02-08 05:55:53"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S91458ace2d",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S91458ace2d",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S91458ace2d",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S91458ace2d",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S91458ace2d",
+        "source": "email",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 6,
+      "tool": "get_events",
+      "args": {
+        "ids": [
+          "{G2Z4-X8HH53WZ-0286NXWS}",
+          "{B4H5-U6KV96QQ-0752FJYI}",
+          "{M0G1-H8KI01SO-6191NZOD}",
+          "{I1M1-G0FC29JQ-4144IAZN}",
+          "{W7R2-J2OV82KT-8722JOBM}",
+          "{S7K9-G9AP28HN-1964QVZB}"
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 8,
+        "prompt_tokens": 34836,
+        "completion_tokens": 2003
+      },
+      "seconds": 53.3
+    }
+  ]
+}

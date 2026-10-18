@@ -1,0 +1,67 @@
+{
+  "session_id": "Sde1ba8305c",
+  "summary": {
+    "claims": 5,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 0,
+    "groundedness": 0.8,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L4R5-G7JG33XZ-3927QMRT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session was outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "MAS0025 accessed an unusual URL during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='discovery.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{T3D6-S1BR96LZ-0581LASF}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session involved 16 file operations, 5 USB connections, and 1 HTTP request.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "count says 1 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 07:39.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

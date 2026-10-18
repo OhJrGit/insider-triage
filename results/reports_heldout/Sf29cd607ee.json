@@ -1,0 +1,104 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sf29cd607ee",
+    "verdict": "benign",
+    "summary": "JLM0364 logged on to a foreign PC outside usual working hours, connected a removable device, and logged off after 12 minutes.",
+    "claims": [
+      {
+        "text": "JLM0364 logged on to PC-8486 at 2011-04-28 20:40:04.",
+        "type": "factual",
+        "citations": [
+          "{K0F9-W7LI17ZQ-8971LBZF}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8486",
+          "date": "2011-04-28 20:40:04"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "A removable device was connected once during the session.",
+        "type": "factual",
+        "citations": [
+          "{F4X0-Z6QF97JJ-7137HLRB}",
+          "{H3E5-K5MS58TR-7776OUHQ}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "JLM0364 logged off at 2011-04-28 20:52:30.",
+        "type": "factual",
+        "citations": [
+          "{Y0F3-L9OK95VF-7830FSJG}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2011-04-28 20:52:30"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 12 minutes and included 1 USB connection.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 12.0,
+          "n_usb_connect": 1.0
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user normally uses PC-3791, but this session was on a foreign PC.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-3791"
+        },
+        "session": {
+          "pc": "PC-8486"
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3249,
+        "completion_tokens": 586
+      },
+      "seconds": 17.0
+    }
+  ]
+}

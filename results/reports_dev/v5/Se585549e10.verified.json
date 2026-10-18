@@ -1,0 +1,79 @@
+{
+  "session_id": "Se585549e10",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.75,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "TAP0551 logged on to PC-7623 at 2010-11-02 21:02:22.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O5N5-I4FK19SM-6081WPIT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 146 minutes and included 2 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The user visited multiple suspicious websites, including apple.com, linkedin.com, and kat.ph.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim asserts no checkable field, count, baseline or session value"
+      ],
+      "warnings": [],
+      "citations": [
+        "{D4S7-D0BG51ST-7147GTXU}",
+        "{Y1V8-E1XN49HU-4171NUIA}",
+        "{F4R5-G8SP08XE-9843UCHY}",
+        "{X2S7-R5TZ82OL-8733LLCP}",
+        "{S9H5-U2TJ74CH-1134XXTJ}",
+        "{B5Z4-Y5ZA39IE-9437HXRA}",
+        "{W9C3-D4EH90QE-3610OJCY}",
+        "{G1I3-P1AX55WI-8091DCKE}",
+        "{W5K6-Y5NX91EJ-8524YSLI}",
+        "{Q5F9-E4LF62SE-7814HLZQ}",
+        "{Q3Q2-H1ND81ID-9178PDFA}",
+        "{Y7S4-W8WG89RT-2052KQXZ}",
+        "{Y3E9-S7DS63QA-1775DCNA}",
+        "{T3V1-D1FN84VV-3763MUBI}",
+        "{V7Y5-L4OF93HX-6682RHGF}",
+        "{P6I1-O0HK59AY-5388LYFS}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user's usual PC is PC-7623, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

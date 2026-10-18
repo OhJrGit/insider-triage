@@ -1,0 +1,178 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S5a3afaba3a",
+    "verdict": "suspicious",
+    "summary": "GHL0460 logged on at 22:51 and used the PC for 6 hours, connecting a removable device 6 times. The session included 19 file operations and 1 HTTP visit to a suspicious URL.",
+    "claims": [
+      {
+        "text": "GHL0460 logged on to PC-6255 at 22:51:26.",
+        "type": "factual",
+        "citations": [
+          "{J6A8-V1GP82TI-3617KGVX}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6255",
+          "date": "2010-11-12 22:51:26"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 486 minutes and included 6 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 486.0,
+          "n_usb_connect": 6.0
+        }
+      },
+      {
+        "text": "The user performed 19 file operations, mostly with .doc and .zip files.",
+        "type": "factual",
+        "citations": [
+          "{X9H1-F6XW64GZ-0588EOBB}",
+          "{A7G1-V5EV94OT-6292IZUX}",
+          "{D3C9-K0WS01LO-6304ZHHS}",
+          "{F7U4-C2UV19NH-1185IZOD}",
+          "{R9Q7-M3NK26SE-8974IBBM}",
+          "{G7F7-P2UX68PV-3768MVXP}",
+          "{M4F1-D9VD55PX-6232ARPW}",
+          "{N9P8-A1NJ85UP-1817FDXQ}",
+          "{C7R9-Y0BR94SD-3476OXBW}",
+          "{B2R3-L8LU54YK-6730CWWR}",
+          "{J1W5-M9XS94UR-4305UFUB}",
+          "{U6A6-E6XA84ES-8720NZIS}",
+          "{U4N1-H4NV17BD-7071FMOJ}",
+          "{V3Z8-K6QY43JY-3981DXGQ}",
+          "{J4G9-F5BA92MC-9488WPDM}",
+          "{R4M1-I6DR48LU-2763TRAR}",
+          "{C4T7-L4EG00JT-1240FDYJ}",
+          "{J7N0-M8TH46TX-4834FXOB}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 19,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 1 HTTP visit to a suspicious URL.",
+        "type": "factual",
+        "citations": [
+          "{J5Q3-V9MH28FH-6538RFQV}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://citibank.com/Ernest_Joyce/joyce/zlfgrelgragguebhtuchgurnegfpneqtnzr930968313.php"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0.2 USB connections and 0.9 file events per session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.208,
+          "avg_files": 0.917
+        },
+        "session": {}
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-12 22:51:26"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S5a3afaba3a",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S5a3afaba3a",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S5a3afaba3a",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S5a3afaba3a",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-12 22:51:26"
+      }
+    },
+    {
+      "step": 6,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 54073,
+        "completion_tokens": 1281
+      },
+      "seconds": 46.5
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sb1fb61445d",
+    "verdict": "benign",
+    "summary": "The session involved a single USB connection and no network or email activity, lasting 12 minutes on a non-usual PC outside usual working hours.",
+    "claims": [
+      {
+        "text": "MSO0222 logged on to PC-5866 at 2010-12-09 19:02:50.",
+        "type": "factual",
+        "citations": [
+          "{K1P4-V4NE37IA-7521SNUE}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-5866",
+          "date": "2010-12-09 19:02:50"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "A removable device was connected once during the session.",
+        "type": "factual",
+        "citations": [
+          "{A5B7-T4LK02LB-6499NUOO}",
+          "{M8H1-A9QB90UI-2979JPZM}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MSO0222 logged off at 2010-12-09 19:14:26.",
+        "type": "factual",
+        "citations": [
+          "{J7M2-G5FS02NA-6253OISB}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-12-09 19:14:26"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 12 minutes and included 1 USB connection.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 12.0,
+          "n_usb_connect": 1.0
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-2524, but this session was on PC-5866.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-2524"
+        },
+        "session": {
+          "pc": "PC-5866"
+        }
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0.012 USB connections per session, which is lower than usual.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.012
+        },
+        "session": {
+          "dev_n_usb_connect": 30.659436745823058
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sb1fb61445d",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sb1fb61445d",
+        "source": "email",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sb1fb61445d",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 13422,
+        "completion_tokens": 882
+      },
+      "seconds": 22.6
+    }
+  ]
+}

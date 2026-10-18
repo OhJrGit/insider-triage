@@ -1,0 +1,125 @@
+{
+  "session_id": "S5a3afaba3a",
+  "summary": {
+    "claims": 8,
+    "verified": 6,
+    "unsupported": 2,
+    "interpretive": 0,
+    "groundedness": 0.75,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "GHL0460 logged on to PC-6255 at 22:51:26 on 12/11/2010.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J6A8-V1GP82TI-3617KGVX}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "GHL0460 logged off PC-6255 at 06:57:43 on 13/11/2010.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J8R6-V0AC91OA-9748EHEV}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 486 minutes, from 22:51 to 06:57 on 12/13/2010.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "GHL0460 visited a suspicious URL 'http://citibank.com/Ernest_Joyce/joyce/zlfgrelgragguebhtuchgurnegfpneqtnzr930968313.php' at 23:03:28 on 12/11/2010.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J5Q3-V9MH28FH-6538RFQV}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "GHL0460 connected a removable device 6 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {Q7Z9-V6QE40TY-8274WCHF}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{A5P9-X0HE25LH-6158QNPU}",
+        "{M6Q3-F8YW70EJ-2694IQPQ}",
+        "{C8T6-T5JZ36AF-5752NYLI}",
+        "{D6L5-X0TA48ZD-4257KJDJ}",
+        "{Q7Z9-V6QE40TY-8274WCHF}",
+        "{A1Z8-C1TW58IS-6037DKPQ}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are from 07:32 to 17:08, and this session was outside those hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The user typically uses PC-6255, and this session used the same PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user accessed 19 files, including 2 archives, during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {W8X8-V3NJ48BJ-2983EXBN}: claimed 'file', log says 'device'",
+        "source mismatch on {M6Q3-F8YW70EJ-2694IQPQ}: claimed 'file', log says 'device'",
+        "activity mismatch on {W8X8-V3NJ48BJ-2983EXBN}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {M6Q3-F8YW70EJ-2694IQPQ}: claimed 'File', log says 'Connect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{X9H1-F6XW64GZ-0588EOBB}",
+        "{A7G1-V5EV94OT-6292IZUX}",
+        "{D3C9-K0WS01LO-6304ZHHS}",
+        "{F7U4-C2UV19NH-1185IZOD}",
+        "{R9Q7-M3NK26SE-8974IBBM}",
+        "{G7F7-P2UX68PV-3768MVXP}",
+        "{M4F1-D9VD55PX-6232ARPW}",
+        "{N9P8-A1NJ85UP-1817FDXQ}",
+        "{A1S1-U4JT77ZQ-0143TAJS}",
+        "{W8X8-V3NJ48BJ-2983EXBN}",
+        "{M6Q3-F8YW70EJ-2694IQPQ}",
+        "{C7R9-Y0BR94SD-3476OXBW}",
+        "{B2R3-L8LU54YK-6730CWWR}",
+        "{J1W5-M9XS94UR-4305UFUB}",
+        "{U6A6-E6XA84ES-8720NZIS}",
+        "{U4N1-H4NV17BD-7071FMOJ}",
+        "{V3Z8-K6QY43JY-3981DXGQ}",
+        "{J4G9-F5BA92MC-9488WPDM}",
+        "{R4M1-I6DR48LU-2763TRAR}"
+      ]
+    }
+  ]
+}

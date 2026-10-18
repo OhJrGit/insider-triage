@@ -1,0 +1,67 @@
+{
+  "session_id": "S331e640b5e",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MYD0978 logged on to PC-3401 at 2010-12-08 00:12:18.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{F6G9-C1JJ31XX-1125DHRJ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MYD0978 accessed four suspicious websites between 02:53 and 03:12.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "count 4 is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{L9K7-N8YH22QC-1831CRQT}",
+        "{A9Q4-Z2DF87GC-2333GRTG}",
+        "{R1K3-X2KB59ZJ-9806KCAV}",
+        "{B5A3-V1AO34HZ-1851BRLS}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The user visited websites with unusual content outside usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 08:12.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

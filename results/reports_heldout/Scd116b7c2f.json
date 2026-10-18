@@ -1,0 +1,150 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Scd116b7c2f",
+    "verdict": "suspicious",
+    "summary": "MCF0600 logged on to PC-8790 outside usual hours and accessed a large number of files, mostly .doc and .zip, with some USB activity.",
+    "claims": [
+      {
+        "text": "MCF0600 logged on to PC-8790 at 2010-09-24 21:18:43.",
+        "type": "factual",
+        "citations": [
+          "{H5U6-L6RO18VS-4583KLAD}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8790",
+          "date": "2010-09-24 21:18:43"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 280 minutes and included 8 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 280.0,
+          "n_usb_connect": 8.0
+        }
+      },
+      {
+        "text": "MCF0600 accessed 27 files, mostly .doc and .zip.",
+        "type": "factual",
+        "citations": [
+          "{M1V0-O7IM48SX-6441DOAY}",
+          "{G1T9-Z2CK33DB-8093CTIY}",
+          "{M0W2-Z6RB53FH-1624FRWL}",
+          "{F4C1-E4JQ06JN-6423BRDD}",
+          "{F0U9-Z7QU98UM-1848JIWK}",
+          "{O4W7-I1PY34NX-6318DAGV}",
+          "{X6O7-B8LE38WG-3898VVZP}",
+          "{K7Y5-B8PZ70BD-1090PHBU}",
+          "{S6N3-Z7EK15ZE-3237BIUV}",
+          "{G3K6-S0WR41EY-8776AITR}",
+          "{L9D2-A3VB61HM-8707JWSP}",
+          "{B6J7-O2MU83LH-0127NHPL}",
+          "{H1Z3-C4RP08ZV-3067NRSD}",
+          "{Z8G9-X5JE99AZ-8040EQKE}",
+          "{Y0I6-I8GU15FR-5263FIXC}",
+          "{J5S4-V8XT83EE-8856TMSB}",
+          "{X8Z3-F4ND68KZ-8835WLTL}",
+          "{Z0H6-G5OI87QG-9074NFWC}",
+          "{U9A6-I0IP75QI-1434LFSA}",
+          "{I0B3-W9BL62TB-2687XMGB}",
+          "{F1J6-J0CC11IQ-3067ILQN}",
+          "{N4N9-V3DK95HX-3849JLUA}",
+          "{U1O0-V8BA76WC-7505SSEB}",
+          "{U3T1-O2HZ73JM-5031QXZD}",
+          "{W9C3-Q9YL52OA-4460CVYP}",
+          "{T7X5-R0WQ59AU-4909ODBH}",
+          "{J4J4-F3CP67AU-9836XJEM}",
+          "{O5U2-R3OK96RS-2165NKMH}",
+          "{H7O9-X7JV72DO-7635FTVX}",
+          "{T8Y3-A5MW59ND-2687MDRW}",
+          "{Y4J4-G3GX75PP-2400WLUF}",
+          "{E1N9-P4ZE61LC-2673FWJN}",
+          "{W9K4-O8DQ87YW-3352CNEO}",
+          "{X0V4-P8IZ66WK-1143CHHM}",
+          "{N2J3-S5CU97YQ-1979LDSS}"
+        ],
+        "asserted": {},
+        "count": 27,
+        "baseline": {},
+        "session": {
+          "n_file": 27.0
+        }
+      },
+      {
+        "text": "MCF0600 accessed 3 .exe/.zip/.rar files.",
+        "type": "factual",
+        "citations": [
+          "{G1T9-Z2CK33DB-8093CTIY}",
+          "{X6O7-B8LE38WG-3898VVZP}",
+          "{W9C3-Q9YL52OA-4460CVYP}"
+        ],
+        "asserted": {},
+        "count": 3,
+        "baseline": {},
+        "session": {
+          "n_file_exec_archive": 3.0
+        }
+      },
+      {
+        "text": "The user visited a file-sharing site at 2010-09-24 23:16:05.",
+        "type": "factual",
+        "citations": [
+          "{Y4J4-G3GX75PP-2400WLUF}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://officedepot.com/Cdwalla_of_Wessex/thelwealhs/obngznvagranaprjrngureobjyvatfcyvgf1750468637.html"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0.293 USB connections and started work around 08:12.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.293,
+          "avg_start_hour": 8.2
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 7281,
+        "completion_tokens": 1448
+      },
+      "seconds": 28.7
+    }
+  ]
+}

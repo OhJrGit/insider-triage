@@ -1,0 +1,104 @@
+{
+  "session_id": "S1a4442ecf1",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.75,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "DCH0843 logged on to PC-8720 at 2011-02-08 01:05:05.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O0B8-M0BF69IC-1019EJYT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 86 minutes and included 5 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "DCH0843 accessed 13 files, mostly .doc and .pdf documents.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {G7Z8-S9PU67QB-8144WORK}: claimed 'file', log says 'device'",
+        "source mismatch on {G9C2-Z2VN95MG-4992MSTM}: claimed 'file', log says 'device'",
+        "source mismatch on {H1X3-J9SP33KX-1657VNXS}: claimed 'file', log says 'device'",
+        "source mismatch on {A4E8-A5XZ11UK-8552IHTB}: claimed 'file', log says 'device'",
+        "source mismatch on {M9C9-I1GT63NW-4932KCIR}: claimed 'file', log says 'http'",
+        "source mismatch on {G1E2-I6LA09PM-5853JKGK}: claimed 'file', log says 'device'",
+        "source mismatch on {C9C1-P3FC14LB-0746LKPW}: claimed 'file', log says 'device'",
+        "source mismatch on {K2Z4-K9KH15RS-2918CNHV}: claimed 'file', log says 'device'",
+        "activity mismatch on {G7Z8-S9PU67QB-8144WORK}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {G9C2-Z2VN95MG-4992MSTM}: claimed 'File', log says 'Connect'",
+        "activity mismatch on {H1X3-J9SP33KX-1657VNXS}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {A4E8-A5XZ11UK-8552IHTB}: claimed 'File', log says 'Connect'",
+        "activity mismatch on {M9C9-I1GT63NW-4932KCIR}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {G1E2-I6LA09PM-5853JKGK}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {C9C1-P3FC14LB-0746LKPW}: claimed 'File', log says 'Connect'",
+        "activity mismatch on {K2Z4-K9KH15RS-2918CNHV}: claimed 'File', log says 'Disconnect'"
+      ],
+      "warnings": [
+        "asserted pc='PC-8720' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{G7Z8-S9PU67QB-8144WORK}",
+        "{G9C2-Z2VN95MG-4992MSTM}",
+        "{H1X3-J9SP33KX-1657VNXS}",
+        "{A4E8-A5XZ11UK-8552IHTB}",
+        "{B6W4-N8DP99YD-8790KJWY}",
+        "{M4O0-D9WS45MV-0069BSOD}",
+        "{T0X8-X1VX08RV-1881VFFB}",
+        "{W9R8-M0AP74DV-7607AOIQ}",
+        "{N9B5-M9UZ45XA-9465LTCF}",
+        "{M9C9-I1GT63NW-4932KCIR}",
+        "{Y3S5-T1ZJ90ZF-5568WRYF}",
+        "{T7A3-U5DZ55PY-2856WZLM}",
+        "{B1Q3-J7IE70JB-9927FFCU}",
+        "{K0J3-L4IK18GB-3715HMQA}",
+        "{G6K8-P7FA03FC-0655DZWX}",
+        "{G1E2-I6LA09PM-5853JKGK}",
+        "{C9C1-P3FC14LB-0746LKPW}",
+        "{K5Q7-D7KC54VL-6664DVWU}",
+        "{S7O7-E3GF88DU-9937QYZJ}",
+        "{K2Z4-K9KH15RS-2918CNHV}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "DCH0843 visited an unusual website at 2011-02-08 01:50:46.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='thepiratebay.org' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{M9C9-I1GT63NW-4932KCIR}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

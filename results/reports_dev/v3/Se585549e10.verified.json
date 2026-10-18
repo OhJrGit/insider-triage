@@ -1,0 +1,105 @@
+{
+  "session_id": "Se585549e10",
+  "summary": {
+    "claims": 6,
+    "verified": 5,
+    "unsupported": 1,
+    "interpretive": 0,
+    "groundedness": 0.833,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "TAP0551 logged on to PC-7623 at 2010-11-02 21:02:22.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O5N5-I4FK19SM-6081WPIT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session ended at 2010-11-02 23:28:50 with a logoff.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{X5L5-T8BH66ML-6846RHPV}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "TAP0551 visited 22 non-work-related websites during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "count says 22 but 24 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{H0Z0-Q0XI10RY-6215RGLE}",
+        "{F9Q2-K3QH80LF-6858RVKP}",
+        "{K5K1-N3GJ79RG-8780XESC}",
+        "{Z8O0-E0ZM87NL-1902JZWH}",
+        "{A4H4-F8IB84IT-2897CMJQ}",
+        "{D4S7-D0BG51ST-7147GTXU}",
+        "{Y1V8-E1XN49HU-4171NUIA}",
+        "{F4R5-G8SP08XE-9843UCHY}",
+        "{M2C0-E1OG28XQ-1176OLTJ}",
+        "{B5V6-B9TG45LT-3523IGNI}",
+        "{Z3H2-W8OT04IB-2849ZVGK}",
+        "{X2S7-R5TZ82OL-8733LLCP}",
+        "{S9H5-U2TJ74CH-1134XXTJ}",
+        "{J4U1-U6PB91PQ-9571AYSI}",
+        "{G1I3-P1AX55WI-8091DCKE}",
+        "{Z7U4-L1SI61HL-8732MLRL}",
+        "{W5K6-Y5NX91EJ-8524YSLI}",
+        "{Q5F9-E4LF62SE-7814HLZQ}",
+        "{Q3Q2-H1ND81ID-9178PDFA}",
+        "{Y7S4-W8WG89RT-2052KQXZ}",
+        "{Y3E9-S7DS63QA-1775DCNA}",
+        "{T3V1-D1FN84VV-3763MUBI}",
+        "{V7Y5-L4OF93HX-6682RHGF}",
+        "{P6I1-O0HK59AY-5388LYFS}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user's usual working hours are from 10:00 to 15:27, and 11.4% of sessions are outside these hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session included multiple visits to technetium-related pages.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "count 4 is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{B5V6-B9TG45LT-3523IGNI}",
+        "{Z3H2-W8OT04IB-2849ZVGK}",
+        "{X2S7-R5TZ82OL-8733LLCP}",
+        "{V7Y5-L4OF93HX-6682RHGF}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user usually uses PC-7623.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

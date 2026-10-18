@@ -1,0 +1,97 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "S888319ff16",
+    "verdict": "suspicious",
+    "summary": "User AAM0658 logged on at 00:18, accessed multiple files, and visited a suspicious URL outside usual working hours.",
+    "claims": [
+      {
+        "text": "User AAM0658 logged on to PC-9923 at 2010-10-21 00:18:18.",
+        "type": "factual",
+        "citations": [
+          "{Y6R0-G0UT09SU-3761DVZN}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-9923",
+          "date": "2010-10-21 00:18:18"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The user accessed 11 files between 00:28 and 01:17.",
+        "type": "factual",
+        "citations": [
+          "{E1M5-V9TM12LE-0288SUCD}",
+          "{Q9P1-H2TH10MS-1690BBGT}",
+          "{T6G7-E6PI97DG-0136CWCZ}",
+          "{B1K2-L6TJ01DP-1156PAZE}",
+          "{W3N9-F0JE92EH-6125EYEK}",
+          "{I2G0-L4HU68OL-4772GPHL}",
+          "{N0D6-P4WA87LR-4872XUXQ}",
+          "{J3D7-X7HK61GE-4429IWXR}",
+          "{H7N4-D6OE42NX-2469ZOUB}",
+          "{Q4S6-R0MT48VF-1195MJAK}",
+          "{M8U3-N0CD18UE-9067ZRKQ}",
+          "{Q3V8-I1LU92MC-4067FTHN}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "pc": "PC-9923"
+        },
+        "count": 11,
+        "baseline": {}
+      },
+      {
+        "text": "A suspicious URL was visited at 00:48:49.",
+        "type": "factual",
+        "citations": [
+          "{I2G0-L4HU68OL-4772GPHL}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "americanexpress.com/Storm_botnet/malware"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The user averaged 0 USB connections and started work around 09:12 over the previous 30 days.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_start_hour": 9.2
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 4212,
+        "completion_tokens": 723
+      },
+      "seconds": 18.0
+    }
+  ]
+}

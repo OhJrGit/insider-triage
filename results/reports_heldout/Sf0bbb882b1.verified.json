@@ -1,0 +1,106 @@
+{
+  "session_id": "Sf0bbb882b1",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.667,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "DCH0843 logged on to PC-8720 at 2011-01-29 06:19:56.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B7H0-P8NJ37LP-9968NBNG}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 83 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session started outside usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "DCH0843 accessed 11 documents during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{L9E3-R2EC45BS-1988FGXP}",
+        "{H7R6-D2FU50AC-5632TSUG}",
+        "{S9X7-Q9TE41IZ-5027VFBP}",
+        "{E5R1-K2CL80CW-4641WXHH}",
+        "{H8N7-D8ST65SB-1024QRZN}",
+        "{O8S4-J5II03GM-8905PKAI}",
+        "{Z6S0-F4SD14DK-6306KTDF}",
+        "{F2O0-N1KZ41HI-3148JWWW}",
+        "{M7H4-O1AI94JJ-4327FDGM}",
+        "{L9C3-E7EM41ZT-0140CHBK}",
+        "{O6V6-N7CI28YB-7714BLCO}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "DCH0843 connected a removable device 5 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{W6V7-S9NN31YN-9216RVMN}",
+        "{G8D5-X4IQ32CJ-2978UBVE}",
+        "{A4F0-J1IJ12RC-7251PPCD}",
+        "{M8N6-Q8IL78IL-4638SJPT}",
+        "{M0N6-O6YL56HF-5780CHCL}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "DCH0843 visited a website at 2011-01-29 06:58:18.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://buzzfeed.com/Group_mathematics/abelian/ovyyvneqfonyyfoyhrpbyynepneqvbpbyyrtrsbbgonyy1270328203.html' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{N0D4-T1FV23VM-8817EXMX}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The session ended with a logoff at 2011-01-29 07:42:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{E1W5-V8ED60RE-0542USVW}"
+      ]
+    }
+  ]
+}

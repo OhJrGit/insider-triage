@@ -1,0 +1,127 @@
+{
+  "session_id": "S69a3fa4719",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.8,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-05 03:51:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B3M8-Z9NE99FJ-8840HUDZ}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MAR0955 accessed 24 files, including .doc and .pdf documents, and one .zip file.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {S9C4-F1CV75GI-4969RTYI}: claimed 'file', log says 'device'",
+        "source mismatch on {U0Q8-V4CO94ED-6107MCSA}: claimed 'file', log says 'http'",
+        "source mismatch on {L5J3-T0KK33MX-9081BQBP}: claimed 'file', log says 'device'",
+        "source mismatch on {W1T3-W8KS92LK-8501WWZW}: claimed 'file', log says 'device'",
+        "source mismatch on {M4I2-N3XM52AU-3349QSUH}: claimed 'file', log says 'device'",
+        "source mismatch on {D9O1-H2KD99KC-8968AOEO}: claimed 'file', log says 'device'",
+        "source mismatch on {U8E2-Z7LW66QJ-7644DRXU}: claimed 'file', log says 'device'",
+        "source mismatch on {H9Y3-N0XZ81RG-5389FJBW}: claimed 'file', log says 'device'",
+        "source mismatch on {P3R6-G4HO66CN-5483RDJK}: claimed 'file', log says 'device'",
+        "activity mismatch on {S9C4-F1CV75GI-4969RTYI}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {U0Q8-V4CO94ED-6107MCSA}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {L5J3-T0KK33MX-9081BQBP}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {W1T3-W8KS92LK-8501WWZW}: claimed 'File', log says 'Connect'",
+        "activity mismatch on {M4I2-N3XM52AU-3349QSUH}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {D9O1-H2KD99KC-8968AOEO}: claimed 'File', log says 'Connect'",
+        "activity mismatch on {U8E2-Z7LW66QJ-7644DRXU}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {H9Y3-N0XZ81RG-5389FJBW}: claimed 'File', log says 'Disconnect'",
+        "activity mismatch on {P3R6-G4HO66CN-5483RDJK}: claimed 'File', log says 'Connect'",
+        "count says 24 but 33 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{O2C5-V7HS42TY-8817NGUU}",
+        "{R0T1-J3CC96RM-9077AFWE}",
+        "{A8A5-U9JX13DW-9111JQMI}",
+        "{B3G8-F1HP62JH-4870YAKM}",
+        "{V6I4-M0VU06AL-7561YMLD}",
+        "{Z4K2-J2UA52HX-2821AYCV}",
+        "{J8Q5-T6UY17SY-4789USMU}",
+        "{D9C9-N2CT18YS-7497XKYV}",
+        "{Y0U7-Q1II25BB-1713RTKB}",
+        "{U7D7-L1EG98OP-1834RLQH}",
+        "{S2Y8-U4IA63QM-9221YRLN}",
+        "{N1Y1-N1SB97DZ-7761WEME}",
+        "{S9C4-F1CV75GI-4969RTYI}",
+        "{S0P3-B7KL74EO-1634IKMM}",
+        "{V1Q4-W1BZ37IX-5125LPPA}",
+        "{A5Q5-X6CG74JC-7973BEHP}",
+        "{L4L1-L3FF00DN-7939OMQI}",
+        "{U0Q8-V4CO94ED-6107MCSA}",
+        "{L5J3-T0KK33MX-9081BQBP}",
+        "{W1T3-W8KS92LK-8501WWZW}",
+        "{V6T9-F9QY48JP-9226BGBN}",
+        "{T0J1-S6VP28JK-5692NJHS}",
+        "{G2T5-J1XV30IP-8192VKCV}",
+        "{T2X0-S0AI83SA-6083VDVM}",
+        "{M4I2-N3XM52AU-3349QSUH}",
+        "{D9O1-H2KD99KC-8968AOEO}",
+        "{T5K9-Q6DB46SX-9328KGUF}",
+        "{B2F4-K8SG38RA-2544FCOL}",
+        "{J4C2-C7GF27GX-7280ULVV}",
+        "{D6G1-O6KP27BM-4246PQGV}",
+        "{U8E2-Z7LW66QJ-7644DRXU}",
+        "{H9Y3-N0XZ81RG-5389FJBW}",
+        "{P3R6-G4HO66CN-5483RDJK}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "MAR0955 visited a website at 2011-02-05 03:57:18.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://sina.com.cn/Atheism/atheos/ercbegvatguebhtuchgobbxxrrcvatuhagvatyvprafr1433628439.htm' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{U0Q8-V4CO94ED-6107MCSA}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 12 minutes and included 5 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user normally uses PC-6793.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

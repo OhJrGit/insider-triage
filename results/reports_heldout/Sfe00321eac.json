@@ -1,0 +1,181 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sfe00321eac",
+    "verdict": "suspicious",
+    "summary": "DCH0843 logged on to PC-8720 at 00:09 and stayed until 06:48, visiting a non-work-related website and handling multiple documents and a compressed file.",
+    "claims": [
+      {
+        "text": "DCH0843 logged on to PC-8720 at 2011-02-02 00:09:58.",
+        "type": "factual",
+        "citations": [
+          "{A6D5-O7BB01AO-4001ASRM}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8720",
+          "date": "2011-02-02 00:09:58"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "DCH0843 logged off at 2011-02-02 06:48:31.",
+        "type": "factual",
+        "citations": [
+          "{K6S3-P2XF03AG-6796SFNI}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2011-02-02 06:48:31"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 399 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 399.0
+        }
+      },
+      {
+        "text": "The session included 6 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_usb_connect": 6.0
+        }
+      },
+      {
+        "text": "The session included 5 file events, including 1 archive file.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_file": 5.0,
+          "n_file_exec_archive": 1.0
+        }
+      },
+      {
+        "text": "The session included 1 HTTP visit to a non-work-related website.",
+        "type": "factual",
+        "citations": [
+          "{Y4E7-Y8IT49DX-1564AKMA}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://buzzfeed.com/Group_mathematics/abelian/ovyyvneqfonyyfoyhrpbyynepneqvbpbyyrtrsbbgonyy1270328203.html"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are 8:00 to 19:00, and this session was outside those hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.98,
+          "avg_end_hour": 19.19
+        },
+        "session": {
+          "after_hours": 1
+        }
+      },
+      {
+        "text": "The user usually does not use USB devices, but 6 were connected during this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.458
+        },
+        "session": {
+          "n_usb_connect": 6.0
+        }
+      },
+      {
+        "text": "The user usually handles 0.833 files per session, but handled 5 files in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_files": 0.833
+        },
+        "session": {
+          "n_file": 5.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "DCH0843",
+        "before": "2011-01-03 00:00:00"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sfe00321eac",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sfe00321eac",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sfe00321eac",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 27378,
+        "completion_tokens": 1044
+      },
+      "seconds": 28.7
+    }
+  ]
+}

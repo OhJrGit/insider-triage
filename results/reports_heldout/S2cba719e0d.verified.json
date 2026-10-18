@@ -1,0 +1,73 @@
+{
+  "session_id": "S2cba719e0d",
+  "summary": {
+    "claims": 5,
+    "verified": 4,
+    "unsupported": 0,
+    "interpretive": 1,
+    "groundedness": 1.0,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "The user visited the website 'cracked.com' 14 times during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L1K4-R4BC85PV-3859JYKU}",
+        "{B6B3-C5RT21AX-5639TPML}",
+        "{X7F1-Z2ZK10SR-9589LMVX}",
+        "{C8T6-H0IL92VG-3336DDJH}",
+        "{A4V1-A6RD03CT-7175FBZQ}",
+        "{Z8F4-A8FC76AK-0334LNBZ}",
+        "{Z7P5-K6KT79JW-3955TLXN}",
+        "{D0F8-R3QT79FQ-1232IPXJ}",
+        "{K4P2-H5FR92HN-2021HTTT}",
+        "{F1B7-R0HT20KM-5116LATH}",
+        "{Q5B9-A6RG61SI-5313TKGE}",
+        "{P6P2-G3BQ14DB-6900BEII}",
+        "{I6W2-J1CK58FQ-3203IQST}",
+        "{G8W3-C9EE65JY-9381ZKBF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The user's typical behavior shows an average of 95 HTTP visits per session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 552 minutes, which is within the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The user's usual PC is PC-6980, which was used for this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

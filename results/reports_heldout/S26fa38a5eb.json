@@ -1,0 +1,106 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S26fa38a5eb",
+    "verdict": "benign",
+    "summary": "HJB0742 logged on to PC-5635 and visited a single website twice, then worked on two documents. The session was brief and within the user's usual PC.",
+    "claims": [
+      {
+        "text": "HJB0742 logged on to PC-5635 at 2010-11-23 03:34:38.",
+        "type": "factual",
+        "citations": [
+          "{O3H2-Z2JK47WH-3317SWXO}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-5635",
+          "date": "2010-11-23 03:34:38"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "HJB0742 visited the same website twice.",
+        "type": "factual",
+        "citations": [
+          "{J6Z9-N6RU56FD-0647RUCX}",
+          "{K5K4-G5UU17XE-9529CAXS}",
+          "{I9M1-L5BI48PJ-4393YARC}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "retailmenot.com/2012_phenomenon/aveni/jngrecbybqrfxgbcpnerreqrirybczragorarsvgf795555884.jsp"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "HJB0742 worked on two documents.",
+        "type": "factual",
+        "citations": [
+          "{J6Z9-N6RU56FD-0647RUCX}",
+          "{I9M1-L5BI48PJ-4393YARC}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename_contains": "0K6EWYLU.doc"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 31 minutes and was on the user's usual PC.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 31.0,
+          "pc": "PC-5635"
+        }
+      },
+      {
+        "text": "This activity is within the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user averaged 0.093 USB connections per session over the last 30 days, and this session had 1 connection.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.093
+        },
+        "session": {
+          "n_usb_connect": 1.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3852,
+        "completion_tokens": 679
+      },
+      "seconds": 13.7
+    }
+  ]
+}

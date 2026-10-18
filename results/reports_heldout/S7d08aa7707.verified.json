@@ -1,0 +1,107 @@
+{
+  "session_id": "S7d08aa7707",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 2,
+    "groundedness": 0.8,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAS0025 logged on to PC-2512 at 2010-09-28 02:58:13.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{W9U5-M8ZJ31UA-0588IELC}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MAS0025 logged off at 2010-09-28 05:55:46.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{V1M2-F2WE36HR-3819QMXE}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 177 minutes and included 4 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "MAS0025 visited an unusual website at 2010-09-28 04:21:30.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://redfin.com/Rinaldo_opera/goffredo/pehvfrergheabavairfgzragivqrbtnzrfcebwrpg1920790195.html' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{V7S1-L0JL51BK-8748TXCE}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "MAS0025 accessed 20 files during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{B9T5-L3DH90KA-2041QCUG}",
+        "{X6H0-Q1PP69GP-2456EFBR}",
+        "{R0S3-R9NS55YF-0567RDRQ}",
+        "{X0C5-I5RQ34MX-4919TJXA}",
+        "{Q3W4-X3GF69CA-6674KEPZ}",
+        "{A2Y3-T7QB86US-8611WWLH}",
+        "{H2S4-N6WT31YY-4871DMZN}",
+        "{M3I7-C9DW60EQ-3619OWMK}",
+        "{L9A4-Y3IL73KH-4087YJXK}",
+        "{O3T5-U5EM27CU-4572VSAB}",
+        "{V4L8-K6QQ22OJ-3186HVHD}",
+        "{Q0K5-S6KL55XV-9891MQSC}",
+        "{M8I9-H0JG86AJ-4088FGEI}",
+        "{H8A7-R0YD04IG-0821WTAK}",
+        "{O8B8-C8GO96PD-4714EGPF}",
+        "{G4G0-C3CU28GO-6680DHOE}",
+        "{A6K4-J2DA30ZJ-6616EGYO}",
+        "{Q2Z5-L4UB71BP-4933NOHD}",
+        "{V5B3-W4HS89VL-8415GCII}",
+        "{Y9B2-B2RT15AC-9792QOCS}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session had a higher than usual number of file activities.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

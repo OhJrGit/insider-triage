@@ -1,0 +1,144 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sefe5847dbb",
+    "verdict": "benign",
+    "summary": "BTL0226 logged on to PC-4534 outside usual hours and accessed a file-sharing site, but the activity is within normal parameters.",
+    "claims": [
+      {
+        "text": "BTL0226 logged on to PC-4534 at 2010-10-08 02:58:22.",
+        "type": "factual",
+        "citations": [
+          "{L8A3-G5XF16QP-2283QGVC}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4534",
+          "date": "2010-10-08 02:58:22"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 163 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 163.0
+        }
+      },
+      {
+        "text": "BTL0226 accessed a file-sharing site at 2010-10-08 03:41:59.",
+        "type": "factual",
+        "citations": [
+          "{R0Y6-K1MO11OY-9750PPAW}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://hulu.com/Bryce_Canyon_National_Park/bryce/snpvyvgvrf697417095.htm"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited the site 1 time.",
+        "type": "factual",
+        "citations": [
+          "{R0Y6-K1MO11OY-9750PPAW}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "hulu.com"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "BTL0226 logged off at 2010-10-08 05:41:17.",
+        "type": "factual",
+        "citations": [
+          "{R8K1-V4TL21KL-6516PEJR}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-10-08 05:41:17"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user accessed 3 files during the session.",
+        "type": "factual",
+        "citations": [
+          "{G8W6-U0JA05WD-4285LGAF}",
+          "{Q2Z2-X6IJ14TN-4190PAIZ}",
+          "{V3G1-H6CV26LX-8546OYMM}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 3,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual start hour is around 10:07.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 10.07
+        },
+        "session": {}
+      },
+      {
+        "text": "The session was on a weekday.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "weekend": 0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 8: moved session field 'weekend' from 'asserted' to 'session'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3818,
+        "completion_tokens": 774
+      },
+      "seconds": 20.8
+    }
+  ]
+}

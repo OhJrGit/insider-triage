@@ -1,0 +1,118 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sde1ba8305c",
+    "verdict": "suspicious",
+    "summary": "The user accessed a suspicious URL during an after-hours session, which is unusual.",
+    "claims": [
+      {
+        "text": "The user accessed a suspicious URL during an after-hours session.",
+        "type": "factual",
+        "citations": [
+          "{T3D6-S1BR96LZ-0581LASF}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://discovery.com/Japan/shikoku/gerrfgnaqergheabavairfgzrag2105221548.jsp"
+        },
+        "count": null
+      },
+      {
+        "text": "The user's typical behavior does not include accessing suspicious URLs during after-hours sessions.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-21 00:00:00"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_user_events",
+      "args": {
+        "user": "MAS0025",
+        "start": "2010-09-22 05:17:31",
+        "end": "2010-09-22 05:32:53",
+        "source": "file",
+        "contains": "doc"
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-21 00:00:00"
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sde1ba8305c",
+        "source": "http",
+        "limit": 1,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-21 00:00:00"
+      }
+    },
+    {
+      "step": 5,
+      "tool": "search_user_events",
+      "args": {
+        "user": "MAS0025",
+        "start": "2010-09-21 00:00:00",
+        "end": "2010-09-22 05:17:30",
+        "source": "http",
+        "contains": "discovery.com"
+      }
+    },
+    {
+      "step": 6,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MAS0025",
+        "before": "2010-09-21 00:00:00"
+      }
+    },
+    {
+      "step": 7,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sde1ba8305c",
+        "source": "http",
+        "limit": 1,
+        "offset": 0
+      }
+    },
+    {
+      "step": 8,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 9,
+        "prompt_tokens": 51376,
+        "completion_tokens": 796
+      },
+      "seconds": 30.6
+    }
+  ]
+}

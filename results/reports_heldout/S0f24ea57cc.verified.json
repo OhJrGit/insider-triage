@@ -1,0 +1,146 @@
+{
+  "session_id": "S0f24ea57cc",
+  "summary": {
+    "claims": 9,
+    "verified": 6,
+    "unsupported": 3,
+    "interpretive": 0,
+    "groundedness": 0.667,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MCF0600 logged on to PC-8790 at 2010-09-29 03:15:19.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{H5Q3-X5KP41ZC-9812EBLL}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MCF0600 logged off at 2010-09-29 04:26:35.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G7V6-E1WP49LX-2212PMOX}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 71 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The user accessed an unusual website at 2010-09-29 03:51:36.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://thepostgame.com/Taiwanese_aborigines/kmt/oyhrpbyyne299397594.asp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{F3I9-O2RT40YW-3522AKEB}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user had 25 file activities during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{N0F2-K4BU24CS-0695YZUC}",
+        "{Z8Z5-W5KD18LB-6557FJBW}",
+        "{S9Y9-P7MN45RW-5037UTYD}",
+        "{M4L4-O2MX87DO-0263IZTG}",
+        "{L3Y0-M4WQ61AS-3491BLNJ}",
+        "{J4W7-C3IQ18QI-5748IWOM}",
+        "{G0A9-E5VJ22OD-0594YTYV}",
+        "{X4L6-L0WA21EH-5172DUTN}",
+        "{X3S5-K4TJ46NZ-7610SAMI}",
+        "{M0L5-B2VE98UF-8457PTKK}",
+        "{D3X5-A6GT01TT-0299HWEU}",
+        "{R4F0-A8VJ99QM-8932EKTL}",
+        "{N1T7-G4JX73JT-5592FYDV}",
+        "{F9U9-F5GJ28TW-8581YEMV}",
+        "{M8U1-I8RR60BI-0859FGPH}",
+        "{N7F6-O4OY49GC-8871HGZE}",
+        "{Q4L4-Q6GJ34RI-9242JCJQ}",
+        "{K0A0-Y8WT39HF-1713RHRS}",
+        "{K8N4-B1YS15DF-8732UGCD}",
+        "{L2J5-S0CN88ME-8328OQYX}",
+        "{J0M3-F2QH66CA-5499HAKW}",
+        "{U7K0-O9CG18DE-3241KQDB}",
+        "{H1H6-H7PQ37GQ-3407PUJY}",
+        "{Z6J1-N9MH45CP-7292OPQN}",
+        "{C3I7-B5XQ37KN-4197YYMY}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session included 9 USB device connections.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I8X5-P3LN41CS-9539MHEX}",
+        "{K1A9-Q1CP57QB-2565TLWO}",
+        "{E1V2-H3GR97JG-5973NKCD}",
+        "{Q3R2-L4DL67ZT-1201TGZY}",
+        "{E5R4-H9YR40WQ-1422EAVT}",
+        "{S4A5-T3KF99II-9226EAEB}",
+        "{C0X0-S2MU45KF-2218HSOP}",
+        "{C1N3-L4XM79IS-1940URAS}",
+        "{C4T2-S1MV49JZ-9773XGJQ}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The session started outside usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user's usual PC is PC-8790.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The session had 1 HTTP visit, which is below the user's average.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{F3I9-O2RT40YW-3522AKEB}"
+      ]
+    }
+  ]
+}

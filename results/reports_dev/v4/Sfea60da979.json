@@ -1,0 +1,114 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sfea60da979",
+    "verdict": "suspicious",
+    "summary": "GHL0460 accessed an unusual website and performed a large number of file operations outside usual working hours.",
+    "claims": [
+      {
+        "text": "GHL0460 logged on to PC-6255 at 2010-11-03 02:19:05.",
+        "type": "factual",
+        "citations": [
+          "{T0A1-F6DJ47DW-6564WKXC}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6255",
+          "date": "2010-11-03 02:19:05"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "GHL0460 accessed the website foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php.",
+        "type": "factual",
+        "citations": [
+          "{E4B3-Y9JG83EM-3990SMFE}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "GHL0460 performed 22 file operations, including 18 .doc and 4 .txt files.",
+        "type": "factual",
+        "citations": [
+          "{U3Q4-S2HC44BI-5164YOCO}",
+          "{O0E0-Q0HE94SD-8801NKEN}",
+          "{G9P1-T0MF05YE-4192CTCQ}",
+          "{K1V6-C4EO21EK-3175CMYW}",
+          "{R6G0-Q1TN12UE-8538DVCW}",
+          "{M6W9-F4MU23UE-1167OCSC}",
+          "{F8E3-A0XO35MK-6151NDJO}",
+          "{F6Z2-U5MN94NE-6141OCQF}",
+          "{D0S2-J5TV09ND-8251FPOV}",
+          "{D0S6-F1GZ60VH-1735IIMD}",
+          "{A9S6-P3WO51QU-6674YYAS}",
+          "{E4B3-Y9JG83EM-3990SMFE}",
+          "{M5M5-I1AN97QI-6779TXMG}",
+          "{S8L5-K1XK60WW-4480IALQ}",
+          "{C8B7-A5AP40LR-3716KNRT}",
+          "{Q2Q7-Z9HT59VR-7253DRTN}",
+          "{C6B5-F3YZ72EC-3835XMDC}",
+          "{H5D2-P1FL35BI-4014UUEG}",
+          "{S6E7-O1DS32JR-3725ROVI}",
+          "{X3S0-R1FP09XP-3207PREE}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 22,
+        "baseline": {},
+        "session": {
+          "n_file": 22.0
+        }
+      },
+      {
+        "text": "The session lasted 179 minutes, which is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 4 USB connections, which is within the user's usual behavior.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0
+        },
+        "session": {
+          "n_usb_connect": 4.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5824,
+        "completion_tokens": 976
+      },
+      "seconds": 22.4
+    }
+  ]
+}

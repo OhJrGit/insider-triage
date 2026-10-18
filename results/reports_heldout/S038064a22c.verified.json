@@ -1,0 +1,120 @@
+{
+  "session_id": "S038064a22c",
+  "summary": {
+    "claims": 7,
+    "verified": 5,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.833,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FTM0406 logged on to PC-1786 at 2010-12-01 00:51:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{M0D1-Y4NY97IW-2970LGWM}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 287 minutes, which is unusually long.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "FTM0406 visited a website at 2010-12-01 03:52:27, which is outside usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://shareasale.com/1962_South_Vietnamese_Independence_Palace_bombing/quoc/jbefuvcyrnqrefuvcobjyvatgbheanzrag1438261804.php' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{E9U4-R8YA84HQ-4726SSPR}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "FTM0406 accessed 13 documents during the session, which is above the usual average.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{H6A2-Y7NB73KN-0494FEVV}",
+        "{G3O1-S4VD68DA-2949ZDKS}",
+        "{I3M4-C9RN20LH-3746OLUR}",
+        "{S7M0-M8PM73OA-5835TWPJ}",
+        "{P9F3-U5WF16TM-0518LKTE}",
+        "{L5Q4-R8DL66VG-7393POBN}",
+        "{C1E8-U9XQ70YQ-9886EYIA}",
+        "{W4E9-B8YQ98OI-3642XZSA}",
+        "{O3K5-F8LN79FN-8134ZJJE}",
+        "{N8K5-P1WD50FP-8611EMVS}",
+        "{R8Z5-C2BU68AY-9810DREX}",
+        "{B8A3-P8QQ30WI-9118OGGE}",
+        "{A3S5-Y4VH82BD-4622BJSD}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "FTM0406 connected a removable device 8 times, which is above the usual average.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {K5P9-O3KU95FU-6171HXYA}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {Z5G8-P1SD51OR-9253YNXL}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {V8W1-Y5HV63FO-1117KZDY}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {I5E6-N9BK73LA-1575YFYB}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {A4L9-U7SA98RT-8438FIZF}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {J1V2-U4RM91RY-9553ILNH}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {I5M2-L2ZI75DL-5870EXEB}: claimed 'Connect', log says 'Disconnect'",
+        "count says 8 but 14 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{F7Y9-T9ZL12HV-8472DDOK}",
+        "{K5P9-O3KU95FU-6171HXYA}",
+        "{N5E2-G4BK57FH-4137LOYA}",
+        "{Z5G8-P1SD51OR-9253YNXL}",
+        "{K6E7-Q6VP15FA-3931XCIY}",
+        "{V8W1-Y5HV63FO-1117KZDY}",
+        "{U2K1-H1NZ80AZ-4949YVHE}",
+        "{I5E6-N9BK73LA-1575YFYB}",
+        "{R6K3-N1SI96QF-5080WBTN}",
+        "{A4L9-U7SA98RT-8438FIZF}",
+        "{A3Y9-I3EE92NJ-8342CXEW}",
+        "{J1V2-U4RM91RY-9553ILNH}",
+        "{V0V7-T1QY80ZQ-7879KSQP}",
+        "{I5M2-L2ZI75DL-5870EXEB}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session started at 00:51, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

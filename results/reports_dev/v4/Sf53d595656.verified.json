@@ -1,0 +1,107 @@
+{
+  "session_id": "Sf53d595656",
+  "summary": {
+    "claims": 8,
+    "verified": 6,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.857,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "LQC0479 logged on to PC-6380 at 2010-09-14 01:37:21.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{C5V2-B5KM15IX-7095SXZK}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 113 minutes and included 6 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The user accessed 22 files, mostly .doc and .pdf documents.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "count says 22 but 14 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Y7S3-J3TD70WX-0300MFNU}",
+        "{N2T0-Z7YO67XX-1986MEFG}",
+        "{H7D7-J0GR52EE-8934QDQN}",
+        "{Y6L2-A0YR53UM-9608YXGD}",
+        "{M4C5-C9XP09QL-6301LRPY}",
+        "{F1P9-L7GW93AM-6243XDCR}",
+        "{Z3O0-U9GN08AK-1680CXFF}",
+        "{D5H2-A4YF47LR-1242QERU}",
+        "{Z6U1-A7HU97YZ-3183XQPD}",
+        "{C3I6-X2SS28ST-9711HKGB}",
+        "{E9O7-X4IH37XJ-6797DWAW}",
+        "{P7Z5-E1HF25MI-1599ATFN}",
+        "{I6G3-R4PU88RT-9792KTQG}",
+        "{I0A6-X8FJ86OB-7467ZWKJ}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user visited two websites outside usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{F0G2-X9ZO10NE-5831GAEX}",
+        "{W1O1-U3TS01FY-2846ULBG}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are from 08:12 to 17:26.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session started at 01:37 and ended at 03:30, which is 3 hours outside the usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user's usual PC is PC-6380, and this session used the same PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "session_id": "S91458ace2d",
+  "summary": {
+    "claims": 13,
+    "verified": 11,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.917,
+    "warnings": 5
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-08 05:55:53.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{W7R2-J2OV82KT-8722JOBM}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MAR0955 connected a removable device at 2011-02-08 05:57:58.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-6793' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{M0G1-H8KI01SO-6191NZOD}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "MAR0955 visited http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php at 2011-02-08 05:59:18.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-6793' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{G2Z4-X8HH53WZ-0286NXWS}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "MAR0955 visited http://filestube.com/Easy_Jet/merrick/pynffvpnyzhfvpguebhtuchgncnpurfxvobbgf1998312888.html at 2011-02-08 06:00:40.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-6793' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{B4H5-U6KV96QQ-0752FJYI}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "MAR0955 logged off at 2011-02-08 06:01:50.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-6793' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{S7K9-G9AP28HN-1964QVZB}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "MAR0955 connected a removable device 1 time during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {I1M1-G0FC29JQ-4144IAZN}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [
+        "count 2 is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{M0G1-H8KI01SO-6191NZOD}",
+        "{I1M1-G0FC29JQ-4144IAZN}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "MAR0955 visited 2 websites during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G2Z4-X8HH53WZ-0286NXWS}",
+        "{B4H5-U6KV96QQ-0752FJYI}"
+      ]
+    },
+    {
+      "index": 7,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user visited wikileaks.org 1 time.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{G2Z4-X8HH53WZ-0286NXWS}"
+      ]
+    },
+    {
+      "index": 9,
+      "text": "The user visited filestube.com 1 time.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B4H5-U6KV96QQ-0752FJYI}"
+      ]
+    },
+    {
+      "index": 10,
+      "text": "Over the previous 30 days the user averaged 0.227 USB connections and started work around 07:04.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 11,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 12,
+      "text": "The session was outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

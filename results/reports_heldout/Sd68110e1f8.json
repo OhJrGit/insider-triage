@@ -1,0 +1,102 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sd68110e1f8",
+    "verdict": "suspicious",
+    "summary": "AAM0658 accessed a potentially malicious site and visited the same URL multiple times outside usual working hours.",
+    "claims": [
+      {
+        "text": "AAM0658 logged on to PC-9923 at 2010-10-23 01:34:19.",
+        "type": "factual",
+        "citations": [
+          "{K3V4-Y4OK65SI-1583GEOQ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-9923",
+          "date": "2010-10-23 01:34:19"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 294 minutes and included 1 USB connection.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 294.0,
+          "n_usb_connect": 1.0
+        }
+      },
+      {
+        "text": "AAM0658 visited the same URL (http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp) three times.",
+        "type": "factual",
+        "citations": [
+          "{N2Y8-M7QC66LK-0957HBRI}",
+          "{F0E9-O5DR10UB-9498WHKH}",
+          "{P9C3-N5CZ37JT-2840NKPC}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp"
+        },
+        "count": 3,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "AAM0658 visited wikileaks.org once.",
+        "type": "factual",
+        "citations": [
+          "{Y4Q9-U5VQ11UG-1279ZPTL}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual start hour is around 08:12, but this session started at 01:34.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.82
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3780,
+        "completion_tokens": 684
+      },
+      "seconds": 13.9
+    }
+  ]
+}

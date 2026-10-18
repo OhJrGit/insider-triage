@@ -1,0 +1,157 @@
+{
+  "session_id": "S1e9f5b1ff1",
+  "summary": {
+    "claims": 10,
+    "verified": 8,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.889,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FTM0406 logged on to PC-1786 at 2010-11-22 20:40:03.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K6E0-I5FW35HS-3934ICKL}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "FTM0406 logged off PC-1786 at 2010-11-23 03:24:38.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{V8G6-W9TS19EJ-6100DXTN}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "FTM0406 connected a removable device 12 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {T8H5-I5KO47RA-5914DMOB}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {M8D4-U9ZQ49DC-8657GDJS}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {Q4C6-B1DI00IJ-9692KHHI}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {S8S9-E5JI54GE-0373PXNG}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {U9S5-H6GO34CG-9562TCSO}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {Z0S0-Z9FA75VX-0098JZHL}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{M9R2-Q0SV74WY-2234TXKJ}",
+        "{T8H5-I5KO47RA-5914DMOB}",
+        "{B2Z8-U8IR76YI-2806XKBN}",
+        "{M8D4-U9ZQ49DC-8657GDJS}",
+        "{P4G4-H7KV66GZ-2636XZNC}",
+        "{Q4C6-B1DI00IJ-9692KHHI}",
+        "{C5Z6-L8IQ16KY-2759PIPH}",
+        "{S8S9-E5JI54GE-0373PXNG}",
+        "{T5N3-U7RY83UD-8605RFWZ}",
+        "{U9S5-H6GO34CG-9562TCSO}",
+        "{H0P3-M7VG34WL-1465QOEO}",
+        "{Z0S0-Z9FA75VX-0098JZHL}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "FTM0406 visited websites related to the South Vietnamese Independence Palace bombing 3 times.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url_contains='South_Vietnamese_Independence_Palace_bombing' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Z3J7-O0HH57EW-7227OBIP}",
+        "{P4Z5-R6YN15KO-2534FWCA}",
+        "{E9V0-U3ZS06BG-6881ITTK}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "FTM0406 visited the Paxillus_involutus page twice.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{R3U0-R2IH55VB-2681PRDY}",
+        "{G7L6-A8SU08YN-0517XFPS}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "FTM0406 visited the Blackburn_Olympic_FC page twice.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{F4K9-M3YV00BJ-7633OEBX}",
+        "{X7C5-P0YQ86WY-8979CLHS}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "FTM0406 downloaded 17 documents during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{V9K0-O1RZ76MC-7281PUOD}",
+        "{H1S0-X1UF10VN-2422YUON}",
+        "{X7U2-Z7PS74JM-2917EOGZ}",
+        "{X0A9-L0GF49WQ-1140IFYV}",
+        "{A6W7-T8FM03PV-8335YIGI}",
+        "{S0E8-U6WK45AE-7036CPZA}",
+        "{I6U3-B7KC68HL-6671RXFP}",
+        "{O5S0-C2CY11SM-3591XSIR}",
+        "{M7B0-Q6DD04AT-7198CRDT}",
+        "{N2F1-Q3CO89NT-0924XOAS}",
+        "{R0M8-K2RK75OC-2901PHIE}",
+        "{I1C9-O4HG17IA-4813TXRS}",
+        "{V2Y8-R5AB73AR-6156EGGE}",
+        "{Y7X4-S5BX55MX-1698CMIM}",
+        "{S1M1-J2DM40WJ-8140ZNHO}",
+        "{X9Q4-C5NB94PV-2857FLWW}",
+        "{P4W3-P8WT07KC-6277VYCQ}"
+      ]
+    },
+    {
+      "index": 7,
+      "text": "The user's usual PC is PC-1786.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user's usual working hours are 07:57 to 18:02.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 9,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sfea60da979",
+    "verdict": "suspicious",
+    "summary": "GHL0460 accessed an unusual website outside usual working hours.",
+    "claims": [
+      {
+        "text": "GHL0460 logged on to PC-6255 at 2010-11-03 02:19:05.",
+        "type": "factual",
+        "citations": [
+          "{T0A1-F6DJ47DW-6564WKXC}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6255",
+          "date": "2010-11-03 02:19:05"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "GHL0460 accessed http://foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php at 2010-11-03 03:38:19.",
+        "type": "factual",
+        "citations": [
+          "{S8L5-K1XK60WW-4480IALQ}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://foxnews.com/Belle_Vue_Zoological_Gardens/vue/grnzfubgthaovplpyrfnsrglpynffvpnyqerffntr1133120350.php",
+          "date": "2010-11-03 03:38:19"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The user visited the site at 03:38, which is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [
+          "{S8L5-K1XK60WW-4480IALQ}"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The user averaged 0.0 USB connections and 0.0 files per session over the past 30 days.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_files": 0.0
+        }
+      },
+      {
+        "text": "The user usually starts work around 07:59.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.98
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-03 02:19:05"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_user_events",
+      "args": {
+        "user": "GHL0460",
+        "start": "2010-11-03 02:19:05",
+        "end": "2010-11-03 05:18:37",
+        "source": "http",
+        "contains": "foxnews.com"
+      }
+    },
+    {
+      "step": 2,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 16932,
+        "completion_tokens": 762
+      },
+      "seconds": 22.2
+    }
+  ]
+}

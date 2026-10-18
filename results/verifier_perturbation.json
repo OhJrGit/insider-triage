@@ -1,0 +1,52 @@
+{
+  "reports": 49,
+  "by_mutation": {
+    "fake_id": {
+      "tried": 104,
+      "caught": 104,
+      "detection_rate": 1.0
+    },
+    "swap_citation": {
+      "tried": 104,
+      "caught": 104,
+      "detection_rate": 1.0
+    },
+    "shift_time": {
+      "tried": 72,
+      "caught": 72,
+      "detection_rate": 1.0
+    },
+    "wrong_pc": {
+      "tried": 57,
+      "caught": 57,
+      "detection_rate": 1.0
+    },
+    "wrong_count": {
+      "tried": 15,
+      "caught": 15,
+      "detection_rate": 1.0
+    },
+    "wrong_url": {
+      "tried": 27,
+      "caught": 27,
+      "detection_rate": 1.0
+    },
+    "drop_citation": {
+      "tried": 102,
+      "caught": 102,
+      "detection_rate": 1.0
+    },
+    "wrong_baseline": {
+      "tried": 34,
+      "caught": 34,
+      "detection_rate": 1.0
+    },
+    "wrong_session": {
+      "tried": 85,
+      "caught": 85,
+      "detection_rate": 1.0
+    }
+  },
+  "overall_detection_rate": 1.0,
+  "example_misses": {}
+}

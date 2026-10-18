@@ -1,0 +1,80 @@
+{
+  "session_id": "S02e94690d5",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.8,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "FBA0348 logged on to PC-8486 at 2011-04-29 19:56:47.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{U1J6-J3NA26AD-4968TGCF}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "FBA0348 sent an email at 2011-04-29 20:01:45.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "to mismatch on {U8N6-A0EI13OP-0818CGPA}: claimed 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com', log says 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com'"
+      ],
+      "warnings": [
+        "asserted to='William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com' is not mentioned in the claim text",
+        "asserted from='Francis.Brian.Armstrong@dtaa.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{U8N6-A0EI13OP-0818CGPA}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "FBA0348 logged off at 2011-04-29 20:04:27.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted pc='PC-8486' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{S1B9-Q6BH62ZK-9232AKPI}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 8 minutes and did not involve any USB connections or file activity.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session occurred outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual behaviour is to start work around 08:12 and send 6.762 external emails per session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

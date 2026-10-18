@@ -1,0 +1,102 @@
+{
+  "session_id": "Sd9ad6fcde0",
+  "summary": {
+    "claims": 8,
+    "verified": 5,
+    "unsupported": 3,
+    "interpretive": 0,
+    "groundedness": 0.625,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O9C7-Q1RV04YI-2039IQXA}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "AJR0932 logged off at 2010-09-10 06:14:26.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J8N3-O5PH44IP-8418FUNE}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 107 minutes.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "unknown field 'duration_min'"
+      ],
+      "warnings": [
+        "asserted duration_min='107.0' is not mentioned in the claim text"
+      ],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session started at 04:27, outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session ended at 06:14, outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "AJR0932 connected a removable device 8 times during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "count says 8 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "AJR0932 accessed 24 files during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "count says 24 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "AJR0932 visited a suspicious URL: http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{I0R2-U1TQ25SQ-3537AFGU}"
+      ]
+    }
+  ]
+}

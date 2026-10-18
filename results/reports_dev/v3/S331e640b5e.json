@@ -1,0 +1,111 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "S331e640b5e",
+    "verdict": "suspicious",
+    "summary": "MYD0978 accessed multiple suspicious websites outside usual working hours.",
+    "claims": [
+      {
+        "text": "MYD0978 logged on to PC-3401 at 2010-12-08 00:12:18.",
+        "type": "factual",
+        "citations": [
+          "{F6G9-C1JJ31XX-1125DHRJ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-3401",
+          "date": "2010-12-08 00:12:18"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "MYD0978 accessed four suspicious websites between 02:53 and 03:12.",
+        "type": "factual",
+        "citations": [
+          "{L9K7-N8YH22QC-1831CRQT}",
+          "{A9Q4-Z2DF87GC-2333GRTG}",
+          "{R1K3-X2KB59ZJ-9806KCAV}",
+          "{B5A3-V1AO34HZ-1851BRLS}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit"
+        },
+        "count": 4,
+        "baseline": {}
+      },
+      {
+        "text": "The user visited websites with unusual content outside usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0 USB connections and started work around 08:12.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_start_hour": 7.97
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "MYD0978",
+        "before": "2010-12-08 00:00:00"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S331e640b5e",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "MYD0978",
+        "before": "2010-12-08 00:00:00"
+      }
+    },
+    {
+      "step": 3,
+      "final": true,
+      "normalized": [
+        "claim 1: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 22624,
+        "completion_tokens": 682
+      },
+      "seconds": 20.4
+    }
+  ]
+}

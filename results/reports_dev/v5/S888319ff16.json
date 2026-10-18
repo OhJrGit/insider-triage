@@ -1,0 +1,100 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S888319ff16",
+    "verdict": "suspicious",
+    "summary": "User AAM0658 accessed a suspicious URL and performed multiple file operations outside usual working hours.",
+    "claims": [
+      {
+        "text": "User AAM0658 logged on to PC-9923 at 2010-10-21 00:18:18.",
+        "type": "factual",
+        "citations": [
+          "{Y6R0-G0UT09SU-3761DVZN}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-9923",
+          "date": "2010-10-21 00:18:18"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 62 minutes and included 3 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 62.0,
+          "n_usb_connect": 3.0
+        }
+      },
+      {
+        "text": "A suspicious URL was visited at 2010-10-21 00:48:49.",
+        "type": "factual",
+        "citations": [
+          "{I2G0-L4HU68OL-4772GPHL}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "americanexpress.com/Storm_botnet/malware/fcrrqjnyxvatercnve1166039597.jsp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user performed 11 file operations, including 4 with filenames containing 'doc' or 'pdf'.",
+        "type": "factual",
+        "citations": [
+          "{E1M5-V9TM12LE-0288SUCD}",
+          "{Q9P1-H2TH10MS-1690BBGT}",
+          "{T6G7-E6PI97DG-0136CWCZ}",
+          "{W3N9-F0JE92EH-6125EYEK}",
+          "{N0D6-P4WA87LR-4872XUXQ}",
+          "{J3D7-X7HK61GE-4429IWXR}",
+          "{G1K3-A7RJ76HE-1102PRZE}",
+          "{Q4S6-R0MT48VF-1195MJAK}",
+          "{M8U3-N0CD18UE-9067ZRKQ}",
+          "{Q3V8-I1LU92MC-4067FTHN}",
+          "{V5K4-B2PS79AF-7599SFAP}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename_contains": "doc|pdf"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 4666,
+        "completion_tokens": 711
+      },
+      "seconds": 18.6
+    }
+  ]
+}

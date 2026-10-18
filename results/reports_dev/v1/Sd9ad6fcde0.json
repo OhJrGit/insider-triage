@@ -1,0 +1,23 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sd9ad6fcde0",
+    "verdict": "unclear",
+    "summary": "",
+    "claims": []
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5131,
+        "completion_tokens": 47
+      },
+      "seconds": 51.1
+    }
+  ]
+}

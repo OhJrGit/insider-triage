@@ -1,0 +1,216 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S1e9f5b1ff1",
+    "verdict": "suspicious",
+    "summary": "FTM0406 accessed multiple websites and files outside usual working hours, and used removable devices frequently.",
+    "claims": [
+      {
+        "text": "FTM0406 logged on to PC-1786 at 2010-11-22 20:40:03.",
+        "type": "factual",
+        "citations": [
+          "{K6E0-I5FW35HS-3934ICKL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:40:03"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 404 minutes and included 8 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 404.0,
+          "n_usb_connect": 8.0
+        }
+      },
+      {
+        "text": "FTM0406 accessed 24 websites, mostly unrelated content.",
+        "type": "factual",
+        "citations": [
+          "{Z0P7-V2VP36PA-7338QPZU}",
+          "{Z3J7-O0HH57EW-7227OBIP}",
+          "{B8U7-J8SG73LD-1942ITOD}",
+          "{X8E0-F5YF91DA-6308XCRV}",
+          "{H0L4-R9VW59OK-5936OZER}",
+          "{X3V9-L8VB32WA-7725DIWY}",
+          "{T6S5-Y0WB88NP-9507BJDU}",
+          "{H2R3-Z1JW75EX-5343JLJR}",
+          "{R3U0-R2IH55VB-2681PRDY}",
+          "{L9N9-M2GY86DJ-1147OVUA}",
+          "{R6G2-U5WS52PQ-9031SEYU}",
+          "{Q4A6-K1ZZ19PM-9170EBOO}",
+          "{P4Z5-R6YN15KO-2534FWCA}",
+          "{E9V0-U3ZS06BG-6881ITTK}",
+          "{X7Z6-N6PU64VA-9548XSKP}",
+          "{F4K9-M3YV00BJ-7633OEBX}",
+          "{V1U2-E0HE38GF-7460NQQY}",
+          "{X7C5-P0YQ86WY-8979CLHS}",
+          "{F9G3-E2NL91NS-4866BLWV}",
+          "{S9L2-V3BY74OR-3293TOPS}",
+          "{J6C0-E7UJ35AR-9158TRKR}",
+          "{S8T7-E8RF35GG-5399FKHJ}",
+          "{G7L6-A8SU08YN-0517XFPS}",
+          "{F8V0-Y2HX22PL-1785RGAG}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:49:19 to 2010-11-22 23:50:19"
+        },
+        "count": 24,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FTM0406 accessed 20 files, mostly documents.",
+        "type": "factual",
+        "citations": [
+          "{V9K0-O1RZ76MC-7281PUOD}",
+          "{H1S0-X1UF10VN-2422YUON}",
+          "{X7U2-Z7PS74JM-2917EOGZ}",
+          "{X0A9-L0GF49WQ-1140IFYV}",
+          "{A6W7-T8FM03PV-8335YIGI}",
+          "{O0A9-A0EF69JG-4630OYAQ}",
+          "{S0E8-U6WK45AE-7036CPZA}",
+          "{I6U3-B7KC68HL-6671RXFP}",
+          "{O5S0-C2CY11SM-3591XSIR}",
+          "{M7B0-Q6DD04AT-7198CRDT}",
+          "{N2F1-Q3CO89NT-0924XOAS}",
+          "{R0M8-K2RK75OC-2901PHIE}",
+          "{I1C9-O4HG17IA-4813TXRS}",
+          "{V2Y8-R5AB73AR-6156EGGE}",
+          "{Y7X4-S5BX55MX-1698CMIM}",
+          "{K3N2-A9VG09WI-3357KEAY}",
+          "{P4W3-P8WT07KC-6277VYCQ}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:49:12 to 2010-11-22 23:18:15"
+        },
+        "count": 20,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FTM0406 used removable devices 16 times, mostly for file access.",
+        "type": "factual",
+        "citations": [
+          "{M9R2-Q0SV74WY-2234TXKJ}",
+          "{T8H5-I5KO47RA-5914DMOB}",
+          "{B2Z8-U8IR76YI-2806XKBN}",
+          "{M8D4-U9ZQ49DC-8657GDJS}",
+          "{P4G4-H7KV66GZ-2636XZNC}",
+          "{Q4C6-B1DI00IJ-9692KHHI}",
+          "{C5Z6-L8IQ16KY-2759PIPH}",
+          "{S8S9-E5JI54GE-0373PXNG}",
+          "{T5N3-U7RY83UD-8605RFWZ}",
+          "{U9S5-H6GO34CG-9562TCSO}",
+          "{H0P3-M7VG34WL-1465QOEO}",
+          "{Z0S0-Z9FA75VX-0098JZHL}",
+          "{O5T6-J4NC96RY-3319QCSX}",
+          "{A5N0-H4VM63EJ-8318JHSZ}",
+          "{F5Q4-I8WY38VJ-1327DXXO}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:48:02 to 2010-11-22 23:29:47"
+        },
+        "count": 16,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session started outside usual working hours and lasted until 03:24.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:40:03",
+          "start_hour": 20.666666666666668,
+          "end_hour": 3.4,
+          "after_hours": 1
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-1786, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-1786"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "FTM0406",
+        "before": "2010-11-22 20:40:03"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1e9f5b1ff1",
+        "source": "http",
+        "limit": 50
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1e9f5b1ff1",
+        "source": "file",
+        "limit": 50
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S1e9f5b1ff1",
+        "source": "device",
+        "limit": 50
+      }
+    },
+    {
+      "step": 4,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 61872,
+        "completion_tokens": 2121
+      },
+      "seconds": 59.6
+    }
+  ]
+}

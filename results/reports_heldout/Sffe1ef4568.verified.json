@@ -1,0 +1,90 @@
+{
+  "session_id": "Sffe1ef4568",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 2,
+    "interpretive": 0,
+    "groundedness": 0.6,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AAM0658 logged on to PC-9923 at 2010-11-02 02:31:32.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B4H0-T0VS68NI-2874IXYP}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session included 11 file events, with 1 archive file.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "source mismatch on {D9S5-I8AP98RJ-1303HBWK}: claimed 'file', log says 'http'",
+        "source mismatch on {Z1O0-J1QH34XQ-4354CGWO}: claimed 'file', log says 'logon'",
+        "activity mismatch on {D9S5-I8AP98RJ-1303HBWK}: claimed 'File', log says 'Visit'",
+        "activity mismatch on {Z1O0-J1QH34XQ-4354CGWO}: claimed 'File', log says 'Logoff'",
+        "unknown field 'count'",
+        "count says 11 but 12 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{M6C1-J5IC45EA-8196QTFF}",
+        "{F3F5-S1JH64OH-4320CRGI}",
+        "{N5A8-B5KS81OA-6643CNZV}",
+        "{W8P2-Z9UN51NC-7286DVKQ}",
+        "{Z5G8-V9BE60WG-5547IYFE}",
+        "{D9S5-I8AP98RJ-1303HBWK}",
+        "{P4L0-Q0AW57HF-8548HEYK}",
+        "{G9Q1-V8ER75KX-6740QZMN}",
+        "{I7E9-J0XH77JE-0925GDDZ}",
+        "{Z2F9-E2FA97ZS-7744EFDW}",
+        "{I6N8-W3EI66CP-7801QFOK}",
+        "{Z1O0-J1QH34XQ-4354CGWO}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "AAM0658 accessed a website at 02:49:47.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://thefreedictionary.com/Ian_Chappell/wsc/bcraebnqercnveargjbex1044001982.html' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{D9S5-I8AP98RJ-1303HBWK}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The session lasted 31 minutes, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim has no citation",
+        "asserted fields but no cited events to check them against",
+        "unknown field 'session'"
+      ],
+      "warnings": [
+        "asserted session='{'duration_min': 31.0, 'after_hours': 1}' is not mentioned in the claim text"
+      ],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user's usual working hours are from 07:59 to 18:39, based on the 30-day baseline.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

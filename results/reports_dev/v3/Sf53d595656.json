@@ -1,0 +1,175 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sf53d595656",
+    "verdict": "suspicious",
+    "summary": "The user accessed multiple files and visited unusual websites outside usual working hours.",
+    "claims": [
+      {
+        "text": "LQC0479 logged on to PC-6380 at 2010-09-14 01:37:21.",
+        "type": "factual",
+        "citations": [
+          "{C5V2-B5KM15IX-7095SXZK}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6380",
+          "date": "2010-09-14 01:37:21"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "LQC0479 logged off at 2010-09-14 03:30:33.",
+        "type": "factual",
+        "citations": [
+          "{Q2C1-Y5CI88FY-0476IEHG}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-09-14 03:30:33"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The user accessed 22 files during the session.",
+        "type": "factual",
+        "citations": [
+          "{Y7S3-J3TD70WX-0300MFNU}",
+          "{N2T0-Z7YO67XX-1986MEFG}",
+          "{H7D7-J0GR52EE-8934QDQN}",
+          "{Y6L2-A0YR53UM-9608YXGD}",
+          "{H6F9-A7HG29GQ-6112OXWV}",
+          "{T8C4-C9LQ25PR-9968EPKA}",
+          "{L5E4-F1ED31MN-5050XOGW}",
+          "{U7N4-X3RM61PL-2978TIED}",
+          "{E0A3-E6YT94EJ-7306QISV}",
+          "{H0B8-V4AV29FA-7986FMWV}",
+          "{S7J5-G2OB97WU-4219FIPX}",
+          "{Z3O0-U9GN08AK-1680CXFF}",
+          "{D5H2-A4YF47LR-1242QERU}",
+          "{Z6U1-A7HU97YZ-3183XQPD}",
+          "{C3I6-X2SS28ST-9711HKGB}",
+          "{E9O7-X4IH37XJ-6797DWAW}",
+          "{I6G3-R4PU88RT-9792KTQG}",
+          "{V6Q5-A0AE81EM-3364XNUT}",
+          "{I0A6-X8FJ86OB-7467ZWKJ}",
+          "{T9I4-V3GR50QL-4588IMKQ}",
+          "{P7Z5-E1HF25MI-1599ATFN}",
+          "{K1L9-K5PG59OA-3369CYOP}",
+          "{I0A6-X8FJ86OB-7467ZWKJ}",
+          "{I6G3-R4PU88RT-9792KTQG}",
+          "{V6Q5-A0AE81EM-3364XNUT}",
+          "{K1L9-K5PG59OA-3369CYOP}",
+          "{I0A6-X8FJ86OB-7467ZWKJ}"
+        ],
+        "asserted": {},
+        "count": 22,
+        "baseline": {}
+      },
+      {
+        "text": "The user visited two websites outside usual working hours.",
+        "type": "factual",
+        "citations": [
+          "{F0G2-X9ZO10NE-5831GAEX}",
+          "{W1O1-U3TS01FY-2846ULBG}"
+        ],
+        "asserted": {},
+        "count": 2,
+        "baseline": {}
+      },
+      {
+        "text": "The user's usual working hours are from 8:23 to 17:26.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 8.23,
+          "avg_end_hour": 17.26
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "LQC0479",
+        "before": "2010-09-14 01:37:21"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf53d595656",
+        "source": "logon",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf53d595656",
+        "source": "device",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf53d595656",
+        "source": "file",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sf53d595656",
+        "source": "http",
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "LQC0479",
+        "before": "2010-09-14 01:37:21"
+      }
+    },
+    {
+      "step": 6,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 54770,
+        "completion_tokens": 1497
+      },
+      "seconds": 35.9
+    }
+  ]
+}

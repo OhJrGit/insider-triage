@@ -1,0 +1,133 @@
+{
+  "session_id": "Sc3294a386b",
+  "summary": {
+    "claims": 9,
+    "verified": 6,
+    "unsupported": 1,
+    "interpretive": 2,
+    "groundedness": 0.857,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-02 19:23:43.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L5Q8-S1AH64DZ-0740GXXX}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 555 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The user visited multiple job and career-related sites.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim asserts no checkable field, count, baseline or session value",
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{M8Z3-P3MS67GM-8618JLZY}",
+        "{Z5S5-K2JJ94NJ-0406UIHJ}",
+        "{W9D3-X7UE38YS-3386TFFS}",
+        "{Q0R1-L5JG58SJ-3788XPBG}",
+        "{F0V3-A7EW23AU-1596VOPO}",
+        "{G6B0-I9GI61WT-3828STKB}",
+        "{T7H3-V3ZM77PX-4676ZZQK}",
+        "{G7R4-J4GI37XF-7034QEZR}",
+        "{O9Q2-F7EU43ZN-1336UZQR}",
+        "{W4D4-C2OD63TG-9508UQDH}",
+        "{M4A5-T1VI53VT-4453OWXQ}",
+        "{A5T9-N7LX82JD-2907GUPK}",
+        "{K3U3-K2QH17JK-2712LELF}",
+        "{A6J0-O7RB63UX-1684EKGW}",
+        "{G9U4-U7MN93CD-8709JHWQ}",
+        "{A6J0-O7RB63UX-1684EKGW}",
+        "{D7E6-A8HA91FD-7159UGTY}",
+        "{S7N3-U6NW32YO-6472IRIR}",
+        "{O6D0-Q5QK65RF-4557EIBX}",
+        "{U8W6-H2IP10ZQ-4102RKGJ}",
+        "{W1C9-R8VM17NZ-7896OWXP}",
+        "{W8V8-K6CA18GQ-8011DOZB}",
+        "{V3E1-N3ZS51VZ-4184YFSA}",
+        "{D6J0-K1MC17OK-6935CYPI}",
+        "{R7U5-B9HX46CY-8092UJGB}",
+        "{I3U7-E9CX57FM-9010NNSN}",
+        "{C1C2-J5KJ14YT-7700LVFC}",
+        "{P7T6-W8MD76LQ-3201ZIED}",
+        "{C6M6-T8VZ31DX-9856AMTW}",
+        "{F9N8-J4NN12LA-6719EUXX}",
+        "{C6M6-T8VZ31DX-9856AMTW}",
+        "{H1L6-H4AX92PX-6882ZCMY}",
+        "{I3Q5-U7OU93VJ-8627WCKO}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user's usual working hours are 8:57 AM to 4:40 PM.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session started at 7:23 PM, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session included 30 web visits.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user's usual number of web visits per session is 89.57.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The session's number of web visits is below the user's usual average.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

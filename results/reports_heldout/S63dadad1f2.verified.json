@@ -1,0 +1,107 @@
+{
+  "session_id": "S63dadad1f2",
+  "summary": {
+    "claims": 7,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.667,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-18 05:15:57.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B2E9-C1CI79KB-5053CEKO}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 42 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "JRG0207 accessed 9 files, mostly documents.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K9T3-F6MP70FV-6267TTGK}",
+        "{Z3R7-Q0KD13JG-6399YWYK}",
+        "{M4W2-Z5BA24OZ-7050GUZQ}",
+        "{J5Y2-Z7NE76FN-4960TJNC}",
+        "{Y7S9-H8QW26YO-4452QOJM}",
+        "{J0P5-N0ZQ46GV-3156XBXN}",
+        "{P0E3-J5GK08DV-8712UEDK}",
+        "{Y8J8-N3OA15MP-7861CIRX}",
+        "{G6U4-D1RM82ZN-8435ZJAU}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "JRG0207 visited two suspicious websites.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {B3K3-H8TB99GU-4963RCTZ}: claimed 'bluehost.com', log says 'http://myspace.com/Princess_Charlotte_of_Wales/oatlands/fxvyvsgbayvaryrneavatcngeby1270598313.aspx'"
+      ],
+      "warnings": [
+        "asserted url_contains='bluehost.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{M4O0-C2HK77AC-5454AZRY}",
+        "{B3K3-H8TB99GU-4963RCTZ}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session included 7 USB device connections.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "activity mismatch on {E5K6-E6NK11DK-5419ORKN}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {H8W1-U5UW04YN-5135BHIK}: claimed 'Connect', log says 'Disconnect'",
+        "activity mismatch on {L1D7-U0QM61DV-1820AGLD}: claimed 'Connect', log says 'Disconnect'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{U0C0-W8IK70PD-1406PELW}",
+        "{E5K6-E6NK11DK-5419ORKN}",
+        "{Z8N2-B5CZ81TH-0580MCRV}",
+        "{H8W1-U5UW04YN-5135BHIK}",
+        "{S0Y2-Z9OH77QJ-9242IOXJ}",
+        "{L1D7-U0QM61DV-1820AGLD}",
+        "{Z3L1-R0ZZ05CQ-0504BSEX}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session started outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session was on the user's usual PC.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

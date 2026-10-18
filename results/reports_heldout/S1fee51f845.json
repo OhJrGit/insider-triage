@@ -1,0 +1,137 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S1fee51f845",
+    "verdict": "suspicious",
+    "summary": "EDB0714 spent most of the session browsing job and hacker-related sites, and used a removable device.",
+    "claims": [
+      {
+        "text": "EDB0714 logged on to PC-6103 at 2010-10-19 07:41:00.",
+        "type": "factual",
+        "citations": [
+          "{B3I4-R6UC21SO-7156YPLS}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6103",
+          "date": "2010-10-19 07:41:00"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 547 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 547.0
+        }
+      },
+      {
+        "text": "EDB0714 visited hacker-related sites 1 time.",
+        "type": "factual",
+        "citations": [
+          "{F5C4-F2JY21SI-7916VSKT}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "hacker"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "EDB0714 visited job-related sites 5 times.",
+        "type": "factual",
+        "citations": [
+          "{I5M6-P9KG46UR-8312EPBS}",
+          "{X0J5-V6SU11RV-8236RTVJ}",
+          "{V8Q9-D9BO77SJ-2116NYTT}",
+          "{N2W7-E6WB23BE-6755ADUG}",
+          "{O9K1-G4YI20MX-7766QBZO}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url_contains": "job"
+        },
+        "count": 5,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "EDB0714 used a removable device 2 times.",
+        "type": "factual",
+        "citations": [
+          "{A8C5-N7CB01AL-2742DHZD}",
+          "{I5E3-N0AP62AF-6107PELD}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual working hours are 07:30 to 16:30.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.73,
+          "avg_end_hour": 16.78
+        },
+        "session": {}
+      },
+      {
+        "text": "This activity is within the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session included 19 web visits, 1 file event, and 1 email.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_http": 19.0,
+          "n_file": 1.0,
+          "n_email": 1.0
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true,
+      "normalized": [
+        "claim 2: moved 'count' out of 'asserted'",
+        "claim 3: moved 'count' out of 'asserted'",
+        "claim 4: moved 'count' out of 'asserted'"
+      ]
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 5883,
+        "completion_tokens": 773
+      },
+      "seconds": 19.4
+    }
+  ]
+}

@@ -1,0 +1,4124 @@
+{
+  "summary": {
+    "items": 291,
+    "good": 150,
+    "bad": 141,
+    "judge_model": "ollama:qwen2.5:7b (num_ctx=32768)",
+    "deterministic_verifier": {
+      "accuracy": 1.0,
+      "errors_caught": "141/141",
+      "recall_on_errors": 1.0,
+      "false_alarms_on_true_claims": "0/150",
+      "false_alarm_rate": 0.0,
+      "caught_by_mutation": {
+        "drop_citation": "14/14",
+        "fake_id": "17/17",
+        "shift_time": "7/7",
+        "swap_citation": "19/19",
+        "wrong_baseline": "20/20",
+        "wrong_count": "4/4",
+        "wrong_pc": "9/9",
+        "wrong_session": "49/49",
+        "wrong_url": "2/2"
+      }
+    },
+    "llm_judge": {
+      "accuracy": 0.821,
+      "errors_caught": "102/141",
+      "recall_on_errors": 0.723,
+      "false_alarms_on_true_claims": "13/150",
+      "false_alarm_rate": 0.087,
+      "caught_by_mutation": {
+        "drop_citation": "0/14",
+        "fake_id": "16/17",
+        "shift_time": "5/7",
+        "swap_citation": "19/19",
+        "wrong_baseline": "13/20",
+        "wrong_count": "3/4",
+        "wrong_pc": "6/9",
+        "wrong_session": "40/49",
+        "wrong_url": "0/2"
+      }
+    },
+    "judge_invalid_outputs": 0,
+    "judge_seconds_per_claim": 2.81,
+    "judge_tokens_per_claim": 565,
+    "judge_self_consistency": 1.0
+  },
+  "rows": [
+    {
+      "session_id": "S78af8668e0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 5.03,
+      "judge_tokens": 616,
+      "text": "The user's usual PC is PC-1809, which matches the session PC."
+    },
+    {
+      "session_id": "S16530eff93",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.5,
+      "judge_tokens": 358,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-15 18:40:15."
+    },
+    {
+      "session_id": "S16530eff93",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.91,
+      "judge_tokens": 379,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-15 18:40:15."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.56,
+      "judge_tokens": 358,
+      "text": "FMG0527 logged on to PC-4256 at 2010-12-30 21:16:01."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 307,
+      "text": "FMG0527 logged on to PC-4256 at 2010-12-30 21:16:01."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 614,
+      "text": "The user accessed 49 web pages in total."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 612,
+      "text": "The user accessed 49 web pages in total."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.93,
+      "judge_tokens": 640,
+      "text": "The session did not involve any USB connections, file events, web visits, or emails."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 628,
+      "text": "The session did not involve any USB connections, file events, web visits, or emails."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.52,
+      "judge_tokens": 358,
+      "text": "MYD0978 logged on to PC-3401 at 2010-12-13 20:30:07."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 419,
+      "text": "MYD0978 logged on to PC-3401 at 2010-12-13 20:30:07."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.47,
+      "judge_tokens": 340,
+      "text": "DCH0843 logged off at 2011-02-02 06:48:31."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.78,
+      "judge_tokens": 406,
+      "text": "DCH0843 logged off at 2011-02-02 06:48:31."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.51,
+      "judge_tokens": 360,
+      "text": "DRR0162 logged on to PC-5168 at 2010-11-12 07:01:00."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.32,
+      "judge_tokens": 404,
+      "text": "DRR0162 logged on to PC-5168 at 2010-11-12 07:01:00."
+    },
+    {
+      "session_id": "Sb0023366cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 360,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-28 19:04:25."
+    },
+    {
+      "session_id": "Sb0023366cb",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 383,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-28 19:04:25."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.52,
+      "judge_tokens": 344,
+      "text": "MCF0600 logged off at 2010-09-28 06:30:06."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.15,
+      "judge_tokens": 644,
+      "text": "MCF0600 logged off at 2010-09-28 06:30:06."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.06,
+      "judge_tokens": 643,
+      "text": "The user's usual start hour is around 08:12, but this session started at 01:34."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 640,
+      "text": "The user's usual start hour is around 08:12, but this session started at 01:34."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.99,
+      "judge_tokens": 643,
+      "text": "The session started at 18:46:50, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.23,
+      "judge_tokens": 654,
+      "text": "The session started at 18:46:50, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 630,
+      "text": "The user averaged 0.25 USB connections per session over the last 30 days."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.93,
+      "judge_tokens": 630,
+      "text": "The user averaged 0.25 USB connections per session over the last 30 days."
+    },
+    {
+      "session_id": "S943765c92c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 605,
+      "text": "The session lasted 16 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "S943765c92c",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 608,
+      "text": "The session lasted 16 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "S5ba22fdaff",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 603,
+      "text": "The session lasted 83 minutes and included 1 web visit."
+    },
+    {
+      "session_id": "S5ba22fdaff",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 606,
+      "text": "The session lasted 83 minutes and included 1 web visit."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.86,
+      "judge_tokens": 607,
+      "text": "DRR0162 sent 11 emails during the session."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.87,
+      "judge_tokens": 607,
+      "text": "DRR0162 sent 11 emails during the session."
+    },
+    {
+      "session_id": "S8cf7af2de8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 360,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-02 03:46:16."
+    },
+    {
+      "session_id": "S8cf7af2de8",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.65,
+      "judge_tokens": 671,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-02 03:46:16."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.89,
+      "judge_tokens": 626,
+      "text": "The user's usual number of USB connections per session is 2.05, which matches this session."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.03,
+      "judge_tokens": 635,
+      "text": "The user's usual number of USB connections per session is 2.05, which matches this session."
+    },
+    {
+      "session_id": "S28efaec841",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 622,
+      "text": "The session lasted 124 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S28efaec841",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.83,
+      "judge_tokens": 631,
+      "text": "The session lasted 124 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.76,
+      "judge_tokens": 400,
+      "text": "AAM0658 visited wikileaks.org once."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.64,
+      "judge_tokens": 288,
+      "text": "AAM0658 visited wikileaks.org once."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 358,
+      "text": "DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.67,
+      "judge_tokens": 361,
+      "text": "DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.28,
+      "judge_tokens": 644,
+      "text": "Over the previous 30 days, the user averaged 0 USB connections and started work around 08:12."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.0,
+      "judge_tokens": 631,
+      "text": "Over the previous 30 days, the user averaged 0 USB connections and started work around 08:12."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.99,
+      "judge_tokens": 621,
+      "text": "The user accessed 2 potentially malicious websites."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 609,
+      "text": "The user accessed 2 potentially malicious websites."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.86,
+      "judge_tokens": 586,
+      "text": "The user's usual behaviour includes 6.3 web visits per session."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.84,
+      "judge_tokens": 588,
+      "text": "The user's usual behaviour includes 6.3 web visits per session."
+    },
+    {
+      "session_id": "S8cf7af2de8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.85,
+      "judge_tokens": 612,
+      "text": "The session occurred on a weekend."
+    },
+    {
+      "session_id": "S8cf7af2de8",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.67,
+      "judge_tokens": 603,
+      "text": "The session occurred on a weekend."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 600,
+      "text": "The session included 37 web visits, which is 26 more than the user's average."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.18,
+      "judge_tokens": 612,
+      "text": "The session included 37 web visits, which is 26 more than the user's average."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.53,
+      "judge_tokens": 358,
+      "text": "MLL0598 logged off from PC-0189 at 2011-01-20 18:25:00."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.52,
+      "judge_tokens": 359,
+      "text": "MLL0598 logged off from PC-0189 at 2011-01-20 18:25:00."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 584,
+      "text": "The session lasted 606 minutes."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.79,
+      "judge_tokens": 589,
+      "text": "The session lasted 606 minutes."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 625,
+      "text": "The session lasted 102 minutes and included 9 USB connections."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 627,
+      "text": "The session lasted 102 minutes and included 9 USB connections."
+    },
+    {
+      "session_id": "Sf29cd607ee",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.09,
+      "judge_tokens": 654,
+      "text": "The user normally uses PC-3791, but this session was on a foreign PC."
+    },
+    {
+      "session_id": "S26fa38a5eb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.92,
+      "judge_tokens": 651,
+      "text": "The user averaged 0.093 USB connections per session over the last 30 days, and this session had 1 connection."
+    },
+    {
+      "session_id": "S26fa38a5eb",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.2,
+      "judge_tokens": 663,
+      "text": "The user averaged 0.093 USB connections per session over the last 30 days, and this session had 1 connection."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 360,
+      "text": "DCH0843 logged on to PC-8720 at 2011-02-08 01:05:05."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 412,
+      "text": "DCH0843 logged on to PC-8720 at 2011-02-08 01:05:05."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 358,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-04 18:35:12."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.96,
+      "judge_tokens": 379,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-04 18:35:12."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.81,
+      "judge_tokens": 687,
+      "text": "The user's usual working hours are 8:57 AM to 4:40 PM."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.52,
+      "judge_tokens": 670,
+      "text": "The user's usual working hours are 8:57 AM to 4:40 PM."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.83,
+      "judge_tokens": 614,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 612,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.86,
+      "judge_tokens": 599,
+      "text": "The session was on the user's usual PC."
+    },
+    {
+      "session_id": "S8720a76d39",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.87,
+      "judge_tokens": 643,
+      "text": "The user normally uses PC-8908, and this session was on the usual PC."
+    },
+    {
+      "session_id": "S8720a76d39",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.8,
+      "judge_tokens": 643,
+      "text": "The user normally uses PC-8908, and this session was on the usual PC."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.88,
+      "judge_tokens": 613,
+      "text": "The session included 30 web visits."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 607,
+      "text": "The session included 30 web visits."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 627,
+      "text": "The session included 19 web visits, 1 file event, and 1 email."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 632,
+      "text": "The session included 19 web visits, 1 file event, and 1 email."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.64,
+      "judge_tokens": 360,
+      "text": "FMG0527 logged on to PC-4256 at 2011-01-07 18:46:50."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.99,
+      "judge_tokens": 381,
+      "text": "FMG0527 logged on to PC-4256 at 2011-01-07 18:46:50."
+    },
+    {
+      "session_id": "Sf0bbb882b1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 358,
+      "text": "DCH0843 logged on to PC-8720 at 2011-01-29 06:19:56."
+    },
+    {
+      "session_id": "Sf0bbb882b1",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 359,
+      "text": "DCH0843 logged on to PC-8720 at 2011-01-29 06:19:56."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 599,
+      "text": "The session included 5 file events, including 1 archive file."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.79,
+      "judge_tokens": 596,
+      "text": "The session included 5 file events, including 1 archive file."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.61,
+      "judge_tokens": 464,
+      "text": "FTM0406 visited a website at 2010-12-01 03:52:27, which is outside usual working hours."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 717,
+      "text": "FTM0406 visited a website at 2010-12-01 03:52:27, which is outside usual working hours."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 630,
+      "text": "The user's usual working hours are 07:30 to 16:30."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.33,
+      "judge_tokens": 652,
+      "text": "The user's usual working hours are 07:30 to 16:30."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 360,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-13 06:00:20."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 307,
+      "text": "EHD0584 logged on to PC-8669 at 2010-10-13 06:00:20."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 509,
+      "text": "MAR0955 visited 2 websites during the session."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.71,
+      "judge_tokens": 465,
+      "text": "MAR0955 visited 2 websites during the session."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 576,
+      "text": "The session included 9 email sends."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.8,
+      "judge_tokens": 582,
+      "text": "The session included 9 email sends."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.81,
+      "judge_tokens": 584,
+      "text": "The session lasted 8 minutes."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 590,
+      "text": "The session lasted 8 minutes."
+    },
+    {
+      "session_id": "S78af8668e0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.77,
+      "judge_tokens": 602,
+      "text": "The session lasted 460 minutes, which is 7.67 hours."
+    },
+    {
+      "session_id": "S78af8668e0",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.89,
+      "judge_tokens": 610,
+      "text": "The session lasted 460 minutes, which is 7.67 hours."
+    },
+    {
+      "session_id": "S26081ed285",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.81,
+      "judge_tokens": 625,
+      "text": "The session lasted 163 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S26081ed285",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.65,
+      "judge_tokens": 623,
+      "text": "The session lasted 163 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.65,
+      "judge_tokens": 360,
+      "text": "MCF0600 logged on to PC-8790 at 2010-09-29 03:15:19."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 307,
+      "text": "MCF0600 logged on to PC-8790 at 2010-09-29 03:15:19."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 576,
+      "text": "The session lasted 18 minutes."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.89,
+      "judge_tokens": 581,
+      "text": "The session lasted 18 minutes."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.12,
+      "judge_tokens": 1862,
+      "text": "The session included 23 file events, mostly PDFs."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.06,
+      "judge_tokens": 1891,
+      "text": "The session included 23 file events, mostly PDFs."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 604,
+      "text": "DRR0162 visited job-related websites 5 times."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.01,
+      "judge_tokens": 610,
+      "text": "DRR0162 visited job-related websites 5 times."
+    },
+    {
+      "session_id": "S06a1cafd31",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 346,
+      "text": "The user visited a suspicious website yfrog.com/Saffron/saffron."
+    },
+    {
+      "session_id": "S06a1cafd31",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 368,
+      "text": "The user visited a suspicious website yfrog.com/Saffron/saffron."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.8,
+      "judge_tokens": 631,
+      "text": "The session lasted 607 minutes and included no file, USB or web activity."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.69,
+      "judge_tokens": 625,
+      "text": "The session lasted 607 minutes and included no file, USB or web activity."
+    },
+    {
+      "session_id": "S02e94690d5",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.52,
+      "judge_tokens": 353,
+      "text": "FBA0348 logged off at 2011-04-29 20:04:27."
+    },
+    {
+      "session_id": "S02e94690d5",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.78,
+      "judge_tokens": 426,
+      "text": "FBA0348 logged off at 2011-04-29 20:04:27."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 409,
+      "text": "EDB0714 used a removable device 2 times."
+    },
+    {
+      "session_id": "S1fee51f845",
+      "truth": "unsupported",
+      "mutation": "wrong_count",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.79,
+      "judge_tokens": 408,
+      "text": "EDB0714 used a removable device 2 times."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 340,
+      "text": "OKC0107 logged off at 2011-05-16 18:14:00."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.2,
+      "judge_tokens": 659,
+      "text": "OKC0107 logged off at 2011-05-16 18:14:00."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.09,
+      "judge_tokens": 3044,
+      "text": "DRR0162 visited multiple websites, including news, job, and personal interest sites."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "unsupported",
+      "mutation": "wrong_count",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.07,
+      "judge_tokens": 3042,
+      "text": "DRR0162 visited multiple websites, including news, job, and personal interest sites."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.0,
+      "judge_tokens": 528,
+      "text": "DRR0162 connected and disconnected a removable device 3 times."
+    },
+    {
+      "session_id": "S7365890092",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.85,
+      "judge_tokens": 628,
+      "text": "DRR0162 connected and disconnected a removable device 3 times."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 651,
+      "text": "The user's usual working hours are from 8:23 to 14:84, and this session was outside those hours."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.63,
+      "judge_tokens": 698,
+      "text": "The user's usual working hours are from 8:23 to 14:84, and this session was outside those hours."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.96,
+      "judge_tokens": 622,
+      "text": "The user's usual PC is PC-0155, which was used in this session."
+    },
+    {
+      "session_id": "S8720a76d39",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 360,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-19 20:25:05."
+    },
+    {
+      "session_id": "S8720a76d39",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 309,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-19 20:25:05."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 626,
+      "text": "The session lasted 294 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 632,
+      "text": "The session lasted 294 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.01,
+      "judge_tokens": 633,
+      "text": "The session lasted 580 minutes and included 3 USB connections."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.96,
+      "judge_tokens": 631,
+      "text": "The session lasted 580 minutes and included 3 USB connections."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.64,
+      "judge_tokens": 360,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-02 19:23:43."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.66,
+      "judge_tokens": 412,
+      "text": "PPF0435 logged on to PC-1809 at 2011-02-02 19:23:43."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 364,
+      "text": "KLH0596 logged on to PC-0132 at 2011-02-01 21:15:24."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.66,
+      "judge_tokens": 409,
+      "text": "KLH0596 logged on to PC-0132 at 2011-02-01 21:15:24."
+    },
+    {
+      "session_id": "S06a1cafd31",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 360,
+      "text": "DCH0843 logged on to PC-8720 at 2011-01-27 21:35:19."
+    },
+    {
+      "session_id": "S06a1cafd31",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.46,
+      "judge_tokens": 687,
+      "text": "DCH0843 logged on to PC-8720 at 2011-01-27 21:35:19."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.83,
+      "judge_tokens": 612,
+      "text": "The session lasted 10 minutes and included 2 USB connections."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 610,
+      "text": "The session lasted 10 minutes and included 2 USB connections."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.71,
+      "judge_tokens": 603,
+      "text": "The session lasted 287 minutes, which is unusually long."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 614,
+      "text": "The session lasted 287 minutes, which is unusually long."
+    },
+    {
+      "session_id": "Sf29cd607ee",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 625,
+      "text": "The session lasted 12 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "Sf29cd607ee",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 632,
+      "text": "The session lasted 12 minutes and included 1 USB connection."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 358,
+      "text": "AAM0658 logged on to PC-9923 at 2010-11-02 02:31:32."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 307,
+      "text": "AAM0658 logged on to PC-9923 at 2010-11-02 02:31:32."
+    },
+    {
+      "session_id": "S06a1cafd31",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 614,
+      "text": "The user's usual PC is PC-8720, which was used in this session."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.11,
+      "judge_tokens": 2104,
+      "text": "FTM0406 accessed 13 documents during the session, which is above the usual average."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "unsupported",
+      "mutation": "wrong_count",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.0,
+      "judge_tokens": 2103,
+      "text": "FTM0406 accessed 13 documents during the session, which is above the usual average."
+    },
+    {
+      "session_id": "S2cba719e0d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.0,
+      "judge_tokens": 615,
+      "text": "The session lasted 552 minutes, which is within the user's usual working hours."
+    },
+    {
+      "session_id": "S2cba719e0d",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.91,
+      "judge_tokens": 610,
+      "text": "The session lasted 552 minutes, which is within the user's usual working hours."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 593,
+      "text": "The session included 3 visits to job-related sites."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.85,
+      "judge_tokens": 588,
+      "text": "The session included 3 visits to job-related sites."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 605,
+      "text": "The session lasted 163 minutes."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.94,
+      "judge_tokens": 618,
+      "text": "The session lasted 163 minutes."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 356,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-08 05:55:53."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 308,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-08 05:55:53."
+    },
+    {
+      "session_id": "S16530eff93",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.19,
+      "judge_tokens": 670,
+      "text": "The session started at 18:40, which is outside the user's usual working hours of 06:00 to 14:56."
+    },
+    {
+      "session_id": "S16530eff93",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.15,
+      "judge_tokens": 664,
+      "text": "The session started at 18:40, which is outside the user's usual working hours of 06:00 to 14:56."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.56,
+      "judge_tokens": 360,
+      "text": "OKC0107 logged on to PC-3932 at 2011-05-16 09:15:00."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 361,
+      "text": "OKC0107 logged on to PC-3932 at 2011-05-16 09:15:00."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.56,
+      "judge_tokens": 320,
+      "text": "The session included 1 file event, downloading FX6BOC70.pdf."
+    },
+    {
+      "session_id": "S1a7e274698",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 264,
+      "text": "The session included 1 file event, downloading FX6BOC70.pdf."
+    },
+    {
+      "session_id": "S02e94690d5",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 627,
+      "text": "The session lasted 8 minutes and did not involve any USB connections or file activity."
+    },
+    {
+      "session_id": "S02e94690d5",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 627,
+      "text": "The session lasted 8 minutes and did not involve any USB connections or file activity."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.67,
+      "judge_tokens": 598,
+      "text": "The session lasted 12 minutes."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.8,
+      "judge_tokens": 605,
+      "text": "The session lasted 12 minutes."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 630,
+      "text": "The user accessed 10 files, including documents and a compressed file."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 626,
+      "text": "The user accessed 10 files, including documents and a compressed file."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 342,
+      "text": "FBA0348 logged off at 2010-10-01 19:48:03."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.54,
+      "judge_tokens": 287,
+      "text": "FBA0348 logged off at 2010-10-01 19:48:03."
+    },
+    {
+      "session_id": "Sf29cd607ee",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.53,
+      "judge_tokens": 360,
+      "text": "JLM0364 logged on to PC-8486 at 2011-04-28 20:40:04."
+    },
+    {
+      "session_id": "Sf29cd607ee",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 673,
+      "text": "JLM0364 logged on to PC-8486 at 2011-04-28 20:40:04."
+    },
+    {
+      "session_id": "Sb1fb61445d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.53,
+      "judge_tokens": 358,
+      "text": "MSO0222 logged on to PC-5866 at 2010-12-09 19:02:50."
+    },
+    {
+      "session_id": "Sb1fb61445d",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 309,
+      "text": "MSO0222 logged on to PC-5866 at 2010-12-09 19:02:50."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 604,
+      "text": "The session lasted 231 minutes."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.89,
+      "judge_tokens": 613,
+      "text": "The session lasted 231 minutes."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.53,
+      "judge_tokens": 342,
+      "text": "MCF0600 logged off at 2010-09-29 04:26:35."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.92,
+      "judge_tokens": 651,
+      "text": "MCF0600 logged off at 2010-09-29 04:26:35."
+    },
+    {
+      "session_id": "S613539532f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.69,
+      "judge_tokens": 625,
+      "text": "The session lasted 141 minutes and included 9 USB connections."
+    },
+    {
+      "session_id": "S613539532f",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 627,
+      "text": "The session lasted 141 minutes and included 9 USB connections."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.55,
+      "judge_tokens": 362,
+      "text": "FBA0348 logged on to PC-8486 at 2010-10-01 19:40:01."
+    },
+    {
+      "session_id": "S236e8d83a2",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.44,
+      "judge_tokens": 407,
+      "text": "FBA0348 logged on to PC-8486 at 2010-10-01 19:40:01."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 360,
+      "text": "MLL0598 logged on to PC-0189 at 2011-01-20 08:18:00."
+    },
+    {
+      "session_id": "Sf8c893b78c",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.51,
+      "judge_tokens": 311,
+      "text": "MLL0598 logged on to PC-0189 at 2011-01-20 08:18:00."
+    },
+    {
+      "session_id": "S26081ed285",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.53,
+      "judge_tokens": 356,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-16 21:34:33."
+    },
+    {
+      "session_id": "S26081ed285",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 390,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-16 21:34:33."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 617,
+      "text": "The session lasted 222 minutes, which is longer than usual."
+    },
+    {
+      "session_id": "S836b4e7d66",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.84,
+      "judge_tokens": 625,
+      "text": "The session lasted 222 minutes, which is longer than usual."
+    },
+    {
+      "session_id": "S63dadad1f2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.22,
+      "judge_tokens": 1256,
+      "text": "JRG0207 accessed 9 files, mostly documents."
+    },
+    {
+      "session_id": "S63dadad1f2",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.28,
+      "judge_tokens": 1295,
+      "text": "JRG0207 accessed 9 files, mostly documents."
+    },
+    {
+      "session_id": "Sf0bbb882b1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.77,
+      "judge_tokens": 587,
+      "text": "The session lasted 83 minutes."
+    },
+    {
+      "session_id": "Sf0bbb882b1",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 598,
+      "text": "The session lasted 83 minutes."
+    },
+    {
+      "session_id": "S5ba22fdaff",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.15,
+      "judge_tokens": 1235,
+      "text": "The user accessed 9 files, mostly documents and a PDF."
+    },
+    {
+      "session_id": "S5ba22fdaff",
+      "truth": "unsupported",
+      "mutation": "wrong_count",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.18,
+      "judge_tokens": 1236,
+      "text": "The user accessed 9 files, mostly documents and a PDF."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 443,
+      "text": "MCF0600 visited a website at 2010-09-28 05:22:26."
+    },
+    {
+      "session_id": "S31cf0b134d",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.77,
+      "judge_tokens": 471,
+      "text": "MCF0600 visited a website at 2010-09-28 05:22:26."
+    },
+    {
+      "session_id": "S78af8668e0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.54,
+      "judge_tokens": 362,
+      "text": "PPF0435 logged on to PC-1809 at 2011-01-27 19:54:51."
+    },
+    {
+      "session_id": "S78af8668e0",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.91,
+      "judge_tokens": 383,
+      "text": "PPF0435 logged on to PC-1809 at 2011-01-27 19:54:51."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.55,
+      "judge_tokens": 490,
+      "text": "MAR0955 visited http://filestube.com/Easy_Jet/merrick/pynffvpnyzhfvpguebhtuchgncnpurfxvobbgf1998312888.html at 2011-02-08 06:00:40."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "wrong_url",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.51,
+      "judge_tokens": 449,
+      "text": "MAR0955 visited http://filestube.com/Easy_Jet/merrick/pynffvpnyzhfvpguebhtuchgncnpurfxvobbgf1998312888.html at 2011-02-08 06:00:40."
+    },
+    {
+      "session_id": "S2cba719e0d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.94,
+      "judge_tokens": 608,
+      "text": "The user's typical behavior shows an average of 95 HTTP visits per session."
+    },
+    {
+      "session_id": "S2cba719e0d",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.81,
+      "judge_tokens": 599,
+      "text": "The user's typical behavior shows an average of 95 HTTP visits per session."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 600,
+      "text": "The user's usual PC was PC-3401, which was used for this session."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 376,
+      "text": "The user visited a website related to fighting in ice hockey at 2010-12-30 23:36:13."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.99,
+      "judge_tokens": 446,
+      "text": "The user visited a website related to fighting in ice hockey at 2010-12-30 23:36:13."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 358,
+      "text": "CCL0068 logged on to PC-7699 at 2010-12-30 08:07:00."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 418,
+      "text": "CCL0068 logged on to PC-7699 at 2010-12-30 08:07:00."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.79,
+      "judge_tokens": 616,
+      "text": "The session lasted 86 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.78,
+      "judge_tokens": 619,
+      "text": "The session lasted 86 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.71,
+      "judge_tokens": 573,
+      "text": "The session included 6 USB connections."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 576,
+      "text": "The session included 6 USB connections."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.64,
+      "judge_tokens": 336,
+      "text": "The session included a file activity on 2010-12-30 16:00:27."
+    },
+    {
+      "session_id": "S9df2cf0746",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.64,
+      "judge_tokens": 384,
+      "text": "The session included a file activity on 2010-12-30 16:00:27."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 435,
+      "text": "The user visited a suspicious URL: http://hp.com/Through_the_Looking_Glass_Lost/ariston/gbbyfcebsrffvbanyfbppreiveghnyznpuvar223685341.jsp."
+    },
+    {
+      "session_id": "Sf56fcf8070",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 388,
+      "text": "The user visited a suspicious URL: http://hp.com/Through_the_Looking_Glass_Lost/ariston/gbbyfcebsrffvbanyfbppreiveghnyznpuvar223685341.jsp."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 364,
+      "text": "WDD0366 logged on to PC-0155 at 2011-02-28 22:54:21."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 364,
+      "text": "WDD0366 logged on to PC-0155 at 2011-02-28 22:54:21."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.69,
+      "judge_tokens": 738,
+      "text": "AAM0658 visited the same URL (http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp) three times."
+    },
+    {
+      "session_id": "Sd68110e1f8",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.66,
+      "judge_tokens": 634,
+      "text": "AAM0658 visited the same URL (http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp) three times."
+    },
+    {
+      "session_id": "S8398d8691f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.59,
+      "judge_tokens": 360,
+      "text": "CIM0926 logged off from PC-7445 at 2010-11-12 18:37:00."
+    },
+    {
+      "session_id": "S8398d8691f",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.06,
+      "judge_tokens": 383,
+      "text": "CIM0926 logged off from PC-7445 at 2010-11-12 18:37:00."
+    },
+    {
+      "session_id": "S28efaec841",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 349,
+      "text": "MAS0025 logged on to PC-2512 at 21:52:14."
+    },
+    {
+      "session_id": "S28efaec841",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.61,
+      "judge_tokens": 295,
+      "text": "MAS0025 logged on to PC-2512 at 21:52:14."
+    },
+    {
+      "session_id": "S69a3fa4719",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.84,
+      "judge_tokens": 579,
+      "text": "The user normally uses PC-6793."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.32,
+      "judge_tokens": 644,
+      "text": "The session started at 22:54:21, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S5ec2e4dde4",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.31,
+      "judge_tokens": 644,
+      "text": "The session started at 22:54:21, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.65,
+      "judge_tokens": 573,
+      "text": "The session involved 2 USB connections."
+    },
+    {
+      "session_id": "S7632c87cc1",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 580,
+      "text": "The session involved 2 USB connections."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.56,
+      "judge_tokens": 360,
+      "text": "DRR0162 logged off from PC-5168 at 2010-11-15 16:13:00."
+    },
+    {
+      "session_id": "S6a852450cb",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.27,
+      "judge_tokens": 686,
+      "text": "DRR0162 logged off from PC-5168 at 2010-11-15 16:13:00."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.61,
+      "judge_tokens": 360,
+      "text": "NWT0098 logged on to PC-4667 at 2011-02-08 07:15:00."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 645,
+      "text": "NWT0098 logged on to PC-4667 at 2011-02-08 07:15:00."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.0,
+      "judge_tokens": 617,
+      "text": "The user usually does not use USB devices, but 6 were connected during this session."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.84,
+      "judge_tokens": 614,
+      "text": "The user usually does not use USB devices, but 6 were connected during this session."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.06,
+      "judge_tokens": 624,
+      "text": "The user usually handles 0.833 files per session, but handled 5 files in this session."
+    },
+    {
+      "session_id": "Sfe00321eac",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 607,
+      "text": "The user usually handles 0.833 files per session, but handled 5 files in this session."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 358,
+      "text": "FTM0406 logged on to PC-1786 at 2010-12-01 00:51:00."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.94,
+      "judge_tokens": 378,
+      "text": "FTM0406 logged on to PC-1786 at 2010-12-01 00:51:00."
+    },
+    {
+      "session_id": "S8398d8691f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.54,
+      "judge_tokens": 360,
+      "text": "CIM0926 logged on to PC-7445 at 2010-11-12 18:27:38."
+    },
+    {
+      "session_id": "S8398d8691f",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 411,
+      "text": "CIM0926 logged on to PC-7445 at 2010-11-12 18:27:38."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 360,
+      "text": "TAP0551 logged on to PC-7623 at 2010-10-23 02:55:51."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "unsupported",
+      "mutation": "wrong_pc",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.9,
+      "judge_tokens": 381,
+      "text": "TAP0551 logged on to PC-7623 at 2010-10-23 02:55:51."
+    },
+    {
+      "session_id": "S7d08aa7707",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.54,
+      "judge_tokens": 340,
+      "text": "MAS0025 logged off at 2010-09-28 05:55:46."
+    },
+    {
+      "session_id": "S7d08aa7707",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.73,
+      "judge_tokens": 652,
+      "text": "MAS0025 logged off at 2010-09-28 05:55:46."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.69,
+      "judge_tokens": 302,
+      "text": "The session included 1 USB connection."
+    },
+    {
+      "session_id": "Sa837937482",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.56,
+      "judge_tokens": 248,
+      "text": "The session included 1 USB connection."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.76,
+      "judge_tokens": 598,
+      "text": "The session lasted 539 minutes, which is the full working day."
+    },
+    {
+      "session_id": "S705efed69d",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.91,
+      "judge_tokens": 606,
+      "text": "The session lasted 539 minutes, which is the full working day."
+    },
+    {
+      "session_id": "S69a3fa4719",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.8,
+      "judge_tokens": 587,
+      "text": "The session lasted 12 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S69a3fa4719",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.86,
+      "judge_tokens": 594,
+      "text": "The session lasted 12 minutes and included 5 USB connections."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 355,
+      "text": "The user visited wikileaks.org 1 time."
+    },
+    {
+      "session_id": "S14841c0e92",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.7,
+      "judge_tokens": 356,
+      "text": "The user visited wikileaks.org 1 time."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 3.08,
+      "judge_tokens": 622,
+      "text": "The session started outside usual working hours."
+    },
+    {
+      "session_id": "S0f24ea57cc",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 617,
+      "text": "The session started outside usual working hours."
+    },
+    {
+      "session_id": "S8398d8691f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.95,
+      "judge_tokens": 641,
+      "text": "The session took place on a foreign PC, PC-7445, which is not the user's usual PC, PC-3201."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.65,
+      "judge_tokens": 606,
+      "text": "The session lasted 555 minutes."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.84,
+      "judge_tokens": 616,
+      "text": "The session lasted 555 minutes."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.76,
+      "judge_tokens": 611,
+      "text": "The session started at 00:51, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S038064a22c",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.94,
+      "judge_tokens": 622,
+      "text": "The session started at 00:51, which is outside the user's usual working hours."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 494,
+      "text": "MAR0955 visited http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php at 2011-02-08 05:59:18."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "wrong_url",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 451,
+      "text": "MAR0955 visited http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php at 2011-02-08 05:59:18."
+    },
+    {
+      "session_id": "Scd116b7c2f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 610,
+      "text": "The session lasted 280 minutes and included 8 USB connections."
+    },
+    {
+      "session_id": "Scd116b7c2f",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 610,
+      "text": "The session lasted 280 minutes and included 8 USB connections."
+    },
+    {
+      "session_id": "S26fa38a5eb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 360,
+      "text": "HJB0742 logged on to PC-5635 at 2010-11-23 03:34:38."
+    },
+    {
+      "session_id": "S26fa38a5eb",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.62,
+      "judge_tokens": 309,
+      "text": "HJB0742 logged on to PC-5635 at 2010-11-23 03:34:38."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.16,
+      "judge_tokens": 649,
+      "text": "The user's usual working hours are 07:00 to 15:36."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.79,
+      "judge_tokens": 683,
+      "text": "The user's usual working hours are 07:00 to 15:36."
+    },
+    {
+      "session_id": "Sb0023366cb",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.91,
+      "judge_tokens": 677,
+      "text": "The session started at 19:04 and ended at 05:26, outside the user's usual working hours."
+    },
+    {
+      "session_id": "Sb0023366cb",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 658,
+      "text": "The session started at 19:04 and ended at 05:26, outside the user's usual working hours."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.6,
+      "judge_tokens": 358,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-20 19:07:57."
+    },
+    {
+      "session_id": "Sf33fcc5ef0",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.74,
+      "judge_tokens": 673,
+      "text": "JRG0207 logged on to PC-8908 at 2011-01-20 19:07:57."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.58,
+      "judge_tokens": 412,
+      "text": "AAM0658 accessed a website at 02:49:47."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "unsupported",
+      "mutation": "shift_time",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.57,
+      "judge_tokens": 412,
+      "text": "AAM0658 accessed a website at 02:49:47."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.39,
+      "judge_tokens": 661,
+      "text": "The user's usual working hours are from 08:12 to 17:03."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.92,
+      "judge_tokens": 638,
+      "text": "The user's usual working hours are from 08:12 to 17:03."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.83,
+      "judge_tokens": 639,
+      "text": "The user's usual working hours are from 07:59 to 18:39, based on the 30-day baseline."
+    },
+    {
+      "session_id": "Sffe1ef4568",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.97,
+      "judge_tokens": 652,
+      "text": "The user's usual working hours are from 07:59 to 18:39, based on the 30-day baseline."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.28,
+      "judge_tokens": 625,
+      "text": "The session started at 20:30, which is 2 hours and 30 minutes after the user's usual start time."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 3.31,
+      "judge_tokens": 627,
+      "text": "The session started at 20:30, which is 2 hours and 30 minutes after the user's usual start time."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.63,
+      "judge_tokens": 358,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-09 02:40:01."
+    },
+    {
+      "session_id": "S9ce71c79d2",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.75,
+      "judge_tokens": 664,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-09 02:40:01."
+    },
+    {
+      "session_id": "Scd116b7c2f",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.61,
+      "judge_tokens": 358,
+      "text": "MCF0600 logged on to PC-8790 at 2010-09-24 21:18:43."
+    },
+    {
+      "session_id": "Scd116b7c2f",
+      "truth": "unsupported",
+      "mutation": "drop_citation",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.67,
+      "judge_tokens": 656,
+      "text": "MCF0600 logged on to PC-8790 at 2010-09-24 21:18:43."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.76,
+      "judge_tokens": 614,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits."
+    },
+    {
+      "session_id": "S91458ace2d",
+      "truth": "unsupported",
+      "mutation": "wrong_session",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.69,
+      "judge_tokens": 612,
+      "text": "The session lasted 6 minutes and included 2 HTTP visits."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.51,
+      "judge_tokens": 370,
+      "text": "The user visited a website related to bokassa at 2010-12-30 23:57:44."
+    },
+    {
+      "session_id": "Sad8b99c63b",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.45,
+      "judge_tokens": 268,
+      "text": "The user visited a website related to bokassa at 2010-12-30 23:57:44."
+    },
+    {
+      "session_id": "Sb1fb61445d",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.72,
+      "judge_tokens": 659,
+      "text": "The user's usual PC is PC-2524, but this session was on PC-5866."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.46,
+      "judge_tokens": 372,
+      "text": "DCH0843 visited an unusual website at 2011-02-08 01:50:46."
+    },
+    {
+      "session_id": "S1a4442ecf1",
+      "truth": "unsupported",
+      "mutation": "swap_citation",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.49,
+      "judge_tokens": 393,
+      "text": "DCH0843 visited an unusual website at 2011-02-08 01:50:46."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.52,
+      "judge_tokens": 362,
+      "text": "MYD0978 accessed a known leak site, wikileaks.org, during the session."
+    },
+    {
+      "session_id": "S610f9693ad",
+      "truth": "unsupported",
+      "mutation": "fake_id",
+      "deterministic": "unsupported",
+      "judge": "unsupported",
+      "judge_all": [
+        "unsupported",
+        "unsupported"
+      ],
+      "judge_seconds": 2.48,
+      "judge_tokens": 258,
+      "text": "MYD0978 accessed a known leak site, wikileaks.org, during the session."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "supported",
+      "mutation": null,
+      "deterministic": "supported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 626,
+      "text": "The user's usual number of web visits per session is 89.57."
+    },
+    {
+      "session_id": "Sc3294a386b",
+      "truth": "unsupported",
+      "mutation": "wrong_baseline",
+      "deterministic": "unsupported",
+      "judge": "supported",
+      "judge_all": [
+        "supported",
+        "supported"
+      ],
+      "judge_seconds": 2.68,
+      "judge_tokens": 628,
+      "text": "The user's usual number of web visits per session is 89.57."
+    }
+  ]
+}

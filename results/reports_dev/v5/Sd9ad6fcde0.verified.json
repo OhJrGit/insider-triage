@@ -1,0 +1,150 @@
+{
+  "session_id": "Sd9ad6fcde0",
+  "summary": {
+    "claims": 10,
+    "verified": 7,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.778,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O9C7-Q1RV04YI-2039IQXA}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "AJR0932 logged off at 2010-09-10 06:14:26.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{J8N3-O5PH44IP-8418FUNE}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 107 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session included 24 file operations.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session involved 1 HTTP visit to a non-job-related site.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{I0R2-U1TQ25SQ-3537AFGU}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session involved 8 USB device connections.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited event {X9D8-F3WJ51JW-7590LMIN does not exist",
+        "factual claim asserts no checkable field, count, baseline or session value"
+      ],
+      "warnings": [],
+      "citations": [
+        "{D4G3-V6SF83DW-3875JZLP}",
+        "{H8O9-D2EF01AS-4226KRDM}",
+        "{A2Z7-J1AF68WU-3984OQUW}",
+        "{F5N8-G4NC22KZ-5007HAJH}",
+        "{Z0B8-Y9ZI15NI-5485TDRF}",
+        "{I3I0-J9LS24JV-9418EKKT}",
+        "{O6Q6-W1RZ45BY-6824PEFY}",
+        "{X9D8-F3WJ51JW-7590LMIN"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The session involved 18 file operations with .doc and .pdf files.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited event {Z6G2-E0VJ89KI-1893QPVK does not exist",
+        "factual claim asserts no checkable field, count, baseline or session value"
+      ],
+      "warnings": [],
+      "citations": [
+        "{C7T5-L9XL29JR-1694MOZH}",
+        "{B2Q8-C3XQ25NR-1552ZWQJ}",
+        "{L7C6-A8HE79TO-5089HAYZ}",
+        "{Y2U8-X6VQ75IM-2931DALW}",
+        "{Y7V1-Z8OG17BA-8907PMDG}",
+        "{A6R6-C8RK96WT-8726WTQK}",
+        "{E6K8-E8UT65PX-1315BBCD}",
+        "{V8M9-A3PJ93LI-1478QQPH}",
+        "{I0T5-B8FV29SO-4498OZPF}",
+        "{A6B3-F9GM22IV-8519EOJB}",
+        "{Y4P1-L4DZ57XX-0045XLUI}",
+        "{H9X9-A3IE57VV-0465OSDL}",
+        "{J4D6-T5TB44OK-6491QWRM}",
+        "{V2D3-K0KK12DH-2978TWUX}",
+        "{T9T5-D9SP76RI-8595ACWT}",
+        "{M5U5-N5FA17TY-1634SKKY}",
+        "{T0X8-N9UJ35ET-8460TMLP}",
+        "{O4B7-N0AD54XD-4669TEPQ}",
+        "{Z6G2-E0VJ89KI-1893QPVK"
+      ]
+    },
+    {
+      "index": 7,
+      "text": "The session involved 1 file operation with a .zip file.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted filename='5YMNPAA3.zip' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{V2D3-K0KK12DH-2978TWUX}"
+      ]
+    },
+    {
+      "index": 8,
+      "text": "The session was outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 9,
+      "text": "The session involved 21 sessions in the 30-day window, with an average of 0.0 USB connections and 0.0 file events per session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

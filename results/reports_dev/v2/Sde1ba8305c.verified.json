@@ -1,0 +1,67 @@
+{
+  "session_id": "Sde1ba8305c",
+  "summary": {
+    "claims": 5,
+    "verified": 3,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAS0025 logged on to PC-2512 at 2010-09-22 05:17:31.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L4R5-G7JG33XZ-3927QMRT}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "MAS0025 accessed an unusual URL (http://discovery.com/Japan/shikoku/gerrfgnaqergheabavairfgzrag2105221548.jsp) at 2010-09-22 05:25:17.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{T3D6-S1BR96LZ-0581LASF}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session was during after-hours (05:17-05:32).",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "MAS0025 connected a foreign device 5 times during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{R1Y8-T3LA16IM-6333XSRV}",
+        "{O9Z6-L0FE86DQ-2028ECQL}",
+        "{F7R5-J1VP39KO-4810KLEE}",
+        "{Y8K1-V5NM50RI-1184QDDD}",
+        "{T1P9-K5US70AH-2747VSJD}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user's typical activity during the 30 days before this session was 0.0 average file accesses and 142.95 average HTTP requests.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

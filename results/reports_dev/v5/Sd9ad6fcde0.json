@@ -1,0 +1,237 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "Sd9ad6fcde0",
+    "verdict": "benign",
+    "summary": "AJR0932 logged on to PC-4748 at 04:27 AM and performed file operations and web browsing until 06:14 AM, outside usual working hours.",
+    "claims": [
+      {
+        "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+        "type": "factual",
+        "citations": [
+          "{O9C7-Q1RV04YI-2039IQXA}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-4748",
+          "date": "2010-09-10 04:27:44"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "AJR0932 logged off at 2010-09-10 06:14:26.",
+        "type": "factual",
+        "citations": [
+          "{J8N3-O5PH44IP-8418FUNE}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-09-10 06:14:26"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 107 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 107.0
+        }
+      },
+      {
+        "text": "The session included 24 file operations.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "n_file": 24.0
+        }
+      },
+      {
+        "text": "The session involved 1 HTTP visit to a non-job-related site.",
+        "type": "factual",
+        "citations": [
+          "{I0R2-U1TQ25SQ-3537AFGU}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session involved 8 USB device connections.",
+        "type": "factual",
+        "citations": [
+          "{D4G3-V6SF83DW-3875JZLP}",
+          "{H8O9-D2EF01AS-4226KRDM}",
+          "{A2Z7-J1AF68WU-3984OQUW}",
+          "{F5N8-G4NC22KZ-5007HAJH}",
+          "{Z0B8-Y9ZI15NI-5485TDRF}",
+          "{I3I0-J9LS24JV-9418EKKT}",
+          "{O6Q6-W1RZ45BY-6824PEFY}",
+          "{X9D8-F3WJ51JW-7590LMIN"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session involved 18 file operations with .doc and .pdf files.",
+        "type": "factual",
+        "citations": [
+          "{C7T5-L9XL29JR-1694MOZH}",
+          "{B2Q8-C3XQ25NR-1552ZWQJ}",
+          "{L7C6-A8HE79TO-5089HAYZ}",
+          "{Y2U8-X6VQ75IM-2931DALW}",
+          "{Y7V1-Z8OG17BA-8907PMDG}",
+          "{A6R6-C8RK96WT-8726WTQK}",
+          "{E6K8-E8UT65PX-1315BBCD}",
+          "{V8M9-A3PJ93LI-1478QQPH}",
+          "{I0T5-B8FV29SO-4498OZPF}",
+          "{A6B3-F9GM22IV-8519EOJB}",
+          "{Y4P1-L4DZ57XX-0045XLUI}",
+          "{H9X9-A3IE57VV-0465OSDL}",
+          "{J4D6-T5TB44OK-6491QWRM}",
+          "{V2D3-K0KK12DH-2978TWUX}",
+          "{T9T5-D9SP76RI-8595ACWT}",
+          "{M5U5-N5FA17TY-1634SKKY}",
+          "{T0X8-N9UJ35ET-8460TMLP}",
+          "{O4B7-N0AD54XD-4669TEPQ}",
+          "{Z6G2-E0VJ89KI-1893QPVK"
+        ],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session involved 1 file operation with a .zip file.",
+        "type": "factual",
+        "citations": [
+          "{V2D3-K0KK12DH-2978TWUX}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename": "5YMNPAA3.zip"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session was outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session involved 21 sessions in the 30-day window, with an average of 0.0 USB connections and 0.0 file events per session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.0,
+          "avg_files": 0.0,
+          "sessions": 21.0
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "AJR0932",
+        "before": "2010-09-10 04:27:44"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "device",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 3,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "file",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 4,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "logon",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 5,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "Sd9ad6fcde0",
+        "source": "email",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 6,
+      "error": "invalid report: 10 validation errors for Report\nclaims.4.citations.0\n  Input should be a valid string [type=string_type, input_value={'id': '{I0R2-U1TQ25SQ-3537AFGU}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.0\n  Input should be a valid string [type=string_type, input_value={'id': '{D4G3-V6SF83DW-3875JZLP}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.1\n  Input should be a valid string [type=string_type, input_value={'id': '{H8O9-D2EF01AS-4226KRDM}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.2\n  Input should be a valid string [type=string_type, input_value={'id': '{A2Z7-J1AF68WU-3984OQUW}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.3\n  Input should be a valid string [type=string_type, input_value={'id': '{F5N8-G4NC22KZ-5007HAJH}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.4\n  Input should be a valid string [type=string_type, input_value={'id': '{Z0B8-Y9ZI15NI-5485TDRF}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.5\n  Input should be a valid string [type=string_type, input_value={'id': '{I3I0-J9LS24JV-9418EKKT}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.6\n  Input should be a valid string [type=string_type, input_value={'id': '{O6Q6-W1RZ45BY-6824PEFY}'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.5.citations.7\n  Input should be a valid string [type=string_type, input_value={'id': '{X9D8-F3WJ51JW-7590LMIN'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nclaims.6\n  Input should be a valid dictionary or instance of Claim [type=model_type, input_value='count: 8', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/model_type"
+    },
+    {
+      "step": 7,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 8,
+        "prompt_tokens": 75331,
+        "completion_tokens": 3106
+      },
+      "seconds": 83.6
+    }
+  ]
+}

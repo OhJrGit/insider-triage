@@ -1,0 +1,190 @@
+{
+  "reports": 49,
+  "by_mutation": {
+    "fake_id": {
+      "tried": 120,
+      "caught": 120,
+      "detection_rate": 1.0
+    },
+    "swap_citation": {
+      "tried": 120,
+      "caught": 104,
+      "detection_rate": 0.867
+    },
+    "shift_time": {
+      "tried": 72,
+      "caught": 72,
+      "detection_rate": 1.0
+    },
+    "wrong_pc": {
+      "tried": 58,
+      "caught": 57,
+      "detection_rate": 0.983
+    },
+    "wrong_count": {
+      "tried": 26,
+      "caught": 26,
+      "detection_rate": 1.0
+    },
+    "wrong_url": {
+      "tried": 27,
+      "caught": 27,
+      "detection_rate": 1.0
+    },
+    "drop_citation": {
+      "tried": 110,
+      "caught": 110,
+      "detection_rate": 1.0
+    },
+    "wrong_baseline": {
+      "tried": 39,
+      "caught": 39,
+      "detection_rate": 1.0
+    },
+    "wrong_session": {
+      "tried": 91,
+      "caught": 91,
+      "detection_rate": 1.0
+    }
+  },
+  "overall_detection_rate": 0.974,
+  "example_misses": {
+    "swap_citation": [
+      {
+        "session": "S0f24ea57cc",
+        "claim": {
+          "text": "The user had 25 file activities during the session.",
+          "type": "factual",
+          "citations": [
+            "{N0F2-K4BU24CS-0695YZUC}",
+            "{Z8Z5-W5KD18LB-6557FJBW}",
+            "{S9Y9-P7MN45RW-5037UTYD}",
+            "{M4L4-O2MX87DO-0263IZTG}",
+            "{L3Y0-M4WQ61AS-3491BLNJ}",
+            "{L8I6-P8GJ71GN-8254YJPC}",
+            "{G0A9-E5VJ22OD-0594YTYV}",
+            "{X4L6-L0WA21EH-5172DUTN}",
+            "{X3S5-K4TJ46NZ-7610SAMI}",
+            "{M0L5-B2VE98UF-8457PTKK}",
+            "{D3X5-A6GT01TT-0299HWEU}",
+            "{R4F0-A8VJ99QM-8932EKTL}",
+            "{N1T7-G4JX73JT-5592FYDV}",
+            "{F9U9-F5GJ28TW-8581YEMV}",
+            "{M8U1-I8RR60BI-0859FGPH}",
+            "{N7F6-O4OY49GC-8871HGZE}",
+            "{Q4L4-Q6GJ34RI-9242JCJQ}",
+            "{K0A0-Y8WT39HF-1713RHRS}",
+            "{K8N4-B1YS15DF-8732UGCD}",
+            "{L2J5-S0CN88ME-8328OQYX}",
+            "{J0M3-F2QH66CA-5499HAKW}",
+            "{U7K0-O9CG18DE-3241KQDB}",
+            "{H1H6-H7PQ37GQ-3407PUJY}",
+            "{Z6J1-N9MH45CP-7292OPQN}",
+            "{C3I7-B5XQ37KN-4197YYMY}"
+          ],
+          "asserted": {},
+          "count": 25,
+          "baseline": {},
+          "session": {}
+        }
+      },
+      {
+        "session": "S0f24ea57cc",
+        "claim": {
+          "text": "The session included 9 USB device connections.",
+          "type": "factual",
+          "citations": [
+            "{I8X5-P3LN41CS-9539MHEX}",
+            "{K1A9-Q1CP57QB-2565TLWO}",
+            "{E1V2-H3GR97JG-5973NKCD}",
+            "{Q3R2-L4DL67ZT-1201TGZY}",
+            "{E5R4-H9YR40WQ-1422EAVT}",
+            "{S4A5-T3KF99II-9226EAEB}",
+            "{Q8B1-S3SG07LJ-3717FCKA}",
+            "{C1N3-L4XM79IS-1940URAS}",
+            "{C4T2-S1MV49JZ-9773XGJQ}"
+          ],
+          "asserted": {},
+          "count": 9,
+          "baseline": {},
+          "session": {}
+        }
+      },
+      {
+        "session": "S0f24ea57cc",
+        "claim": {
+          "text": "The session had 1 HTTP visit, which is below the user's average.",
+          "type": "factual",
+          "citations": [
+            "{W1K9-O9UF38CG-2815FFEN}"
+          ],
+          "asserted": {},
+          "count": null,
+          "baseline": {
+            "avg_http": 6.24
+          },
+          "session": {
+            "n_http": 1.0
+          }
+        }
+      },
+      {
+        "session": "S1a7e274698",
+        "claim": {
+          "text": "The user visited job-hunt.org 7 times over the last 30 days, outside usual working hours.",
+          "type": "factual",
+          "citations": [
+            "{F9B8-D7GT91QC-6058YPLW}",
+            "{F6G0-R7IY89WX-7000YEHP}",
+            "{E3M4-L3FV18RL-0065HFHQ}",
+            "{A3Q5-O3UM39MR-4532VNWA}",
+            "{S4V8-X0JO04IP-1439GKPN}",
+            "{Q2V1-G2HW83JZ-3286HKZF}",
+            "{A1P0-M9VJ58ME-7508QKHE}"
+          ],
+          "asserted": {},
+          "count": null,
+          "baseline": {
+            "avg_http": 86.33,
+            "avg_job_site_visits": 2.625
+          },
+          "session": {}
+        }
+      },
+      {
+        "session": "S1a7e274698",
+        "claim": {
+          "text": "The session included 1 visit to job-hunt.org, outside usual working hours.",
+          "type": "factual",
+          "citations": [
+            "{O2O4-Z1GQ11FK-8057CPWU}"
+          ],
+          "asserted": {},
+          "count": null,
+          "baseline": {
+            "avg_job_site_visits": 2.625
+          },
+          "session": {}
+        }
+      }
+    ],
+    "wrong_pc": [
+      {
+        "session": "S705efed69d",
+        "claim": {
+          "text": "The session started and ended on the user's usual PC, PC-3932.",
+          "type": "factual",
+          "citations": [],
+          "asserted": {
+            "pc": "PC-37471"
+          },
+          "count": null,
+          "baseline": {
+            "usual_pc": "PC-3932"
+          },
+          "session": {}
+        }
+      }
+    ]
+  }
+}

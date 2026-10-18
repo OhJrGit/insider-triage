@@ -1,0 +1,102 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S236e8d83a2",
+    "verdict": "benign",
+    "summary": "FBA0348 logged on to PC-8486 at 19:40 and sent an internal email at 19:45, then logged off at 19:48.",
+    "claims": [
+      {
+        "text": "FBA0348 logged on to PC-8486 at 2010-10-01 19:40:01.",
+        "type": "factual",
+        "citations": [
+          "{F2X9-N6CT67WV-0165DWKQ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-8486",
+          "date": "2010-10-01 19:40:01"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FBA0348 sent an email to 7 internal recipients at 2010-10-01 19:45:53.",
+        "type": "factual",
+        "citations": [
+          "{A8K0-Q3DX55DM-3791QCFI}"
+        ],
+        "asserted": {
+          "source": "email",
+          "activity": "Send",
+          "to": "Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com",
+          "date": "2010-10-01 19:45:53"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FBA0348 logged off at 2010-10-01 19:48:03.",
+        "type": "factual",
+        "citations": [
+          "{B1I2-X3TE24CB-4083EMHJ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-10-01 19:48:03"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 8 minutes.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 8.0
+        }
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session was on the user's usual PC.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-8486"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3245,
+        "completion_tokens": 669
+      },
+      "seconds": 16.5
+    }
+  ]
+}

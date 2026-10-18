@@ -1,0 +1,100 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S5ec2e4dde4",
+    "verdict": "suspicious",
+    "summary": "WDD0366 logged on late at night and accessed multiple documents, including some with unusual filenames, outside usual working hours.",
+    "claims": [
+      {
+        "text": "WDD0366 logged on to PC-0155 at 2011-02-28 22:54:21.",
+        "type": "factual",
+        "citations": [
+          "{X0V9-M2KU18EJ-4681ZDQA}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-0155",
+          "date": "2011-02-28 22:54:21"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 10 minutes and included 2 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 10.0,
+          "n_usb_connect": 2.0
+        }
+      },
+      {
+        "text": "The user accessed 4 files, including 'YCPR5UNL.doc' and 'ADGISHHH.doc'.",
+        "type": "factual",
+        "citations": [
+          "{X2G9-J0NS01VN-4087GLNQ}",
+          "{P9H6-Z7EX88NP-3842VOQI}",
+          "{I9H6-W6ED09XS-1182IDEV}",
+          "{D8H1-F7EH59QD-0077IGOF}"
+        ],
+        "asserted": {},
+        "count": 4,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited two websites, 'wellsfargo.com' and 'slideshare.net'.",
+        "type": "factual",
+        "citations": [
+          "{I9G4-P0YM59CQ-0780DBPL}",
+          "{I4Y0-X1QL18LK-9893OGRX}"
+        ],
+        "asserted": {},
+        "count": 2,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session started at 22:54:21, which is outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 11.74
+        },
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-0155, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-0155"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 4033,
+        "completion_tokens": 576
+      },
+      "seconds": 11.9
+    }
+  ]
+}

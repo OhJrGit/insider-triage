@@ -1,0 +1,123 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S1e9f5b1ff1",
+    "verdict": "suspicious",
+    "summary": "FTM0406 accessed multiple suspicious websites and downloaded files outside usual working hours.",
+    "claims": [
+      {
+        "text": "FTM0406 logged on to PC-1786 at 2010-11-22 20:40:03.",
+        "type": "factual",
+        "citations": [
+          "{K6E0-I5FW35HS-3934ICKL}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-1786",
+          "date": "2010-11-22 20:40:03"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FTM0406 logged off at 2010-11-23 03:24:38.",
+        "type": "factual",
+        "citations": [
+          "{V8G6-W9TS19EJ-6100DXTN}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logoff",
+          "date": "2010-11-23 03:24:38"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 404 minutes and included 8 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 404.0,
+          "n_usb_connect": 8.0
+        }
+      },
+      {
+        "text": "FTM0406 visited suspicious websites multiple times, including buy.com, logmein.com, and outbrain.com.",
+        "type": "factual",
+        "citations": [
+          "{B8U7-J8SG73LD-1942ITOD}",
+          "{H0L4-R9VW59OK-5936OZER}",
+          "{F5Q4-I8WY38VJ-1327DXXO}",
+          "{F8V0-Y2HX22PL-1785RGAG}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "buy.com|logmein.com|outbrain.com"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "FTM0406 downloaded files, including .zip archives, outside usual working hours.",
+        "type": "factual",
+        "citations": [
+          "{K3N2-A9VG09WI-3357KEAY}",
+          "{X7C5-P0YQ86WY-8979CLHS}",
+          "{S9L2-V3BY74OR-3293TOPS}",
+          "{Z6R9-V4ZY79YF-9528JNVD}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File",
+          "filename_contains": ".zip|pdf"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user's usual PC is PC-1786, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-1786"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 9292,
+        "completion_tokens": 789
+      },
+      "seconds": 17.6
+    }
+  ]
+}

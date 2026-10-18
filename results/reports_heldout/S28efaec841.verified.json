@@ -1,0 +1,160 @@
+{
+  "session_id": "S28efaec841",
+  "summary": {
+    "claims": 7,
+    "verified": 2,
+    "unsupported": 4,
+    "interpretive": 1,
+    "groundedness": 0.333,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAS0025 logged on to PC-2512 at 21:52:14.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A4N7-C0LF50GZ-0027LWSN}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 124 minutes and included 5 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "MAS0025 visited 30 different websites, including suspicious ones.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "factual claim asserts no checkable field, count, baseline or session value",
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I4B3-E7AD09DQ-1000DSUY}",
+        "{I6T3-U6WX70MU-7471GPZI}",
+        "{D3H2-H9TR86DT-1640LBHH}",
+        "{K2M6-Y4EV75RM-2374YRAQ}",
+        "{S9A5-C4IC50AL-2396UGRT}",
+        "{K1N8-I7ZE63PO-3196KDQF}",
+        "{S9G9-G5VI06RS-5834NYQL}",
+        "{S0E5-J2QS68UB-7880XKXC}",
+        "{Z9R5-C7DI60EJ-4387IORL}",
+        "{L4K4-U3BT60WC-2397RCSV}",
+        "{Q1X9-F8GX31FM-0649SBCI}",
+        "{E6T0-Q2IP87PW-5237BLRZ}",
+        "{C7D1-W3JW79LM-2241OICP}",
+        "{K6B8-K8SJ77PN-5633JGVI}",
+        "{M6T0-F6VM28AF-2801EKII}",
+        "{S6L6-F6AC44CI-1236XRAS}",
+        "{T8G9-Y4KN60WX-7171PCVA}",
+        "{N5C3-L1SI12HG-2127KHBV}",
+        "{P2X8-D0IZ10LW-9846KERO}",
+        "{T4I4-J8XC29ZA-0760FAOW}",
+        "{P5Q7-N5LH87ZE-6186POCK}",
+        "{O5P3-C1EN30QJ-8897HGRI}",
+        "{Q4K4-L9ZB28WE-6293HEWM}",
+        "{L7B7-P2VX69IK-2519IBSP}",
+        "{W0L5-X2HT22XS-9725OOUO}",
+        "{E2R9-M2XP39DW-6708RICQ}",
+        "{D9E0-Z9RM65ZZ-4460GLFE}",
+        "{D8D0-C9QY01VM-4351FZUV}",
+        "{S3D7-Q5TJ69SF-8039AGIF}",
+        "{B5L7-Q8AO52QK-9033XSWT}",
+        "{W5K8-Y9DE01QE-8512ZZUE}",
+        "{Q1Z9-H7HV57KF-4642TQCH}",
+        "{Z6A3-I0RR01FT-1489YATP}",
+        "{F7C7-D2KQ80ZY-3172VEII}",
+        "{I3F7-M9PP30LN-2065BXXZ}",
+        "{C0S3-K2OU32JW-7547IMGF}",
+        "{K2J0-S3JT44CH-2165HMKS}",
+        "{J5S4-Y0GO77TF-9071MMNU}",
+        "{M9S2-X1BA36HI-3791CQXV}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "MAS0025 downloaded 19 files, including .doc and .pdf documents.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)",
+        "count says 19 but 18 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I0Q3-M6EC85ML-9302XSLC}",
+        "{K1O8-J5TO62WS-9291LHHK}",
+        "{C7S6-H1OX96VP-1918TFQD}",
+        "{N2A9-V5VK44AK-7373ALZN}",
+        "{Z0H4-D8IC29SU-8685XNBU}",
+        "{K1N8-I7ZE63PO-3196KDQF}",
+        "{F8T4-X0VU22CV-5593YJGE}",
+        "{J3H3-N2GN76YC-6637WAYU}",
+        "{G5B7-W4WR72UU-0549SKJN}",
+        "{E9K9-V6TB01NR-5848PJFI}",
+        "{R4P0-V5LN78KT-1163XEAT}",
+        "{S9G9-G5VI06RS-5834NYQL}",
+        "{S9A5-C4IC50AL-2396UGRT}",
+        "{K1N8-I7ZE63PO-3196KDQF}",
+        "{S6L6-F6AC44CI-1236XRAS}",
+        "{P2X8-D0IZ10LW-9846KERO}",
+        "{N5C3-L1SI12HG-2127KHBV}",
+        "{P7J7-I8YA77IK-1365CXQO}",
+        "{W0B2-U7AC05VA-7647KPIH}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session included 10 .zip files, suggesting potential malicious activity.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)",
+        "count says 10 but 9 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": [
+        "{F8T4-X0VU22CV-5593YJGE}",
+        "{L4K4-U3BT60WC-2397RCSV}",
+        "{S6L6-F6AC44CI-1236XRAS}",
+        "{P2X8-D0IZ10LW-9846KERO}",
+        "{W0L5-X2HT22XS-9725OOUO}",
+        "{Q1Z9-H7HV57KF-4642TQCH}",
+        "{Z6A3-I0RR01FT-1489YATP}",
+        "{F7C7-D2KQ80ZY-3172VEII}",
+        "{W5K8-Y9DE01QE-8512ZZUE}",
+        "{Q1Z9-H7HV57KF-4642TQCH}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The session occurred outside the user's usual working hours.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "unknown baseline field 'after_hours'"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

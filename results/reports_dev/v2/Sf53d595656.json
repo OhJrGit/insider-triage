@@ -1,0 +1,85 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "Sf53d595656",
+    "verdict": "suspicious",
+    "summary": "LQC0479 accessed potentially malicious websites during non-working hours.",
+    "claims": [
+      {
+        "text": "LQC0479 logged on to PC-6380 at 2010-09-14 01:37:21.",
+        "type": "factual",
+        "citations": [
+          "{C5V2-B5KM15IX-7095SXZK}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6380",
+          "date": "2010-09-14 01:37:21"
+        },
+        "count": null
+      },
+      {
+        "text": "LQC0479 accessed ups.com and vistaprint.com during the session.",
+        "type": "factual",
+        "citations": [
+          "{F0G2-X9ZO10NE-5831GAEX}",
+          "{W1O1-U3TS01FY-2846ULBG}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url_contains": "ups.com|vistaprint.com"
+        },
+        "count": null
+      },
+      {
+        "text": "The user's typical activity does not include HTTP events, especially not during non-working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "LQC0479",
+        "before": "2010-09-14 01:37:21"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_user_events",
+      "args": {
+        "user": "LQC0479",
+        "start": "2010-09-14 01:37:21",
+        "end": "2010-09-14 03:30:33",
+        "source": "http"
+      }
+    },
+    {
+      "step": 2,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "LQC0479",
+        "before": "2010-09-14 01:37:21"
+      }
+    },
+    {
+      "step": 3,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 23428,
+        "completion_tokens": 563
+      },
+      "seconds": 19.1
+    }
+  ]
+}

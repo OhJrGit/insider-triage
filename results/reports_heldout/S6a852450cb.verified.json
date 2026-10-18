@@ -1,0 +1,84 @@
+{
+  "session_id": "S6a852450cb",
+  "summary": {
+    "claims": 7,
+    "verified": 6,
+    "unsupported": 1,
+    "interpretive": 0,
+    "groundedness": 0.857,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "DRR0162 logged on to PC-5168 at 2010-11-15 07:03:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{L2Z7-T1AD62MG-7867HPVE}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "DRR0162 logged off from PC-5168 at 2010-11-15 16:13:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{P0F6-A9IR22AF-7370XGTL}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 550 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "DRR0162 visited 124 websites during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "DRR0162 sent 11 emails during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "DRR0162 visited job-related websites 5 times.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session included 1 USB connection.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{Q6M4-H9NL06OV-1423DFQS}"
+      ]
+    }
+  ]
+}

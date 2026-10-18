@@ -1,0 +1,81 @@
+{
+  "session_id": "S5ec2e4dde4",
+  "summary": {
+    "claims": 6,
+    "verified": 4,
+    "unsupported": 2,
+    "interpretive": 0,
+    "groundedness": 0.667,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "WDD0366 logged on to PC-0155 at 2011-02-28 22:54:21.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{X0V9-M2KU18EJ-4681ZDQA}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 10 minutes and included 2 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The user accessed 4 files, including 'YCPR5UNL.doc' and 'ADGISHHH.doc'.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{X2G9-J0NS01VN-4087GLNQ}",
+        "{P9H6-Z7EX88NP-3842VOQI}",
+        "{I9H6-W6ED09XS-1182IDEV}",
+        "{D8H1-F7EH59QD-0077IGOF}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "The user visited two websites, 'wellsfargo.com' and 'slideshare.net'.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I9G4-P0YM59CQ-0780DBPL}",
+        "{I4Y0-X1QL18LK-9893OGRX}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The session started at 22:54:21, which is outside the user's usual working hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The user's usual PC is PC-0155, which was used in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

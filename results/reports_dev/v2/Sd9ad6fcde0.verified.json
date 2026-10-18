@@ -1,0 +1,52 @@
+{
+  "session_id": "Sd9ad6fcde0",
+  "summary": {
+    "claims": 4,
+    "verified": 2,
+    "unsupported": 0,
+    "interpretive": 2,
+    "groundedness": 1.0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "AJR0932 logged on to PC-4748 at 2010-09-10 04:27:44.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{O9C7-Q1RV04YI-2039IQXA}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "AJR0932 accessed the URL 'http://autotrader.com/July_2009_rmqi_riots/uyghur/qngnonfr698395983.asp' at 2010-09-10 05:40:20.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{I0R2-U1TQ25SQ-3537AFGU}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "AJR0932's usual working hours are from 7:24 to 16:26, but this session started at 4:27 AM.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "AJR0932 usually does not access any external websites, but visited one during this session.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

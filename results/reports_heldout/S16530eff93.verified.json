@@ -1,0 +1,80 @@
+{
+  "session_id": "S16530eff93",
+  "summary": {
+    "claims": 6,
+    "verified": 3,
+    "unsupported": 3,
+    "interpretive": 0,
+    "groundedness": 0.5,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MAR0955 logged on to PC-6793 at 2011-02-15 18:40:15.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{V6O5-M4NS68YH-2899GMQB}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 54 minutes, which is longer than the user's average session duration of 32.2 hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "MAR0955 accessed two suspicious websites: mediafire.com and orbitz.com during the session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {H2W0-T4AH53FF-9034ZWEN}: claimed 'orbitz.com', log says 'http://mediafire.com/Atom/corpuscularianism/cnvagonyy647150019.aspx'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{H2W0-T4AH53FF-9034ZWEN}",
+        "{P2R5-D6PM58PL-0596FNOA}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "MAR0955 connected and disconnected a removable device 8 times, which is more than the user's average of 0.3 connections per session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "asserted fields but no cited events to check them against",
+        "count says 8 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "MAR0955 handled 24 files, including 2 .zip files, which is more than the user's average of 0.923 files per session.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "asserted fields but no cited events to check them against",
+        "count says 24 but 0 distinct events are cited"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session started at 18:40, which is outside the user's usual working hours of 06:00 to 14:56.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

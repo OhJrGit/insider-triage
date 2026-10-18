@@ -1,0 +1,104 @@
+{
+  "session_id": "S1fee51f845",
+  "summary": {
+    "claims": 8,
+    "verified": 5,
+    "unsupported": 2,
+    "interpretive": 1,
+    "groundedness": 0.714,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "EDB0714 logged on to PC-6103 at 2010-10-19 07:41:00.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{B3I4-R6UC21SO-7156YPLS}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 547 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "EDB0714 visited hacker-related sites 1 time.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {F5C4-F2JY21SI-7916VSKT}: claimed 'hacker', log says 'http://fatwallet.com/Ethan_Hawke/linklater/gbbyf1525921859.asp'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{F5C4-F2JY21SI-7916VSKT}"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "EDB0714 visited job-related sites 5 times.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {X0J5-V6SU11RV-8236RTVJ}: claimed 'job', log says 'http://simplyhired.com/WboUhagvat57469130.jsp'",
+        "url_contains mismatch on {N2W7-E6WB23BE-6755ADUG}: claimed 'job', log says 'http://lockheedmartin.com/WboUhagvat1636367808.htm'",
+        "url_contains mismatch on {O9K1-G4YI20MX-7766QBZO}: claimed 'job', log says 'http://nfl.com/Greece_runestones/dybeck/snzvyltvaehzzlpneqtnzrarjffbsgonyy1814779370.jsp'"
+      ],
+      "warnings": [],
+      "citations": [
+        "{I5M6-P9KG46UR-8312EPBS}",
+        "{X0J5-V6SU11RV-8236RTVJ}",
+        "{V8Q9-D9BO77SJ-2116NYTT}",
+        "{N2W7-E6WB23BE-6755ADUG}",
+        "{O9K1-G4YI20MX-7766QBZO}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "EDB0714 used a removable device 2 times.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A8C5-N7CB01AL-2742DHZD}",
+        "{I5E3-N0AP62AF-6107PELD}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The user's usual working hours are 07:30 to 16:30.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "This activity is within the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The session included 19 web visits, 1 file event, and 1 email.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

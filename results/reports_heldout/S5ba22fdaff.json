@@ -1,0 +1,124 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S5ba22fdaff",
+    "verdict": "suspicious",
+    "summary": "User AAM0658 logged on at 04:31, used PC-9923, and accessed files outside usual working hours. Visited an unusual website.",
+    "claims": [
+      {
+        "text": "User AAM0658 logged on to PC-9923 at 2010-10-27 04:31:52.",
+        "type": "factual",
+        "citations": [
+          "{Q7J2-R0UY09AF-7403UNWV}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-9923",
+          "date": "2010-10-27 04:31:52"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "A removable device was connected once.",
+        "type": "factual",
+        "citations": [
+          "{G0R8-K2YH87AK-9571JLRM}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 1,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user accessed 9 files, mostly documents and a PDF.",
+        "type": "factual",
+        "citations": [
+          "{G0Q5-N0UW21VO-4948EJCU}",
+          "{W6R7-L5HC56RT-3206GSXI}",
+          "{C8J4-Y0MU84TC-0185HROY}",
+          "{X3W4-T3VN21FH-3889ISYA}",
+          "{I6H8-T9IQ99SB-0249LRTB}",
+          "{M1E2-M5BV54TM-8233PQBV}",
+          "{K4K2-N9YE23GA-1283WMYN}",
+          "{O2B9-P4GJ93TA-5079KFPZ}",
+          "{H1H3-P6XX99HI-4192PSDG}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 9,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user visited an unusual website at 05:16:03.",
+        "type": "factual",
+        "citations": [
+          "{Z3Y7-I3OA88AP-9440ZAYH}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://amazon.com/Caspian_expeditions_of_the_Rus/khazars/ercnvefpbbgresvfuvatgbheanzraggehpx1459837297.jsp"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 83 minutes and included 1 web visit.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 83.0,
+          "n_http": 1
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "Over the previous 30 days the user averaged 0.167 USB connections and started work around 08:51.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_usb_connects": 0.167,
+          "avg_start_hour": 8.51
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 4205,
+        "completion_tokens": 836
+      },
+      "seconds": 12.7
+    }
+  ]
+}

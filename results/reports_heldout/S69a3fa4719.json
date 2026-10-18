@@ -1,0 +1,133 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=32768)",
+  "report": {
+    "session_id": "S69a3fa4719",
+    "verdict": "benign",
+    "summary": "MAR0955 logged on to PC-6793 at 03:51 AM, accessed several documents and files, and visited a website outside office hours on a weekend.",
+    "claims": [
+      {
+        "text": "MAR0955 logged on to PC-6793 at 2011-02-05 03:51:03.",
+        "type": "factual",
+        "citations": [
+          "{B3M8-Z9NE99FJ-8840HUDZ}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6793",
+          "date": "2011-02-05 03:51:03"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 accessed 24 files, including .doc and .pdf documents, and one .zip file.",
+        "type": "factual",
+        "citations": [
+          "{O2C5-V7HS42TY-8817NGUU}",
+          "{R0T1-J3CC96RM-9077AFWE}",
+          "{A8A5-U9JX13DW-9111JQMI}",
+          "{B3G8-F1HP62JH-4870YAKM}",
+          "{V6I4-M0VU06AL-7561YMLD}",
+          "{Z4K2-J2UA52HX-2821AYCV}",
+          "{J8Q5-T6UY17SY-4789USMU}",
+          "{D9C9-N2CT18YS-7497XKYV}",
+          "{Y0U7-Q1II25BB-1713RTKB}",
+          "{U7D7-L1EG98OP-1834RLQH}",
+          "{S2Y8-U4IA63QM-9221YRLN}",
+          "{N1Y1-N1SB97DZ-7761WEME}",
+          "{S9C4-F1CV75GI-4969RTYI}",
+          "{S0P3-B7KL74EO-1634IKMM}",
+          "{V1Q4-W1BZ37IX-5125LPPA}",
+          "{A5Q5-X6CG74JC-7973BEHP}",
+          "{L4L1-L3FF00DN-7939OMQI}",
+          "{U0Q8-V4CO94ED-6107MCSA}",
+          "{L5J3-T0KK33MX-9081BQBP}",
+          "{W1T3-W8KS92LK-8501WWZW}",
+          "{V6T9-F9QY48JP-9226BGBN}",
+          "{T0J1-S6VP28JK-5692NJHS}",
+          "{G2T5-J1XV30IP-8192VKCV}",
+          "{T2X0-S0AI83SA-6083VDVM}",
+          "{M4I2-N3XM52AU-3349QSUH}",
+          "{D9O1-H2KD99KC-8968AOEO}",
+          "{T5K9-Q6DB46SX-9328KGUF}",
+          "{B2F4-K8SG38RA-2544FCOL}",
+          "{J4C2-C7GF27GX-7280ULVV}",
+          "{D6G1-O6KP27BM-4246PQGV}",
+          "{U8E2-Z7LW66QJ-7644DRXU}",
+          "{H9Y3-N0XZ81RG-5389FJBW}",
+          "{P3R6-G4HO66CN-5483RDJK}"
+        ],
+        "asserted": {
+          "source": "file",
+          "activity": "File"
+        },
+        "count": 24,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "MAR0955 visited a website at 2011-02-05 03:57:18.",
+        "type": "factual",
+        "citations": [
+          "{U0Q8-V4CO94ED-6107MCSA}"
+        ],
+        "asserted": {
+          "source": "http",
+          "activity": "Visit",
+          "url": "http://sina.com.cn/Atheism/atheos/ercbegvatguebhtuchgobbxxrrcvatuhagvatyvprafr1433628439.htm"
+        },
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The session lasted 12 minutes and included 5 USB connections.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {
+          "duration_min": 12.0,
+          "n_usb_connect": 5.0
+        }
+      },
+      {
+        "text": "This activity is outside the user's usual working hours.",
+        "type": "interpretive",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {},
+        "session": {}
+      },
+      {
+        "text": "The user normally uses PC-6793.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-6793"
+        },
+        "session": {}
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 6150,
+        "completion_tokens": 1259
+      },
+      "seconds": 29.6
+    }
+  ]
+}

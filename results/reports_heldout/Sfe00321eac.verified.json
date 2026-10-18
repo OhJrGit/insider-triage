@@ -1,0 +1,102 @@
+{
+  "session_id": "Sfe00321eac",
+  "summary": {
+    "claims": 9,
+    "verified": 9,
+    "unsupported": 0,
+    "interpretive": 0,
+    "groundedness": 1.0,
+    "warnings": 1
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "DCH0843 logged on to PC-8720 at 2011-02-02 00:09:58.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{A6D5-O7BB01AO-4001ASRM}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "DCH0843 logged off at 2011-02-02 06:48:31.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{K6S3-P2XF03AG-6796SFNI}"
+      ]
+    },
+    {
+      "index": 2,
+      "text": "The session lasted 399 minutes.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The session included 6 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The session included 5 file events, including 1 archive file.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session included 1 HTTP visit to a non-work-related website.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [
+        "asserted url='http://buzzfeed.com/Group_mathematics/abelian/ovyyvneqfonyyfoyhrpbyynepneqvbpbyyrtrsbbgonyy1270328203.html' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{Y4E7-Y8IT49DX-1564AKMA}"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "The user's usual working hours are 8:00 to 19:00, and this session was outside those hours.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 7,
+      "text": "The user usually does not use USB devices, but 6 were connected during this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 8,
+      "text": "The user usually handles 0.833 files per session, but handled 5 files in this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "session_id": "S613539532f",
+  "summary": {
+    "claims": 7,
+    "verified": 3,
+    "unsupported": 2,
+    "interpretive": 2,
+    "groundedness": 0.6,
+    "warnings": 2
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "KLH0596 logged on to PC-0132 at 2011-02-07 22:05:48.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{S8I2-E9ZM60AA-8426USWW}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 141 minutes and included 9 USB connections.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "KLH0596 visited two websites outside their usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [
+        "interpretive claim states specific numbers/times that nobody checks; make it factual"
+      ],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "The user accessed 26 files, which is above their average of 2.3 files per session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 4,
+      "text": "The user visited the following URLs: ksl.com and fatwallet.com.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "url_contains mismatch on {J2X1-N6PV07NM-1082CQER}: claimed 'ksl.com|fatwallet.com', log says 'http://ksl.com/Conservation_of_slow_lorises/jwcs/onfronyy1170662394.php'",
+        "url_contains mismatch on {Q5F4-K1WK50EM-9471UFDE}: claimed 'ksl.com|fatwallet.com', log says 'http://fatwallet.com/Michael_Gomez/featherweight/fbsgonyyfpbbgrejngrecbybtbyspyhof747514707.asp'"
+      ],
+      "warnings": [
+        "asserted url_contains='ksl.com|fatwallet.com' is not mentioned in the claim text"
+      ],
+      "citations": [
+        "{J2X1-N6PV07NM-1082CQER}",
+        "{Q5F4-K1WK50EM-9471UFDE}"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "Over the previous 30 days the user averaged 0.783 USB connections and started work around 09:40.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "baseline avg_usb_connects mismatch: claimed 0.783, logs say 0.409",
+        "baseline avg_start_hour mismatch: claimed 9.67, logs say 9.1"
+      ],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}

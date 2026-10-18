@@ -1,0 +1,116 @@
+{
+  "backend": "ollama:qwen2.5:7b (num_ctx=16384)",
+  "report": {
+    "session_id": "S5a3afaba3a",
+    "verdict": "suspicious",
+    "summary": "GHL0460 logged on late at night, accessed an unusual URL, and connected multiple removable devices.",
+    "claims": [
+      {
+        "text": "GHL0460 logged on to PC-6255 at 2010-11-12 22:51:26.",
+        "type": "factual",
+        "citations": [
+          "{J6A8-V1GP82TI-3617KGVX}"
+        ],
+        "asserted": {
+          "source": "logon",
+          "activity": "Logon",
+          "pc": "PC-6255",
+          "date": "2010-11-12 22:51:26"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "The session started outside the user's usual working hours.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "avg_start_hour": 7.67
+        }
+      },
+      {
+        "text": "GHL0460 accessed the URL http://citibank.com/Ernest_Joyce/joyce/zlfgrelgragguebhtuchgurnegfpneqtnzr930968313.php.",
+        "type": "factual",
+        "citations": [
+          "{J5Q3-V9MH28FH-6538RFQV}"
+        ],
+        "asserted": {
+          "source": "http",
+          "url": "http://citibank.com/Ernest_Joyce/joyce/zlfgrelgragguebhtuchgurnegfpneqtnzr930968313.php"
+        },
+        "count": null,
+        "baseline": {}
+      },
+      {
+        "text": "GHL0460 connected 6 removable devices during the session.",
+        "type": "factual",
+        "citations": [
+          "{A5P9-X0HE25LH-6158QNPU}",
+          "{M6Q3-F8YW70EJ-2694IQPQ}",
+          "{C8T6-T5JZ36AF-5752NYLI}",
+          "{B0I6-D8PX36HF-0365PCRK}",
+          "{D6L5-X0TA48ZD-4257KJDJ}",
+          "{A1Z8-C1TW58IS-6037DKPQ}"
+        ],
+        "asserted": {
+          "source": "device",
+          "activity": "Connect"
+        },
+        "count": 6,
+        "baseline": {}
+      },
+      {
+        "text": "The user's usual PC is PC-6255, which was used in this session.",
+        "type": "factual",
+        "citations": [],
+        "asserted": {},
+        "count": null,
+        "baseline": {
+          "usual_pc": "PC-6255"
+        }
+      }
+    ]
+  },
+  "trace": [
+    {
+      "step": 0,
+      "tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-12 22:51:26"
+      }
+    },
+    {
+      "step": 1,
+      "tool": "get_session_events",
+      "args": {
+        "session_id": "S5a3afaba3a",
+        "source": "http",
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "step": 2,
+      "repeated_tool": "get_user_baseline",
+      "args": {
+        "user": "GHL0460",
+        "before": "2010-11-12 22:51:26"
+      }
+    },
+    {
+      "step": 3,
+      "final": true
+    },
+    {
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 23117,
+        "completion_tokens": 842
+      },
+      "seconds": 27.0
+    }
+  ]
+}

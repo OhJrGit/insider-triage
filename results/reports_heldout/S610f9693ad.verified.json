@@ -1,0 +1,93 @@
+{
+  "session_id": "S610f9693ad",
+  "summary": {
+    "claims": 8,
+    "verified": 6,
+    "unsupported": 1,
+    "interpretive": 1,
+    "groundedness": 0.857,
+    "warnings": 0
+  },
+  "claims": [
+    {
+      "index": 0,
+      "text": "MYD0978 logged on to PC-3401 at 2010-12-13 20:30:07.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{U7T6-S1OK45TH-7991HXBL}"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The session lasted 612 minutes, which is 102 minutes longer than the user's average.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 2,
+      "text": "The session started at 20:30, which is 2 hours and 30 minutes after the user's usual start time.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 3,
+      "text": "MYD0978 accessed a known leak site, wikileaks.org, during the session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": [
+        "{M4M6-R5UR00FF-3309UUMD}"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "The user's usual PC was PC-3401, which was used for this session.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 5,
+      "text": "The session included 37 web visits, which is 26 more than the user's average.",
+      "type": "factual",
+      "status": "verified",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    },
+    {
+      "index": 6,
+      "text": "The session included 1 visit to a leak site, which is 1 more than the user's average.",
+      "type": "factual",
+      "status": "unsupported",
+      "reasons": [
+        "cited events are not described by any asserted field (only their existence could be checked)"
+      ],
+      "warnings": [],
+      "citations": [
+        "{M4M6-R5UR00FF-3309UUMD}"
+      ]
+    },
+    {
+      "index": 7,
+      "text": "This activity is outside the user's usual working hours.",
+      "type": "interpretive",
+      "status": "interpretive",
+      "reasons": [],
+      "warnings": [],
+      "citations": []
+    }
+  ]
+}
