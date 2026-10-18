@@ -53,6 +53,8 @@ def cmd_detect_seeds(a):
     cfg = detect.DetectConfig(train_frac=a.train_frac, models=tuple(a.models), top_k=a.top_k)
     res = detect.run_seeds(db.connect(a.db, read_only=True), cfg, a.seeds)
     for name, m in res["models"].items():
+        if name not in a.models:
+            continue
         k = f"insiders_caught@{a.top_k}"
         print(f"  {name:<12} ROC-AUC {m['roc_auc']['mean']:.3f}±{m['roc_auc']['std']:.3f}  "
               f"PR-AUC {m['pr_auc']['mean']:.3f}±{m['pr_auc']['std']:.3f}  "
@@ -181,6 +183,8 @@ def cmd_score_claims(a):
 
 
 def main():
+    import faulthandler
+    faulthandler.enable()          # print a traceback even if a native library crashes
     ap = argparse.ArgumentParser(description="Agentic insider-threat triage pipeline")
     ap.add_argument("--db", default=None, help=f"DuckDB path (default {config.DB_PATH})")
     sub = ap.add_subparsers(dest="cmd", required=True)

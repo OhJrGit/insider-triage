@@ -21,9 +21,7 @@ from . import config
 
 MAX_LEN = 128
 
-TOKEN_SQL = f"""
-WITH t AS (
-  SELECT session_id, ts, id,
+TOKEN_EXPR = f"""
     CASE
       WHEN source = 'logon'  THEN lower(activity)
       WHEN source = 'device' THEN CASE WHEN activity = 'Connect' THEN 'usb_on' ELSE 'usb_off' END
@@ -41,10 +39,24 @@ WITH t AS (
       ELSE source END
     || '|' || CASE WHEN isodow(ts) >= 6 THEN 'wkend'
                    WHEN hour(ts) < 6 THEN 'night' WHEN hour(ts) < 12 THEN 'am'
-                   WHEN hour(ts) < 18 THEN 'pm' ELSE 'eve' END AS tok
-  FROM events WHERE session_id IS NOT NULL
+                   WHEN hour(ts) < 18 THEN 'pm' ELSE 'eve' END
+"""
+
+# Consecutive repeats are collapsed and each session truncated to MAX_LEN - 1 tokens inside
+# DuckDB, so only short lists ever reach Python (building full lists of all ~32M events first
+# exhausted memory on a 16-32 GB PC).
+TOKEN_SQL = f"""
+WITH t AS (
+  SELECT session_id, ts, id, {TOKEN_EXPR} AS tok FROM events WHERE session_id IS NOT NULL
+), d AS (
+  SELECT session_id, ts, id, tok,
+         lag(tok) OVER (PARTITION BY session_id ORDER BY ts, id) AS prev FROM t
+), k AS (
+  SELECT session_id, ts, id, tok,
+         row_number() OVER (PARTITION BY session_id ORDER BY ts, id) AS rn
+  FROM d WHERE prev IS NULL OR prev <> tok
 )
-SELECT session_id, list(tok ORDER BY ts, id) AS toks FROM t GROUP BY session_id
+SELECT session_id, list(tok ORDER BY ts, id) AS toks FROM k WHERE rn < {MAX_LEN} GROUP BY session_id
 """
 
 
@@ -106,15 +118,22 @@ def torch_ae_scores(Xtr: np.ndarray, Xte: np.ndarray, seed: int = 42, epochs: in
 
 
 # ------------------------------------------------------------------------------- sequences
-def load_sequences(con) -> dict[str, list[str]]:
-    """session_id -> token list (consecutive repeats collapsed, truncated to MAX_LEN - 1)."""
+def load_sequences(con, memory_limit: str = "6GB") -> dict[str, list[str]]:
+    """session_id -> token list (consecutive repeats collapsed, truncated to MAX_LEN - 1).
+    DuckDB is capped at `memory_limit` and spills to work/duckdb_tmp/ instead of exhausting RAM."""
+    tmp = config.WORK_DIR / "duckdb_tmp"
+    tmp.mkdir(parents=True, exist_ok=True)
+    con.execute(f"SET memory_limit = '{memory_limit}'")
+    con.execute(f"SET temp_directory = '{tmp.as_posix()}'")
+    con.execute("SET preserve_insertion_order = false")
     seqs = {}
-    for sid, toks in con.execute(TOKEN_SQL).fetchall():
-        out = []
-        for t in toks:
-            if not out or out[-1] != t:
-                out.append(t)
-        seqs[sid] = out[: MAX_LEN - 1]
+    cur = con.execute(TOKEN_SQL)
+    while True:
+        rows = cur.fetchmany(50_000)
+        if not rows:
+            break
+        for sid, toks in rows:
+            seqs[sid] = list(toks)
     return seqs
 
 

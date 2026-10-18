@@ -156,6 +156,20 @@ def run(con, cfg: DetectConfig = DetectConfig()) -> dict:
     return metrics
 
 
+def _summarise(runs: list[dict]) -> dict:
+    summ = {}
+    for key in runs[0]:
+        vals = [r[key] for r in runs]
+        if isinstance(vals[0], float):
+            summ[key] = {"mean": round(float(np.mean(vals)), 4),
+                         "std": round(float(np.std(vals, ddof=1)), 4) if len(vals) > 1 else 0.0}
+        elif isinstance(vals[0], str) and "/" in vals[0]:
+            caught = [int(v.split("/")[0]) for v in vals]
+            summ[key] = {"mean": round(float(np.mean(caught)), 1), "min": min(caught), "max": max(caught),
+                         "of": vals[0].split("/")[1]}
+    return summ
+
+
 def run_seeds(con, cfg: DetectConfig, seeds: list[int]) -> dict:
     """Repeat training/scoring with several random seeds and report mean / std per metric.
     Read-only: does NOT touch the scores/alerts tables, so the alerts the agent was evaluated
@@ -172,26 +186,25 @@ def run_seeds(con, cfg: DetectConfig, seeds: list[int]) -> dict:
     ks = sorted({k for k in (10, 50, 100, cfg.top_k) if k <= len(test)})
     per = {m: [] for m in cfg.models}
     ctx = {"con": con, "train_ids": train.session_id.tolist(), "test_ids": test.session_id.tolist()}
+    path = config.WORK_DIR / "detector_seeds.json"
+    config.ensure_dirs()
+    out = {"seeds": seeds, "split_time": str(cut), "n_test": len(test), "models": {}}
+    if path.exists():                                   # merge, so running a subset of models
+        try:                                            # never erases the others' results
+            old = json.loads(path.read_text())
+            if old.get("split_time") == out["split_time"] and old.get("n_test") == out["n_test"]:
+                out["models"] = old.get("models", {})
+        except (ValueError, OSError):
+            pass
     for sd in seeds:
         c = replace(cfg, seed=sd)
         for name in cfg.models:
             per[name].append(_metrics(test, _fit_score(name, Xtr, Xte, c, ctx), ks))
             m = per[name][-1]
             print(f"  seed {sd} {name:<12} ROC {m['roc_auc']:.3f} PR {m['pr_auc']:.3f} "
-                  f"P@{ks[-1]} {m[f'precision@{ks[-1]}']:.3f} insiders {m[f'insiders_caught@{ks[-1]}']}")
-    out = {"seeds": seeds, "split_time": str(cut), "n_test": len(test), "models": {}}
-    for name, runs in per.items():
-        summ = {}
-        for key in runs[0]:
-            vals = [r[key] for r in runs]
-            if isinstance(vals[0], float):
-                summ[key] = {"mean": round(float(np.mean(vals)), 4), "std": round(float(np.std(vals, ddof=1)), 4)
-                             if len(vals) > 1 else 0.0}
-            elif isinstance(vals[0], str) and "/" in vals[0]:
-                caught = [int(v.split("/")[0]) for v in vals]
-                summ[key] = {"mean": round(float(np.mean(caught)), 1), "min": min(caught), "max": max(caught),
-                             "of": vals[0].split("/")[1]}
-        out["models"][name] = summ
-    config.ensure_dirs()
-    (config.WORK_DIR / "detector_seeds.json").write_text(json.dumps(out, indent=2))
+                  f"P@{ks[-1]} {m[f'precision@{ks[-1]}']:.3f} insiders {m[f'insiders_caught@{ks[-1]}']}",
+                  flush=True)
+            out["models"][name] = _summarise(per[name])
+            out["models"][name]["seeds_done"] = len(per[name])
+            path.write_text(json.dumps(out, indent=2))   # saved after every run
     return out
