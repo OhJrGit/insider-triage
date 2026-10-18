@@ -1,7 +1,7 @@
 """Human pilot study UI:  streamlit run app/pilot.py
 
 Prepare the cases once first:  python cli.py pilot-prepare --cases 8
-Responses are appended to work/pilot/responses.csv; analyse with:  python cli.py pilot-analyze
+Responses are appended to work/pilot/responses.csv (what was opened: interactions.csv); analyse with:  python cli.py pilot-analyze
 """
 import sys
 import time
@@ -92,6 +92,8 @@ sid = case["session_id"]
 key = f"start_{pid}_{case['case_no']}"
 if key not in ss:
     ss[key] = time.time()
+seen = ss.setdefault(f"seen_{pid}_{case['case_no']}", set())   # what was opened before deciding
+with_evidence = {}                                               # claim index -> status
 
 st.progress((len(plan) - len(remaining)) / len(plan),
             text=f"Alert {len(plan) - len(remaining) + 1} of {len(plan)}")
@@ -122,13 +124,18 @@ if case["condition"] == "B_report":
         box(f"**{label[c['status']]}** · {c['text']}")
         rows = [cited[x] for x in c["citations"] if x in cited]
         if rows or c["reasons"]:
-            with st.expander("evidence"):
+            # a toggle rather than an expander so we can record whether the evidence was looked at
+            with_evidence[c["index"]] = c["status"]
+            if st.toggle("show evidence", key=f"ev_{pid}_{case['case_no']}_{c['index']}"):
+                seen.add(c["index"])
                 for r in c["reasons"]:
                     st.markdown(f"- {r}")
                 if rows:
                     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
-with st.expander("Raw event log for this session", expanded=case["condition"] == "A_alert_only"):
+if st.toggle("Show raw event log for this session", value=case["condition"] == "A_alert_only",
+             key=f"log_{pid}_{case['case_no']}"):
+    seen.add("log")
     ev = con.execute("SELECT ts, source, activity, detail FROM events WHERE session_id = ? ORDER BY ts",
                      [sid]).df()
     st.dataframe(ev, hide_index=True, width="stretch", height=350)
@@ -138,4 +145,8 @@ decision = st.radio("Is this a real insider threat?", ["insider", "not insider"]
 confidence = st.slider("How confident are you?", 1, 5, 3, help="1 = guessing, 5 = certain")
 if st.button("Submit and continue", disabled=decision is None, type="primary"):
     pilot.record(pid, case, decision, confidence, time.time() - ss[key])
+    statuses = list(with_evidence.values())
+    pilot.record_interactions(pid, case, "log" in seen, {s: statuses.count(s) for s in pilot.STATUSES},
+                              {s: sum(1 for i, st_ in with_evidence.items() if st_ == s and i in seen)
+                               for s in pilot.STATUSES})
     st.rerun()
