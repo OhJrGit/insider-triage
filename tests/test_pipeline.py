@@ -321,6 +321,7 @@ def test_pilot_flow(con, tmp_path, monkeypatch):
     monkeypatch.setattr(pilot, "CASES", tmp_path / "pilot" / "cases.json")
     monkeypatch.setattr(pilot, "RESPONSES", tmp_path / "pilot" / "responses.csv")
     monkeypatch.setattr(pilot, "SURVEY", tmp_path / "pilot" / "survey.csv")
+    monkeypatch.setattr(pilot, "INTERACTIONS", tmp_path / "pilot" / "interactions.csv")
     ins = [r[0] for r in con.execute("SELECT session_id FROM features WHERE label = 1 LIMIT 2").fetchall()]
     ben = [r[0] for r in con.execute("SELECT session_id FROM features WHERE label = 0 LIMIT 2").fetchall()]
     for sid in ins + ben:
@@ -331,14 +332,42 @@ def test_pilot_flow(con, tmp_path, monkeypatch):
     for p in range(1, 7):
         plan = pilot.schedule(p, cases)
         assert sorted(c["condition"] for c in plan).count("B_report") == 2   # half/half
+        # ...and half of the insiders / half of the benign cases in each condition
+        assert sorted((c["label"], c["condition"]) for c in plan) == [
+            (0, "A_alert_only"), (0, "B_report"), (1, "A_alert_only"), (1, "B_report")]
         for c in plan:
             pilot.record(p, c, "insider" if c["condition"] == "B_report" else "not insider", 3, 10.0)
+            pilot.record_interactions(p, c, c["condition"] == "A_alert_only",
+                                      {"verified": 3, "unsupported": 1} if c["condition"] == "B_report" else {},
+                                      {"verified": 1, "unsupported": 1} if c["condition"] == "B_report" else {})
     assert pilot.done_cases(1) == {0, 1, 2, 3}
     res = pilot.analyze(pilot.RESPONSES)
     assert res["participants"] == 6 and "wilcoxon_p" in res
+    # B: everything flagged (all hits, all false alarms); A: nothing flagged. Same accuracy, opposite bias
+    a, b = res["by_condition"]["A_alert_only"], res["by_condition"]["B_report"]
+    assert a["accuracy"] == b["accuracy"] == 0.5
+    assert (b["hit_rate"], b["false_alarm_rate"], a["hit_rate"], a["false_alarm_rate"]) == (1.0, 1.0, 0.0, 0.0)
+    assert a["d_prime"] == b["d_prime"] == 0.0 and b["criterion_c"] < 0 < a["criterion_c"]
+    ev = res["evidence_checking"]
+    assert ev["verified_claims_opened"] == "12/36" and ev["unsupported_open_rate"] == 1.0
+    assert ev["raw_log_opened_rate"] == {"A_alert_only": 1.0, "B_report": 0.0}
     # every case shown in both conditions across participants
     seen = {(c["case_no"], c["condition"]) for p in range(1, 7) for c in pilot.schedule(p, cases)}
     assert len(seen) == 8
+
+
+def test_pilot_outcomes():
+    from triage.pilot import outcomes
+
+    def rows(hits, misses, fas, crs):
+        return ([{"decision": "insider", "correct": 1}] * hits + [{"decision": "not insider", "correct": 0}] * misses
+                + [{"decision": "insider", "correct": 0}] * fas + [{"decision": "not insider", "correct": 1}] * crs)
+    a, b = outcomes(rows(12, 8, 8, 12)), outcomes(rows(16, 4, 13, 7))
+    assert (a["hit_rate"], a["false_alarm_rate"], b["hit_rate"], b["false_alarm_rate"]) == (0.6, 0.4, 0.8, 0.65)
+    assert a["criterion_c"] == 0.0 and b["criterion_c"] < -0.5        # B: much quicker to say "insider"
+    assert abs(a["d_prime"] - b["d_prime"]) < 0.15                    # ...but not better at telling them apart
+    perfect = outcomes(rows(5, 0, 0, 5))                              # rates of 1 and 0 stay finite
+    assert 0 < perfect["d_prime"] < 4 and perfect["criterion_c"] == 0.0
 
 
 def test_event_sequences(con):

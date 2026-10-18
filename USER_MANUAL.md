@@ -215,9 +215,18 @@ is the verified report. The agent's own verdict is never shown.
    plus confidence 1–5). The time per alert is recorded automatically. A short questionnaire follows.
 5. `python cli.py pilot-analyze` reports accuracy, time and confidence per condition, the paired
    difference for each participant, and Wilcoxon signed-rank p-values once there are 5 or more
-   participants.
+   participants. It also splits decisions into hits and false alarms and gives the signal-detection
+   measures **d′** (how well insiders are told apart from benign sessions) and **c** (bias: below 0
+   means quicker to say "insider"), so it can tell "the report made people better" apart from "the
+   report made people flag more". `evidence_checking` shows how often participants opened the evidence
+   behind verified, unsupported and interpretive claims.
 
-Responses are stored in `work/pilot/responses.csv` and `work/pilot/survey.csv`. No names are
+Each participant gets half the insider cases and half the benign cases with the report, so the two
+conditions have the same case mix. Don't change the code mid-study: a participant's case order and
+conditions come from the code, so resuming under a different version would mix two schedules.
+
+Responses are stored in `work/pilot/responses.csv`, `work/pilot/interactions.csv` (what was opened)
+and `work/pilot/survey.csv`. No names are
 collected. Check with the course team whether a consent form is required.
 
 ## 9. Command reference
