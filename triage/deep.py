@@ -118,22 +118,41 @@ def torch_ae_scores(Xtr: np.ndarray, Xte: np.ndarray, seed: int = 42, epochs: in
 
 
 # ------------------------------------------------------------------------------- sequences
-def load_sequences(con, memory_limit: str = "6GB") -> dict[str, list[str]]:
+def load_sequences(con, memory_limit: str | None = None, n_buckets: int | None = None) -> dict[str, list[str]]:
     """session_id -> token list (consecutive repeats collapsed, truncated to MAX_LEN - 1).
-    DuckDB is capped at `memory_limit` and spills to work/duckdb_tmp/ instead of exhausting RAM."""
+
+    The per-session list() aggregate cannot spill to disk, so doing all ~470k sessions in one query needs
+    several GB. Instead the sessions are split into `n_buckets` groups by hash(session_id) and each group is
+    built by its own query, which keeps peak memory at roughly 1/n_buckets of the single-query figure.
+    The result is identical for any n_buckets.
+
+    Overrides (environment variables): TRIAGE_DUCKDB_MEMORY (default 6GB), TRIAGE_SEQ_BUCKETS (default 16),
+    TRIAGE_DUCKDB_THREADS (default: DuckDB's own choice)."""
+    import os
+    memory_limit = memory_limit or os.environ.get("TRIAGE_DUCKDB_MEMORY", "6GB")
+    n_buckets = int(n_buckets or os.environ.get("TRIAGE_SEQ_BUCKETS", 16))
     tmp = config.WORK_DIR / "duckdb_tmp"
     tmp.mkdir(parents=True, exist_ok=True)
     con.execute(f"SET memory_limit = '{memory_limit}'")
     con.execute(f"SET temp_directory = '{tmp.as_posix()}'")
     con.execute("SET preserve_insertion_order = false")
+    if os.environ.get("TRIAGE_DUCKDB_THREADS"):
+        con.execute(f"SET threads = {int(os.environ['TRIAGE_DUCKDB_THREADS'])}")
+    marker = "FROM events WHERE session_id IS NOT NULL"
+    assert marker in TOKEN_SQL
     seqs = {}
-    cur = con.execute(TOKEN_SQL)
-    while True:
-        rows = cur.fetchmany(50_000)
-        if not rows:
-            break
-        for sid, toks in rows:
-            seqs[sid] = list(toks)
+    for bkt in range(n_buckets):
+        sql = TOKEN_SQL if n_buckets == 1 else TOKEN_SQL.replace(
+            marker, f"{marker} AND hash(session_id) % {n_buckets} = {bkt}")
+        cur = con.execute(sql)
+        while True:
+            rows = cur.fetchmany(50_000)
+            if not rows:
+                break
+            for sid, toks in rows:
+                seqs[sid] = list(toks)
+        if n_buckets > 1:
+            print(f"    sequences: bucket {bkt + 1}/{n_buckets} done ({len(seqs):,} sessions so far)", flush=True)
     return seqs
 
 

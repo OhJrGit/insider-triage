@@ -1,0 +1,15 @@
+{
+  "iforest": {
+    "n_estimators": 300,
+    "max_samples": 8192,
+    "max_features": 0.5
+  },
+  "ocsvm": {
+    "nu": 0.01,
+    "gamma_mult": 4.0
+  },
+  "autoencoder": {
+    "bottleneck": 6,
+    "alpha": 0.0001
+  }
+}

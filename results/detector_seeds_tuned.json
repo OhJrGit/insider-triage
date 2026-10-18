@@ -1,0 +1,286 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_time": "2010-08-24 12:02:45",
+  "n_test": 235296,
+  "models": {
+    "iforest": {
+      "roc_auc": {
+        "mean": 0.9005,
+        "std": 0.0037
+      },
+      "pr_auc": {
+        "mean": 0.0342,
+        "std": 0.0032
+      },
+      "precision@10": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "recall@10": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "insiders_caught@10": {
+        "mean": 0.0,
+        "min": 0,
+        "max": 0,
+        "of": "54"
+      },
+      "insider_users_in_top@10": {
+        "mean": 7.4,
+        "min": 7,
+        "max": 8,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.196,
+        "std": 0.0498
+      },
+      "recall@50": {
+        "mean": 0.0129,
+        "std": 0.0033
+      },
+      "insiders_caught@50": {
+        "mean": 6.4,
+        "min": 5,
+        "max": 8,
+        "of": "54"
+      },
+      "insider_users_in_top@50": {
+        "mean": 14.4,
+        "min": 14,
+        "max": 15,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.21,
+        "std": 0.0394
+      },
+      "recall@100": {
+        "mean": 0.0277,
+        "std": 0.0052
+      },
+      "insiders_caught@100": {
+        "mean": 11.8,
+        "min": 10,
+        "max": 14,
+        "of": "54"
+      },
+      "insider_users_in_top@100": {
+        "mean": 18.0,
+        "min": 16,
+        "max": 19,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.153,
+        "std": 0.0144
+      },
+      "recall@200": {
+        "mean": 0.0403,
+        "std": 0.0038
+      },
+      "insiders_caught@200": {
+        "mean": 18.0,
+        "min": 15,
+        "max": 21,
+        "of": "54"
+      },
+      "insider_users_in_top@200": {
+        "mean": 23.0,
+        "min": 22,
+        "max": 25,
+        "of": "54"
+      },
+      "seeds_done": 5
+    },
+    "ocsvm": {
+      "roc_auc": {
+        "mean": 0.8699,
+        "std": 0.006
+      },
+      "pr_auc": {
+        "mean": 0.1292,
+        "std": 0.0062
+      },
+      "precision@10": {
+        "mean": 0.28,
+        "std": 0.1643
+      },
+      "recall@10": {
+        "mean": 0.0037,
+        "std": 0.0022
+      },
+      "insiders_caught@10": {
+        "mean": 2.6,
+        "min": 1,
+        "max": 4,
+        "of": "54"
+      },
+      "insider_users_in_top@10": {
+        "mean": 8.2,
+        "min": 7,
+        "max": 10,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.24,
+        "std": 0.02
+      },
+      "recall@50": {
+        "mean": 0.0158,
+        "std": 0.0013
+      },
+      "insiders_caught@50": {
+        "mean": 9.8,
+        "min": 9,
+        "max": 12,
+        "of": "54"
+      },
+      "insider_users_in_top@50": {
+        "mean": 23.8,
+        "min": 22,
+        "max": 26,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.474,
+        "std": 0.0397
+      },
+      "recall@100": {
+        "mean": 0.0625,
+        "std": 0.0052
+      },
+      "insiders_caught@100": {
+        "mean": 30.4,
+        "min": 29,
+        "max": 32,
+        "of": "54"
+      },
+      "insider_users_in_top@100": {
+        "mean": 33.6,
+        "min": 31,
+        "max": 36,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.444,
+        "std": 0.023
+      },
+      "recall@200": {
+        "mean": 0.117,
+        "std": 0.0061
+      },
+      "insiders_caught@200": {
+        "mean": 40.4,
+        "min": 38,
+        "max": 42,
+        "of": "54"
+      },
+      "insider_users_in_top@200": {
+        "mean": 43.4,
+        "min": 42,
+        "max": 46,
+        "of": "54"
+      },
+      "seeds_done": 5
+    },
+    "autoencoder": {
+      "roc_auc": {
+        "mean": 0.9066,
+        "std": 0.0081
+      },
+      "pr_auc": {
+        "mean": 0.1363,
+        "std": 0.0096
+      },
+      "precision@10": {
+        "mean": 0.16,
+        "std": 0.0894
+      },
+      "recall@10": {
+        "mean": 0.0021,
+        "std": 0.0012
+      },
+      "insiders_caught@10": {
+        "mean": 1.6,
+        "min": 1,
+        "max": 3,
+        "of": "54"
+      },
+      "insider_users_in_top@10": {
+        "mean": 10.0,
+        "min": 10,
+        "max": 10,
+        "of": "54"
+      },
+      "precision@50": {
+        "mean": 0.372,
+        "std": 0.046
+      },
+      "recall@50": {
+        "mean": 0.0245,
+        "std": 0.003
+      },
+      "insiders_caught@50": {
+        "mean": 15.4,
+        "min": 13,
+        "max": 19,
+        "of": "54"
+      },
+      "insider_users_in_top@50": {
+        "mean": 27.0,
+        "min": 25,
+        "max": 29,
+        "of": "54"
+      },
+      "precision@100": {
+        "mean": 0.52,
+        "std": 0.043
+      },
+      "recall@100": {
+        "mean": 0.0685,
+        "std": 0.0057
+      },
+      "insiders_caught@100": {
+        "mean": 30.6,
+        "min": 29,
+        "max": 35,
+        "of": "54"
+      },
+      "insider_users_in_top@100": {
+        "mean": 35.6,
+        "min": 33,
+        "max": 38,
+        "of": "54"
+      },
+      "precision@200": {
+        "mean": 0.492,
+        "std": 0.0425
+      },
+      "recall@200": {
+        "mean": 0.1296,
+        "std": 0.0112
+      },
+      "insiders_caught@200": {
+        "mean": 38.4,
+        "min": 37,
+        "max": 40,
+        "of": "54"
+      },
+      "insider_users_in_top@200": {
+        "mean": 40.8,
+        "min": 38,
+        "max": 44,
+        "of": "54"
+      },
+      "seeds_done": 5
+    }
+  }
+}

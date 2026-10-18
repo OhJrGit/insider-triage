@@ -39,18 +39,27 @@ def cmd_features(a):
     print(f"  {n:,} session feature rows" + (f", {int(lab)} labelled malicious" if lab is not None else ""))
 
 
+def _load_params(path):
+    """Read a best_params.json written by `tune` ({} when --params was not given)."""
+    if not path:
+        return {}
+    import json
+    return json.loads(Path(path).read_text())
+
+
 def cmd_detect(a):
     from triage import detect
     cfg = detect.DetectConfig(train_frac=a.train_frac, models=tuple(a.models), primary=a.primary,
                               top_k=a.top_k, train_benign_only=a.train_benign_only,
-                              overwrite_alerts=a.overwrite_alerts)
+                              overwrite_alerts=a.overwrite_alerts, params=_load_params(a.params))
     detect.run(db.connect(a.db), cfg)
     print(f"  alerts table = top {a.top_k} by {a.primary}; metrics in {config.WORK_DIR / 'detector_metrics.json'}")
 
 
 def cmd_detect_seeds(a):
     from triage import detect
-    cfg = detect.DetectConfig(train_frac=a.train_frac, models=tuple(a.models), top_k=a.top_k)
+    cfg = detect.DetectConfig(train_frac=a.train_frac, models=tuple(a.models), top_k=a.top_k,
+                              train_benign_only=a.train_benign_only, params=_load_params(a.params))
     res = detect.run_seeds(db.connect(a.db, read_only=True), cfg, a.seeds)
     for name, m in res["models"].items():
         if name not in a.models:
@@ -61,6 +70,15 @@ def cmd_detect_seeds(a):
               f"P@{a.top_k} {m[f'precision@{a.top_k}']['mean']:.3f}±{m[f'precision@{a.top_k}']['std']:.3f}  "
               f"insiders {m[k]['mean']} ({m[k]['min']}-{m[k]['max']}) of {m[k]['of']}")
     print(f"  -> {config.WORK_DIR / 'detector_seeds.json'}  (alerts table left unchanged)")
+
+
+def cmd_tune(a):
+    from triage import detect, tune
+    cfg = detect.DetectConfig(train_frac=a.train_frac, top_k=a.top_k, train_benign_only=a.train_benign_only)
+    tune.run(db.connect(a.db, read_only=True), cfg, a.models, val_frac=a.val_frac, seeds=a.seeds,
+             select_by=a.select_by, quick=a.quick)
+    print(f"  -> {config.WORK_DIR / 'tuning.json'}, {config.WORK_DIR / 'best_params.json'}  "
+          f"(alerts table left unchanged; use `detect-seeds --params` to re-run with the tuned settings)")
 
 
 def cmd_judge(a):
@@ -219,6 +237,7 @@ def main():
     p.add_argument("--train-benign-only", action="store_true")
     p.add_argument("--overwrite-alerts", action="store_true",
                    help="rebuild alerts even though work/reports holds reports for the current ones")
+    p.add_argument("--params", default=None, help="best_params.json from `tune` (default: original settings)")
     p.set_defaults(fn=cmd_detect)
 
     p = sub.add_parser("detect-seeds", help="detector metrics over several random seeds (mean/std); read-only")
@@ -226,7 +245,20 @@ def main():
     p.add_argument("--train-frac", type=float, default=0.5)
     p.add_argument("--models", nargs="+", default=["iforest", "ocsvm", "autoencoder"])
     p.add_argument("--top-k", type=int, default=200)
+    p.add_argument("--train-benign-only", action="store_true")
+    p.add_argument("--params", default=None, help="best_params.json from `tune` (default: original settings)")
     p.set_defaults(fn=cmd_detect_seeds)
+
+    p = sub.add_parser("tune", help="tune sklearn detectors on a validation slice; test set scored once; read-only")
+    p.add_argument("--models", nargs="+", default=["iforest", "ocsvm", "autoencoder"])
+    p.add_argument("--train-frac", type=float, default=0.5, help="train+val end here; test starts here (as in detect)")
+    p.add_argument("--val-frac", type=float, default=0.15, help="share of the timeline just before the test period")
+    p.add_argument("--seeds", type=int, nargs="+", default=[42], help="seeds averaged when ranking configurations")
+    p.add_argument("--select-by", default="pr_auc", help="pr_auc | roc_auc | precision@100")
+    p.add_argument("--top-k", type=int, default=200)
+    p.add_argument("--train-benign-only", action="store_true", help="semi-supervised: drop labelled sessions from training")
+    p.add_argument("--quick", action="store_true", help="smaller grids (smoke test / slow machines)")
+    p.set_defaults(fn=cmd_tune)
 
     p = sub.add_parser("judge-baseline", help="compare the deterministic verifier with an LLM-as-judge")
     p.add_argument("--reports", default=str(config.REPORTS_DIR))

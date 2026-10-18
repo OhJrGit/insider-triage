@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import json
 import warnings
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import numpy as np
 import pandas as pd
@@ -42,6 +42,9 @@ class DetectConfig:
     max_train_ae: int = 100_000
     seed: int = 42
     overwrite_alerts: bool = False
+    # Per-model hyperparameter overrides, e.g. {"ocsvm": {"nu": 0.005}}. Empty = the original defaults.
+    # Produced by `python cli.py tune` (work/best_params.json) and loaded with --params.
+    params: dict = field(default_factory=dict)
 
 
 def _matrix(df: pd.DataFrame) -> np.ndarray:
@@ -55,20 +58,35 @@ def _matrix(df: pd.DataFrame) -> np.ndarray:
     return X.to_numpy()
 
 
+# Defaults reproduce the original hard-coded settings exactly (so results without --params are unchanged).
+DEFAULT_PARAMS = {
+    "iforest": {"n_estimators": 300, "max_samples": "auto", "max_features": 1.0},
+    "ocsvm": {"nu": 0.01, "gamma_mult": 1.0},          # gamma = gamma_mult * gamma("scale")
+    "autoencoder": {"bottleneck": None, "alpha": 1e-4},  # bottleneck None -> max(d // 4, 2)
+}
+
+
 def _fit_score(name: str, Xtr: np.ndarray, Xte: np.ndarray, cfg: DetectConfig, ctx: dict | None = None) -> np.ndarray:
     rng = np.random.default_rng(cfg.seed)
+    p = {**DEFAULT_PARAMS.get(name, {}), **cfg.params.get(name, {})}
     if name == "iforest":
-        m = IsolationForest(n_estimators=300, random_state=cfg.seed, n_jobs=-1).fit(Xtr)
+        m = IsolationForest(n_estimators=int(p["n_estimators"]), max_samples=p["max_samples"],
+                            max_features=float(p["max_features"]),
+                            random_state=cfg.seed, n_jobs=-1).fit(Xtr)
         return -m.score_samples(Xte)
     if name == "ocsvm":
         idx = rng.choice(len(Xtr), min(len(Xtr), cfg.max_train_ocsvm), replace=False)
-        m = OneClassSVM(nu=0.01, gamma="scale").fit(Xtr[idx])
+        Xs = Xtr[idx]
+        gamma = "scale" if p["gamma_mult"] == 1.0 else float(p["gamma_mult"]) / (Xs.shape[1] * Xs.var())
+        m = OneClassSVM(nu=float(p["nu"]), gamma=gamma).fit(Xs)
         return -m.decision_function(Xte)
     if name == "autoencoder":
         idx = rng.choice(len(Xtr), min(len(Xtr), cfg.max_train_ae), replace=False)
         d = Xtr.shape[1]
+        b = int(p["bottleneck"]) if p["bottleneck"] else max(d // 4, 2)
+        mid = max(d // 2, b, 4)
         warnings.filterwarnings("ignore", message=".*Maximum iterations.*")
-        m = MLPRegressor(hidden_layer_sizes=(d, max(d // 2, 4), max(d // 4, 2), max(d // 2, 4), d),
+        m = MLPRegressor(hidden_layer_sizes=(d, mid, b, mid, d), alpha=float(p["alpha"]),
                          max_iter=200, early_stopping=True, random_state=cfg.seed).fit(Xtr[idx], Xtr[idx])
         return ((m.predict(Xte) - Xte) ** 2).mean(axis=1)
     if name == "torch_ae":
@@ -94,13 +112,17 @@ def _metrics(test: pd.DataFrame, score: np.ndarray, ks: list[int]) -> dict:
     out["pr_auc"] = float(average_precision_score(y, score))
     order = np.argsort(-score)
     insider_users = set(test.loc[test.label == 1, "user"])
+    users = test["user"].to_numpy()
     for k in ks:
         top = order[:k]
         hits = int(y[top].sum())
         out[f"precision@{k}"] = hits / k
         out[f"recall@{k}"] = hits / int(y.sum())
-        out[f"insiders_caught@{k}"] = (
-            f"{len(insider_users & set(test.iloc[top]['user']))}/{len(insider_users)}")
+        # STRICT (same definition as precision@k): insiders with at least one *malicious session* in the top k.
+        out[f"insiders_caught@{k}"] = f"{len(set(users[top][y[top] == 1]))}/{len(insider_users)}"
+        # LOOSE (what insiders_caught@k used to report): insiders with *any* session in the top k, malicious or
+        # not. A benign session by an insider counted as a catch, so this can be > 0 while precision@k is 0.
+        out[f"insider_users_in_top@{k}"] = f"{len(insider_users & set(users[top]))}/{len(insider_users)}"
     return out
 
 

@@ -378,3 +378,42 @@ def test_blind_labelling_roundtrip(con, tmp_path):
         w.writerows(rows)
     res = score_claims(out)
     assert res["agreement_with_verifier"] == 1.0 and res["cohens_kappa"] in (1.0, None) or res["cohens_kappa"] == 1.0
+
+
+# ------------------------------------------------------------------ detector metrics + tuning
+def test_insiders_caught_counts_malicious_sessions_only():
+    """An insider's *benign* session in the top-k must not count as a catch (it did before the fix)."""
+    import numpy as np
+    import pandas as pd
+    # insiders: A, B, C (each owns >= 1 malicious session). A and C also own benign sessions ranked high.
+    test = pd.DataFrame({"user": ["A", "B", "C", "D", "C", "A"],
+                         "label": [0, 1, 0, 0, 1, 1]})
+    score = np.array([9.0, 7.0, 6.0, 5.0, 1.0, 0.5])               # ranking: A0, B, C0, D, C1, A1
+    m = detect._metrics(test, score, [2, 3])
+    assert m["precision@2"] == 0.5
+    assert m["insiders_caught@2"] == "1/3"          # strict: only B has a malicious session in the top 2
+    assert m["insider_users_in_top@2"] == "2/3"     # loose: A's benign session also counted before the fix
+    assert m["insiders_caught@3"] == "1/3" and m["insider_users_in_top@3"] == "3/3"
+
+
+def test_tune_split_keeps_test_set_of_detect(con):
+    from triage import tune
+    df = con.execute("SELECT * FROM features ORDER BY start_ts").df()
+    train, val, test, _ = tune.split_by_time(df, 0.5, 0.15)
+    detect_test = df[df.start_ts >= df.start_ts.quantile(0.5)]
+    assert set(test.session_id) == set(detect_test.session_id)
+    assert train.start_ts.max() < val.start_ts.min() <= val.start_ts.max() < test.start_ts.min()
+    assert len(train) + len(val) + len(test) == len(df)
+
+
+def test_default_params_reproduce_original_scores(con):
+    """Passing the documented defaults explicitly must not change any score (no silent behaviour change)."""
+    import numpy as np
+    from dataclasses import replace
+    df = con.execute("SELECT * FROM features ORDER BY start_ts").df()
+    X = detect._matrix(df)
+    base = detect.DetectConfig(max_train_ocsvm=500, max_train_ae=2000)
+    for name in ("iforest", "ocsvm", "autoencoder"):
+        a = detect._fit_score(name, X, X, base)
+        b = detect._fit_score(name, X, X, replace(base, params={name: dict(detect.DEFAULT_PARAMS[name])}))
+        assert np.allclose(a, b), name
