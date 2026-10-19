@@ -1,4 +1,4 @@
-  S02e94690d5: 4 verified, 1 unsupported, 1 interpretive (groundedness 0.8)
+  S02e94690d5: 5 verified, 0 unsupported, 1 interpretive (groundedness 1.0)
   S038064a22c: 5 verified, 1 unsupported, 1 interpretive (groundedness 0.833)
   S06a1cafd31: 4 verified, 1 unsupported, 1 interpretive (groundedness 0.8)
   S0f24ea57cc: 9 verified, 0 unsupported, 0 interpretive (groundedness 1.0)
@@ -7,7 +7,7 @@
   S1a4442ecf1: 3 verified, 1 unsupported, 1 interpretive (groundedness 0.75)
   S1a7e274698: 6 verified, 1 unsupported, 0 interpretive (groundedness 0.857)
   S1fee51f845: 5 verified, 2 unsupported, 1 interpretive (groundedness 0.714)
-  S236e8d83a2: 4 verified, 1 unsupported, 1 interpretive (groundedness 0.8)
+  S236e8d83a2: 5 verified, 0 unsupported, 1 interpretive (groundedness 1.0)
   S26081ed285: 2 verified, 3 unsupported, 2 interpretive (groundedness 0.4)
   S26fa38a5eb: 3 verified, 2 unsupported, 1 interpretive (groundedness 0.6)
   S28efaec841: 2 verified, 4 unsupported, 1 interpretive (groundedness 0.333)
@@ -21,7 +21,7 @@
   S69a3fa4719: 4 verified, 1 unsupported, 1 interpretive (groundedness 0.8)
   S6a852450cb: 7 verified, 0 unsupported, 0 interpretive (groundedness 1.0)
   S705efed69d: 6 verified, 0 unsupported, 0 interpretive (groundedness 1.0)
-  S7365890092: 5 verified, 2 unsupported, 0 interpretive (groundedness 0.714)
+  S7365890092: 6 verified, 1 unsupported, 0 interpretive (groundedness 0.857)
   S7632c87cc1: 4 verified, 1 unsupported, 2 interpretive (groundedness 0.8)
   S78af8668e0: 4 verified, 1 unsupported, 1 interpretive (groundedness 0.8)
   S7d08aa7707: 5 verified, 0 unsupported, 2 interpretive (groundedness 1.0)
@@ -47,4 +47,4 @@
   Sf8c893b78c: 5 verified, 0 unsupported, 0 interpretive (groundedness 1.0)
   Sfe00321eac: 9 verified, 0 unsupported, 0 interpretive (groundedness 1.0)
   Sffe1ef4568: 3 verified, 2 unsupported, 0 interpretive (groundedness 0.6)
-  total: {'verified': 243, 'unsupported': 58, 'interpretive': 42}
+  total: {'verified': 246, 'unsupported': 55, 'interpretive': 42}

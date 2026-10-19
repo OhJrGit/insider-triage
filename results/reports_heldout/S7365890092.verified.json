@@ -2,10 +2,10 @@
   "session_id": "S7365890092",
   "summary": {
     "claims": 7,
-    "verified": 5,
-    "unsupported": 2,
+    "verified": 6,
+    "unsupported": 1,
     "interpretive": 0,
-    "groundedness": 0.714,
+    "groundedness": 0.857,
     "warnings": 2
   },
   "claims": [
@@ -278,10 +278,8 @@
       "index": 6,
       "text": "The session involved 119 web visits, which is within the user's usual average of 114 visits per session.",
       "type": "factual",
-      "status": "unsupported",
-      "reasons": [
-        "baseline avg_http mismatch: claimed 114.0, logs say 114.18"
-      ],
+      "status": "verified",
+      "reasons": [],
       "warnings": [],
       "citations": []
     }

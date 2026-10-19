@@ -2,18 +2,18 @@
   "reports": 49,
   "by_mutation": {
     "fake_id": {
-      "tried": 104,
-      "caught": 104,
+      "tried": 106,
+      "caught": 106,
       "detection_rate": 1.0
     },
     "swap_citation": {
-      "tried": 104,
-      "caught": 104,
+      "tried": 106,
+      "caught": 106,
       "detection_rate": 1.0
     },
     "shift_time": {
-      "tried": 72,
-      "caught": 72,
+      "tried": 74,
+      "caught": 74,
       "detection_rate": 1.0
     },
     "wrong_pc": {
@@ -32,13 +32,13 @@
       "detection_rate": 1.0
     },
     "drop_citation": {
-      "tried": 102,
-      "caught": 102,
+      "tried": 104,
+      "caught": 104,
       "detection_rate": 1.0
     },
     "wrong_baseline": {
-      "tried": 34,
-      "caught": 34,
+      "tried": 35,
+      "caught": 35,
       "detection_rate": 1.0
     },
     "wrong_session": {

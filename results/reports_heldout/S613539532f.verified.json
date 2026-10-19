@@ -6,7 +6,7 @@
     "unsupported": 2,
     "interpretive": 2,
     "groundedness": 0.6,
-    "warnings": 2
+    "warnings": 1
   },
   "claims": [
     {
@@ -35,9 +35,7 @@
       "type": "interpretive",
       "status": "interpretive",
       "reasons": [],
-      "warnings": [
-        "interpretive claim states specific numbers/times that nobody checks; make it factual"
-      ],
+      "warnings": [],
       "citations": []
     },
     {

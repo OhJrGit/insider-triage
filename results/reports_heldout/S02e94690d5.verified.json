@@ -2,10 +2,10 @@
   "session_id": "S02e94690d5",
   "summary": {
     "claims": 6,
-    "verified": 4,
-    "unsupported": 1,
+    "verified": 5,
+    "unsupported": 0,
     "interpretive": 1,
-    "groundedness": 0.8,
+    "groundedness": 1.0,
     "warnings": 2
   },
   "claims": [
@@ -24,10 +24,8 @@
       "index": 1,
       "text": "FBA0348 sent an email at 2011-04-29 20:01:45.",
       "type": "factual",
-      "status": "unsupported",
-      "reasons": [
-        "to mismatch on {U8N6-A0EI13OP-0818CGPA}: claimed 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com', log says 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com'"
-      ],
+      "status": "verified",
+      "reasons": [],
       "warnings": [
         "asserted to='William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com' is not mentioned in the claim text",
         "asserted from='Francis.Brian.Armstrong@dtaa.com' is not mentioned in the claim text"

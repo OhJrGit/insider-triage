@@ -2,10 +2,10 @@
   "session_id": "S236e8d83a2",
   "summary": {
     "claims": 6,
-    "verified": 4,
-    "unsupported": 1,
+    "verified": 5,
+    "unsupported": 0,
     "interpretive": 1,
-    "groundedness": 0.8,
+    "groundedness": 1.0,
     "warnings": 1
   },
   "claims": [
@@ -24,10 +24,8 @@
       "index": 1,
       "text": "FBA0348 sent an email to 7 internal recipients at 2010-10-01 19:45:53.",
       "type": "factual",
-      "status": "unsupported",
-      "reasons": [
-        "to mismatch on {A8K0-Q3DX55DM-3791QCFI}: claimed 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com', log says 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com'"
-      ],
+      "status": "verified",
+      "reasons": [],
       "warnings": [
         "asserted to='Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com' is not mentioned in the claim text"
       ],

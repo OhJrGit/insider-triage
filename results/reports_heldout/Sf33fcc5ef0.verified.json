@@ -6,7 +6,7 @@
     "unsupported": 0,
     "interpretive": 1,
     "groundedness": 1.0,
-    "warnings": 1
+    "warnings": 0
   },
   "claims": [
     {
@@ -35,9 +35,7 @@
       "type": "interpretive",
       "status": "interpretive",
       "reasons": [],
-      "warnings": [
-        "interpretive claim states specific numbers/times that nobody checks; make it factual"
-      ],
+      "warnings": [],
       "citations": [
         "{G4U7-B9GR17VW-5395UPVI}",
         "{D9I7-R2EU51SQ-9779NMKY}"

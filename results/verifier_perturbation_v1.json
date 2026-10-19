@@ -2,18 +2,18 @@
   "reports": 49,
   "by_mutation": {
     "fake_id": {
-      "tried": 120,
-      "caught": 120,
+      "tried": 122,
+      "caught": 122,
       "detection_rate": 1.0
     },
     "swap_citation": {
-      "tried": 120,
-      "caught": 104,
-      "detection_rate": 0.867
+      "tried": 122,
+      "caught": 106,
+      "detection_rate": 0.869
     },
     "shift_time": {
-      "tried": 72,
-      "caught": 72,
+      "tried": 74,
+      "caught": 74,
       "detection_rate": 1.0
     },
     "wrong_pc": {
@@ -32,13 +32,13 @@
       "detection_rate": 1.0
     },
     "drop_citation": {
-      "tried": 110,
-      "caught": 110,
+      "tried": 112,
+      "caught": 112,
       "detection_rate": 1.0
     },
     "wrong_baseline": {
-      "tried": 39,
-      "caught": 39,
+      "tried": 40,
+      "caught": 40,
       "detection_rate": 1.0
     },
     "wrong_session": {
@@ -47,7 +47,7 @@
       "detection_rate": 1.0
     }
   },
-  "overall_detection_rate": 0.974,
+  "overall_detection_rate": 0.975,
   "example_misses": {
     "swap_citation": [
       {
@@ -61,7 +61,7 @@
             "{S9Y9-P7MN45RW-5037UTYD}",
             "{M4L4-O2MX87DO-0263IZTG}",
             "{L3Y0-M4WQ61AS-3491BLNJ}",
-            "{L8I6-P8GJ71GN-8254YJPC}",
+            "{J4W7-C3IQ18QI-5748IWOM}",
             "{G0A9-E5VJ22OD-0594YTYV}",
             "{X4L6-L0WA21EH-5172DUTN}",
             "{X3S5-K4TJ46NZ-7610SAMI}",
@@ -69,7 +69,7 @@
             "{D3X5-A6GT01TT-0299HWEU}",
             "{R4F0-A8VJ99QM-8932EKTL}",
             "{N1T7-G4JX73JT-5592FYDV}",
-            "{F9U9-F5GJ28TW-8581YEMV}",
+            "{A1V3-O9FV39PD-4603KFLS}",
             "{M8U1-I8RR60BI-0859FGPH}",
             "{N7F6-O4OY49GC-8871HGZE}",
             "{Q4L4-Q6GJ34RI-9242JCJQ}",
@@ -94,13 +94,13 @@
           "text": "The session included 9 USB device connections.",
           "type": "factual",
           "citations": [
-            "{I8X5-P3LN41CS-9539MHEX}",
+            "{S0K6-B8UQ67VJ-0879MNAY}",
             "{K1A9-Q1CP57QB-2565TLWO}",
             "{E1V2-H3GR97JG-5973NKCD}",
             "{Q3R2-L4DL67ZT-1201TGZY}",
             "{E5R4-H9YR40WQ-1422EAVT}",
             "{S4A5-T3KF99II-9226EAEB}",
-            "{Q8B1-S3SG07LJ-3717FCKA}",
+            "{C0X0-S2MU45KF-2218HSOP}",
             "{C1N3-L4XM79IS-1940URAS}",
             "{C4T2-S1MV49JZ-9773XGJQ}"
           ],
@@ -116,7 +116,7 @@
           "text": "The session had 1 HTTP visit, which is below the user's average.",
           "type": "factual",
           "citations": [
-            "{W1K9-O9UF38CG-2815FFEN}"
+            "{K2X5-B8AY21II-2374BMBU}"
           ],
           "asserted": {},
           "count": null,
@@ -135,10 +135,10 @@
           "type": "factual",
           "citations": [
             "{F9B8-D7GT91QC-6058YPLW}",
-            "{F6G0-R7IY89WX-7000YEHP}",
+            "{X0P9-F7MS78GC-0105OQZI}",
             "{E3M4-L3FV18RL-0065HFHQ}",
             "{A3Q5-O3UM39MR-4532VNWA}",
-            "{S4V8-X0JO04IP-1439GKPN}",
+            "{G4V1-V3DU58DU-1581GRGA}",
             "{Q2V1-G2HW83JZ-3286HKZF}",
             "{A1P0-M9VJ58ME-7508QKHE}"
           ],
@@ -157,7 +157,7 @@
           "text": "The session included 1 visit to job-hunt.org, outside usual working hours.",
           "type": "factual",
           "citations": [
-            "{O2O4-Z1GQ11FK-8057CPWU}"
+            "{A6K6-E6TA82JI-6001QYDI}"
           ],
           "asserted": {},
           "count": null,
@@ -176,7 +176,7 @@
           "type": "factual",
           "citations": [],
           "asserted": {
-            "pc": "PC-37471"
+            "pc": "PC-67435"
           },
           "count": null,
           "baseline": {

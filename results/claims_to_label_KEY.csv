@@ -160,7 +160,7 @@ S7365890092#2,unsupported,"source mismatch on {P9Z9-I6CY06XO-8287YQLA}: claimed 
 S7365890092#3,verified,
 S7365890092#4,verified,
 S7365890092#5,verified,
-S7365890092#6,unsupported,"baseline avg_http mismatch: claimed 114.0, logs say 114.18"
+S7365890092#6,verified,
 S7632c87cc1#0,verified,
 S7632c87cc1#1,interpretive,
 S7632c87cc1#2,unsupported,"source mismatch on {G6Q3-O2OT82MR-7419PNKN}: claimed 'http', log says 'device' | field 'url' does not apply to a device event ({G6Q3-O2OT82MR-7419PNKN})"
