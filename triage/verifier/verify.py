@@ -110,7 +110,9 @@ def check_field(event: dict, key: str, value) -> str | None:
     if contains:
         ok = v in a
     elif base in LIST_FIELDS:
-        ok = v in [x.strip() for x in a.split(";")]
+        logged = [y.strip() for y in a.split(";") if y.strip()]
+        v_list = [x.strip() for x in v.split(";") if x.strip()]
+        ok = len(v_list) > 0 and all(x in logged for x in v_list)
     else:
         ok = v == a
     return None if ok else f"{key} mismatch on {event['id']}: claimed '{value}', log says '{actual}'"
@@ -153,7 +155,7 @@ def _check_aggregate(actual: dict, key: str, value, allowed: dict, label: str,
     try:
         v = float(value)
         sv = str(value).strip()
-        decimals = len(sv.split(".")[1]) if "." in sv else 0
+        decimals = 0 if v.is_integer() else (len(sv.split(".")[1]) if "." in sv else 0)
         ok = a is not None and round(float(a), decimals) == round(v, decimals)
     except (TypeError, ValueError):
         ok = False
@@ -169,6 +171,7 @@ def check_session(actual: dict, key: str, value) -> str | None:
 
 
 NUMBERISH = re.compile(r"\d")
+ID_TOKENS = re.compile(r"\b[A-Z]{3}\d{4}\b|\bPC-\d+\b") #this is only suitable for CERT dataset, need to change if using other dataset.
 
 
 # --------------------------------------------------------------------------------------------
@@ -259,7 +262,7 @@ def verify_report(con, report: Report, strict_text: bool = False, strict_citatio
             r.reasons = list(dict.fromkeys(r.reasons))           # de-duplicate, keep order
             r.status = "unsupported" if r.reasons else "verified"
         else:
-            if NUMBERISH.search(cl.text):
+            if NUMBERISH.search(ID_TOKENS.sub("", cl.text)):
                 msg = "interpretive claim states specific numbers/times that nobody checks; make it factual"
                 (r.reasons if strict_text else r.warnings).append(msg)
             r.status = "unsupported" if r.reasons else "interpretive"
