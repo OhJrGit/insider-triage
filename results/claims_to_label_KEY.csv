@@ -1,0 +1,344 @@
+claim_id,verifier_status,verifier_reasons
+S02e94690d5#0,verified,
+S02e94690d5#1,unsupported,"to mismatch on {U8N6-A0EI13OP-0818CGPA}: claimed 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com', log says 'William.Price.Robles@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sonia.Anne.Kirkland@dtaa.com;Blossom.Keiko.Weiss@dtaa.com;Jackson.Rafael.Sutton@dtaa.com'"
+S02e94690d5#2,verified,
+S02e94690d5#3,verified,
+S02e94690d5#4,interpretive,
+S02e94690d5#5,verified,
+S038064a22c#0,verified,
+S038064a22c#1,verified,
+S038064a22c#2,verified,
+S038064a22c#3,verified,
+S038064a22c#4,unsupported,"activity mismatch on {K5P9-O3KU95FU-6171HXYA}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {Z5G8-P1SD51OR-9253YNXL}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {V8W1-Y5HV63FO-1117KZDY}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {I5E6-N9BK73LA-1575YFYB}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {A4L9-U7SA98RT-8438FIZF}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {J1V2-U4RM91RY-9553ILNH}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {I5M2-L2ZI75DL-5870EXEB}: claimed 'Connect', log says 'Disconnect' | count says 8 but 14 distinct events are cited"
+S038064a22c#5,verified,
+S038064a22c#6,interpretive,
+S06a1cafd31#0,verified,
+S06a1cafd31#1,verified,
+S06a1cafd31#2,unsupported,"cited event {P2M2-R9PL40XM-6410VZZ} does not exist | source mismatch on {X4T3-M5CL53VN-6456KIQW}: claimed 'file', log says 'device' | source mismatch on {V5D5-U8JO06YA-8096JVEC}: claimed 'file', log says 'device' | source mismatch on {I7P4-G5EI54PQ-9062WHQS}: claimed 'file', log says 'device' | source mismatch on {S1E4-D1UG62RE-6746QNFF}: claimed 'file', log says 'device' | activity mismatch on {X4T3-M5CL53VN-6456KIQW}: claimed 'File', log says 'Connect' | activity mismatch on {V5D5-U8JO06YA-8096JVEC}: claimed 'File', log says 'Disconnect' | activity mismatch on {I7P4-G5EI54PQ-9062WHQS}: claimed 'File', log says 'Connect' | activity mismatch on {S1E4-D1UG62RE-6746QNFF}: claimed 'File', log says 'Connect'"
+S06a1cafd31#3,verified,
+S06a1cafd31#4,interpretive,
+S06a1cafd31#5,verified,
+S0f24ea57cc#0,verified,
+S0f24ea57cc#1,verified,
+S0f24ea57cc#2,verified,
+S0f24ea57cc#3,verified,
+S0f24ea57cc#4,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S0f24ea57cc#5,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S0f24ea57cc#6,verified,
+S0f24ea57cc#7,verified,
+S0f24ea57cc#8,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S14841c0e92#0,verified,
+S14841c0e92#1,verified,
+S14841c0e92#2,verified,
+S14841c0e92#3,interpretive,
+S14841c0e92#4,verified,
+S14841c0e92#5,verified,
+S14841c0e92#6,unsupported,"url_contains mismatch on {U1P0-L6ZA47GF-5533MSOD}: claimed 'eonline.com|shopathome.com', log says 'http://eonline.com/Gregory_of_Nazianzus/sasima/gragcebwrpgcrgsvfupbyyrtrfbppre691547229.htm' | url_contains mismatch on {M1W1-V5KD56OC-8643IGTX}: claimed 'eonline.com|shopathome.com', log says 'http://shopathome.com/Slavery_in_ancient_Greece/theognis/cebwrpgubgrypebffyvprafvatynjfhvg1676757978.aspx'"
+S14841c0e92#7,verified,
+S14841c0e92#8,verified,
+S14841c0e92#9,unsupported,"activity mismatch on {Z5F2-A0SU30LP-8630HIBI}: claimed 'Connect', log says 'Disconnect' | count says 1 but 2 distinct events are cited"
+S16530eff93#0,verified,
+S16530eff93#1,verified,
+S16530eff93#2,unsupported,"url_contains mismatch on {H2W0-T4AH53FF-9034ZWEN}: claimed 'orbitz.com', log says 'http://mediafire.com/Atom/corpuscularianism/cnvagonyy647150019.aspx'"
+S16530eff93#3,unsupported,asserted fields but no cited events to check them against | count says 8 but 0 distinct events are cited
+S16530eff93#4,unsupported,asserted fields but no cited events to check them against | count says 24 but 0 distinct events are cited
+S16530eff93#5,verified,
+S1a4442ecf1#0,verified,
+S1a4442ecf1#1,verified,
+S1a4442ecf1#2,unsupported,"source mismatch on {G7Z8-S9PU67QB-8144WORK}: claimed 'file', log says 'device' | source mismatch on {G9C2-Z2VN95MG-4992MSTM}: claimed 'file', log says 'device' | source mismatch on {H1X3-J9SP33KX-1657VNXS}: claimed 'file', log says 'device' | source mismatch on {A4E8-A5XZ11UK-8552IHTB}: claimed 'file', log says 'device' | source mismatch on {M9C9-I1GT63NW-4932KCIR}: claimed 'file', log says 'http' | source mismatch on {G1E2-I6LA09PM-5853JKGK}: claimed 'file', log says 'device' | source mismatch on {C9C1-P3FC14LB-0746LKPW}: claimed 'file', log says 'device' | source mismatch on {K2Z4-K9KH15RS-2918CNHV}: claimed 'file', log says 'device' | activity mismatch on {G7Z8-S9PU67QB-8144WORK}: claimed 'File', log says 'Disconnect' | activity mismatch on {G9C2-Z2VN95MG-4992MSTM}: claimed 'File', log says 'Connect' | activity mismatch on {H1X3-J9SP33KX-1657VNXS}: claimed 'File', log says 'Disconnect' | activity mismatch on {A4E8-A5XZ11UK-8552IHTB}: claimed 'File', log says 'Connect' | activity mismatch on {M9C9-I1GT63NW-4932KCIR}: claimed 'File', log says 'Visit' | activity mismatch on {G1E2-I6LA09PM-5853JKGK}: claimed 'File', log says 'Disconnect' | activity mismatch on {C9C1-P3FC14LB-0746LKPW}: claimed 'File', log says 'Connect' | activity mismatch on {K2Z4-K9KH15RS-2918CNHV}: claimed 'File', log says 'Disconnect'"
+S1a4442ecf1#3,verified,
+S1a4442ecf1#4,interpretive,
+S1a7e274698#0,verified,
+S1a7e274698#1,verified,
+S1a7e274698#2,verified,
+S1a7e274698#3,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S1a7e274698#4,verified,
+S1a7e274698#5,unsupported,"source mismatch on {D9I0-G5KP63TM-8879YWYQ}: claimed 'http', log says 'device' | source mismatch on {V8Q0-B8PL03BM-5773RIKS}: claimed 'http', log says 'device' | activity mismatch on {D9I0-G5KP63TM-8879YWYQ}: claimed 'Visit', log says 'Connect' | activity mismatch on {V8Q0-B8PL03BM-5773RIKS}: claimed 'Visit', log says 'Connect'"
+S1a7e274698#6,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S1fee51f845#0,verified,
+S1fee51f845#1,verified,
+S1fee51f845#2,unsupported,"url_contains mismatch on {F5C4-F2JY21SI-7916VSKT}: claimed 'hacker', log says 'http://fatwallet.com/Ethan_Hawke/linklater/gbbyf1525921859.asp'"
+S1fee51f845#3,unsupported,"url_contains mismatch on {X0J5-V6SU11RV-8236RTVJ}: claimed 'job', log says 'http://simplyhired.com/WboUhagvat57469130.jsp' | url_contains mismatch on {N2W7-E6WB23BE-6755ADUG}: claimed 'job', log says 'http://lockheedmartin.com/WboUhagvat1636367808.htm' | url_contains mismatch on {O9K1-G4YI20MX-7766QBZO}: claimed 'job', log says 'http://nfl.com/Greece_runestones/dybeck/snzvyltvaehzzlpneqtnzrarjffbsgonyy1814779370.jsp'"
+S1fee51f845#4,verified,
+S1fee51f845#5,verified,
+S1fee51f845#6,interpretive,
+S1fee51f845#7,verified,
+S236e8d83a2#0,verified,
+S236e8d83a2#1,unsupported,"to mismatch on {A8K0-Q3DX55DM-3791QCFI}: claimed 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com', log says 'Arthur.John.Floyd@dtaa.com;Joseph.Alan.Vaughan@dtaa.com;Sean.Omar.Burgess@dtaa.com;Kennedy.Robert.Vega@dtaa.com;Cain.Byron.Baldwin@dtaa.com;Wesley.Dustin.Dickerson@dtaa.com;Kennedy.Shad.Parker@dtaa.com'"
+S236e8d83a2#2,verified,
+S236e8d83a2#3,verified,
+S236e8d83a2#4,interpretive,
+S236e8d83a2#5,verified,
+S26081ed285#0,verified,
+S26081ed285#1,verified,
+S26081ed285#2,unsupported,"url_contains mismatch on {B2L7-T3JH89JU-1143DRLC}: claimed 'lockheedmartin.com|sourceforge.net|orbitz.com', log says 'http://lockheedmartin.com/WboUhagvat1636367808.htm' | url_contains mismatch on {Y7X4-W3IM36RS-9020LRJP}: claimed 'lockheedmartin.com|sourceforge.net|orbitz.com', log says 'http://sourceforge.net/Augusta_Lady_Gregory/persse/fpbbgrencnpurqbtfubjqernzvat777395449.php' | url_contains mismatch on {O5D8-P0IO59QN-8367FBAY}: claimed 'lockheedmartin.com|sourceforge.net|orbitz.com', log says 'http://orbitz.com/Maximian/fausta/guebhtuchgyvahkqryrtngr578321380.jsp'"
+S26081ed285#3,interpretive,
+S26081ed285#4,interpretive,
+S26081ed285#5,unsupported,"source mismatch on {I1R4-D6GR08MU-4196QMKF}: claimed 'file', log says 'device' | source mismatch on {K1J8-L4VX09YM-0045GZEA}: claimed 'file', log says 'device' | source mismatch on {D6K9-C2YK96QR-8730VDUX}: claimed 'file', log says 'device' | source mismatch on {H6C5-T6QJ02IL-3280TOCS}: claimed 'file', log says 'device' | source mismatch on {I3A7-W9VY83IM-7762UNCZ}: claimed 'file', log says 'device' | source mismatch on {Q7Q4-P4WF38FX-8836UMSV}: claimed 'file', log says 'device' | source mismatch on {O5D8-P0IO59QN-8367FBAY}: claimed 'file', log says 'http' | source mismatch on {C3O0-C4NW63FJ-9961BHNN}: claimed 'file', log says 'device' | source mismatch on {S8N7-K8LM93KM-4665DAAF}: claimed 'file', log says 'device' | source mismatch on {L9O5-I1ON24LI-2009AGFO}: claimed 'file', log says 'logon' | activity mismatch on {I1R4-D6GR08MU-4196QMKF}: claimed 'File', log says 'Connect' | activity mismatch on {K1J8-L4VX09YM-0045GZEA}: claimed 'File', log says 'Disconnect' | activity mismatch on {D6K9-C2YK96QR-8730VDUX}: claimed 'File', log says 'Connect' | activity mismatch on {H6C5-T6QJ02IL-3280TOCS}: claimed 'File', log says 'Disconnect' | activity mismatch on {I3A7-W9VY83IM-7762UNCZ}: claimed 'File', log says 'Connect' | activity mismatch on {Q7Q4-P4WF38FX-8836UMSV}: claimed 'File', log says 'Disconnect' | activity mismatch on {O5D8-P0IO59QN-8367FBAY}: claimed 'File', log says 'Visit' | activity mismatch on {C3O0-C4NW63FJ-9961BHNN}: claimed 'File', log says 'Connect' | activity mismatch on {S8N7-K8LM93KM-4665DAAF}: claimed 'File', log says 'Disconnect' | activity mismatch on {L9O5-I1ON24LI-2009AGFO}: claimed 'File', log says 'Logoff' | count says 21 but 31 distinct events are cited"
+S26081ed285#6,unsupported,"baseline avg_start_hour mismatch: claimed 7.74, logs say 7.22 | baseline avg_end_hour mismatch: claimed 14.22, logs say 14.74 | unknown baseline field 'avg_duration_min'"
+S26fa38a5eb#0,verified,
+S26fa38a5eb#1,unsupported,"source mismatch on {K5K4-G5UU17XE-9529CAXS}: claimed 'http', log says 'file' | field 'url' does not apply to a file event ({K5K4-G5UU17XE-9529CAXS}) | count says 2 but 3 distinct events are cited"
+S26fa38a5eb#2,unsupported,"source mismatch on {J6Z9-N6RU56FD-0647RUCX}: claimed 'file', log says 'http' | source mismatch on {I9M1-L5BI48PJ-4393YARC}: claimed 'file', log says 'http' | activity mismatch on {J6Z9-N6RU56FD-0647RUCX}: claimed 'File', log says 'Visit' | activity mismatch on {I9M1-L5BI48PJ-4393YARC}: claimed 'File', log says 'Visit' | field 'filename' does not apply to a http event ({J6Z9-N6RU56FD-0647RUCX}) | field 'filename' does not apply to a http event ({I9M1-L5BI48PJ-4393YARC})"
+S26fa38a5eb#3,verified,
+S26fa38a5eb#4,interpretive,
+S26fa38a5eb#5,verified,
+S28efaec841#0,verified,
+S28efaec841#1,verified,
+S28efaec841#2,unsupported,"factual claim asserts no checkable field, count, baseline or session value | cited events are not described by any asserted field (only their existence could be checked)"
+S28efaec841#3,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 19 but 18 distinct events are cited
+S28efaec841#4,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 10 but 9 distinct events are cited
+S28efaec841#5,unsupported,unknown baseline field 'after_hours'
+S28efaec841#6,interpretive,
+S2cba719e0d#0,verified,
+S2cba719e0d#1,verified,
+S2cba719e0d#2,verified,
+S2cba719e0d#3,verified,
+S2cba719e0d#4,interpretive,
+S31cf0b134d#0,verified,
+S31cf0b134d#1,verified,
+S31cf0b134d#2,verified,
+S31cf0b134d#3,verified,
+S31cf0b134d#4,interpretive,
+S31cf0b134d#5,verified,
+S5ba22fdaff#0,verified,
+S5ba22fdaff#1,verified,
+S5ba22fdaff#2,verified,
+S5ba22fdaff#3,verified,
+S5ba22fdaff#4,verified,
+S5ba22fdaff#5,interpretive,
+S5ba22fdaff#6,verified,
+S5ec2e4dde4#0,verified,
+S5ec2e4dde4#1,verified,
+S5ec2e4dde4#2,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S5ec2e4dde4#3,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S5ec2e4dde4#4,verified,
+S5ec2e4dde4#5,verified,
+S610f9693ad#0,verified,
+S610f9693ad#1,verified,
+S610f9693ad#2,verified,
+S610f9693ad#3,verified,
+S610f9693ad#4,verified,
+S610f9693ad#5,verified,
+S610f9693ad#6,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S610f9693ad#7,interpretive,
+S613539532f#0,verified,
+S613539532f#1,verified,
+S613539532f#2,interpretive,
+S613539532f#3,verified,
+S613539532f#4,unsupported,"url_contains mismatch on {J2X1-N6PV07NM-1082CQER}: claimed 'ksl.com|fatwallet.com', log says 'http://ksl.com/Conservation_of_slow_lorises/jwcs/onfronyy1170662394.php' | url_contains mismatch on {Q5F4-K1WK50EM-9471UFDE}: claimed 'ksl.com|fatwallet.com', log says 'http://fatwallet.com/Michael_Gomez/featherweight/fbsgonyyfpbbgrejngrecbybtbyspyhof747514707.asp'"
+S613539532f#5,unsupported,"baseline avg_usb_connects mismatch: claimed 0.783, logs say 0.409 | baseline avg_start_hour mismatch: claimed 9.67, logs say 9.1"
+S613539532f#6,interpretive,
+S63dadad1f2#0,verified,
+S63dadad1f2#1,verified,
+S63dadad1f2#2,verified,
+S63dadad1f2#3,unsupported,"url_contains mismatch on {B3K3-H8TB99GU-4963RCTZ}: claimed 'bluehost.com', log says 'http://myspace.com/Princess_Charlotte_of_Wales/oatlands/fxvyvsgbayvaryrneavatcngeby1270598313.aspx'"
+S63dadad1f2#4,unsupported,"activity mismatch on {E5K6-E6NK11DK-5419ORKN}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {H8W1-U5UW04YN-5135BHIK}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {L1D7-U0QM61DV-1820AGLD}: claimed 'Connect', log says 'Disconnect'"
+S63dadad1f2#5,interpretive,
+S63dadad1f2#6,verified,
+S69a3fa4719#0,verified,
+S69a3fa4719#1,unsupported,"source mismatch on {S9C4-F1CV75GI-4969RTYI}: claimed 'file', log says 'device' | source mismatch on {U0Q8-V4CO94ED-6107MCSA}: claimed 'file', log says 'http' | source mismatch on {L5J3-T0KK33MX-9081BQBP}: claimed 'file', log says 'device' | source mismatch on {W1T3-W8KS92LK-8501WWZW}: claimed 'file', log says 'device' | source mismatch on {M4I2-N3XM52AU-3349QSUH}: claimed 'file', log says 'device' | source mismatch on {D9O1-H2KD99KC-8968AOEO}: claimed 'file', log says 'device' | source mismatch on {U8E2-Z7LW66QJ-7644DRXU}: claimed 'file', log says 'device' | source mismatch on {H9Y3-N0XZ81RG-5389FJBW}: claimed 'file', log says 'device' | source mismatch on {P3R6-G4HO66CN-5483RDJK}: claimed 'file', log says 'device' | activity mismatch on {S9C4-F1CV75GI-4969RTYI}: claimed 'File', log says 'Disconnect' | activity mismatch on {U0Q8-V4CO94ED-6107MCSA}: claimed 'File', log says 'Visit' | activity mismatch on {L5J3-T0KK33MX-9081BQBP}: claimed 'File', log says 'Disconnect' | activity mismatch on {W1T3-W8KS92LK-8501WWZW}: claimed 'File', log says 'Connect' | activity mismatch on {M4I2-N3XM52AU-3349QSUH}: claimed 'File', log says 'Disconnect' | activity mismatch on {D9O1-H2KD99KC-8968AOEO}: claimed 'File', log says 'Connect' | activity mismatch on {U8E2-Z7LW66QJ-7644DRXU}: claimed 'File', log says 'Disconnect' | activity mismatch on {H9Y3-N0XZ81RG-5389FJBW}: claimed 'File', log says 'Disconnect' | activity mismatch on {P3R6-G4HO66CN-5483RDJK}: claimed 'File', log says 'Connect' | count says 24 but 33 distinct events are cited"
+S69a3fa4719#2,verified,
+S69a3fa4719#3,verified,
+S69a3fa4719#4,interpretive,
+S69a3fa4719#5,verified,
+S6a852450cb#0,verified,
+S6a852450cb#1,verified,
+S6a852450cb#2,verified,
+S6a852450cb#3,verified,
+S6a852450cb#4,verified,
+S6a852450cb#5,verified,
+S6a852450cb#6,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S705efed69d#0,verified,
+S705efed69d#1,verified,
+S705efed69d#2,verified,
+S705efed69d#3,unsupported,asserted fields but no cited events to check them against
+S705efed69d#4,verified,
+S705efed69d#5,verified,
+S7365890092#0,verified,
+S7365890092#1,verified,
+S7365890092#2,unsupported,"source mismatch on {P9Z9-I6CY06XO-8287YQLA}: claimed 'email', log says 'http' | source mismatch on {N1L8-K4ZH97XG-7183GSOC}: claimed 'email', log says 'http' | source mismatch on {H6U6-G9DD04UN-4136YEIH}: claimed 'email', log says 'http' | source mismatch on {M1S9-N9RQ42SZ-4001ZDXE}: claimed 'email', log says 'http' | source mismatch on {Q5H9-N2CK34HU-0571HROR}: claimed 'email', log says 'http' | source mismatch on {G8M1-U2FQ35NX-6312VJXY}: claimed 'email', log says 'http' | source mismatch on {M5T2-G0WU84RG-4337GCFI}: claimed 'email', log says 'http' | source mismatch on {U7I2-Q3OE42EY-4209WJKS}: claimed 'email', log says 'http' | source mismatch on {G6C6-G6CB99GN-8447XZIC}: claimed 'email', log says 'http' | source mismatch on {E6Y9-B0GZ96LM-2336IAOF}: claimed 'email', log says 'http' | source mismatch on {L5E5-F9ZY43QH-3035SGND}: claimed 'email', log says 'http' | source mismatch on {K5Y7-R3LE24KJ-6308JDBJ}: claimed 'email', log says 'http' | source mismatch on {E6M7-O2ON07WT-7679SADD}: claimed 'email', log says 'http' | source mismatch on {P9U6-Z2EV87MS-2511XRPE}: claimed 'email', log says 'http' | source mismatch on {Z7M3-O6TM16FU-7292LWRT}: claimed 'email', log says 'http' | source mismatch on {L4C1-X2TQ76EW-1132PRKG}: claimed 'email', log says 'http' | source mismatch on {X7T5-P4SE19WB-7833HMAW}: claimed 'email', log says 'http' | source mismatch on {F5V2-B2ZB88YM-8733DAUV}: claimed 'email', log says 'http' | source mismatch on {A3R5-V0IQ04SR-5919MTTR}: claimed 'email', log says 'http' | source mismatch on {Z5A0-Z4AG58MR-7622OWPX}: claimed 'email', log says 'http' | source mismatch on {N7M0-Z9PZ08CO-9862MGIR}: claimed 'email', log says 'http' | source mismatch on {H0G5-C4GG00ZR-9365UZLY}: claimed 'email', log says 'http' | source mismatch on {J2C3-A9LC40TW-7206JWXG}: claimed 'email', log says 'http' | source mismatch on {S4M7-K1PA71AB-5312ZIQC}: claimed 'email', log says 'http' | source mismatch on {G4C1-U9IJ79YX-0965HABU}: claimed 'email', log says 'http' | source mismatch on {R3K8-L3BI76YW-1327RKTR}: claimed 'email', log says 'http' | source mismatch on {F6U6-U7DF66AA-3385MFBW}: claimed 'email', log says 'http' | source mismatch on {E7G1-T7IT13AK-2699LRAG}: claimed 'email', log says 'http' | source mismatch on {J0X8-Z3JW80VL-1068QPVN}: claimed 'email', log says 'http' | source mismatch on {J3E4-C0PI74WB-4718VQBE}: claimed 'email', log says 'http' | source mismatch on {O0V2-S6SX71QM-4890GSZH}: claimed 'email', log says 'http' | source mismatch on {I8C6-I9HB54KV-0777ZEJT}: claimed 'email', log says 'http' | source mismatch on {I3F8-Q4KH35UA-8630IOGB}: claimed 'email', log says 'http' | source mismatch on {X9X9-U5EE76DC-9721GLQQ}: claimed 'email', log says 'http' | source mismatch on {Q3Y2-Y6MQ04LH-1401PMHH}: claimed 'email', log says 'http' | source mismatch on {E0A2-Z0AL12WZ-6332UPYL}: claimed 'email', log says 'http' | source mismatch on {K4E9-C4XG94NN-5243PAYW}: claimed 'email', log says 'http' | source mismatch on {W2I7-K9GC30YB-9429RJDM}: claimed 'email', log says 'http' | source mismatch on {J9K7-J7TR23HM-1119HCUP}: claimed 'email', log says 'http' | source mismatch on {A9U3-S8LX73BC-0707QUXA}: claimed 'email', log says 'http' | source mismatch on {U1S3-S1SU66FZ-4961WUEF}: claimed 'email', log says 'http' | source mismatch on {E3B8-C5LM63HQ-9940EFLL}: claimed 'email', log says 'http' | source mismatch on {I1D9-S4GJ18UP-0314HDGR}: claimed 'email', log says 'http' | source mismatch on {O9V2-H2YH91LF-0397KRZH}: claimed 'email', log says 'http' | source mismatch on {P1W3-W6SC97EH-0397JSPV}: claimed 'email', log says 'http' | source mismatch on {O1D9-W6HN83XV-8788WOWT}: claimed 'email', log says 'http' | source mismatch on {S8X4-K8YJ65DN-6655ANTV}: claimed 'email', log says 'http' | source mismatch on {S0R8-U9SE06BX-5284HVNL}: claimed 'email', log says 'http' | source mismatch on {O6N5-X2BG34NT-4348RSOQ}: claimed 'email', log says 'http' | source mismatch on {F3Z3-I9IA63DB-4680YVFV}: claimed 'email', log says 'http' | source mismatch on {K8C7-L3CR16TI-0544FZRP}: claimed 'email', log says 'http' | source mismatch on {D2D6-J6IP20YM-0903TPBQ}: claimed 'email', log says 'http' | source mismatch on {Q5D6-F8CF10AX-6758EQXE}: claimed 'email', log says 'http' | source mismatch on {C3A5-E0HU37JV-7704JSNP}: claimed 'email', log says 'http' | source mismatch on {H9X0-K9ND99KO-3813AZDO}: claimed 'email', log says 'http' | source mismatch on {H3M9-Z5ZT02SE-4457VSBW}: claimed 'email', log says 'http' | source mismatch on {D6F9-U5OM97AH-6663MPWF}: claimed 'email', log says 'http' | source mismatch on {R1B3-S0LY93JX-0129OBUG}: claimed 'email', log says 'http' | source mismatch on {X0U1-Z2XB81BH-6131YKES}: claimed 'email', log says 'http' | activity mismatch on {P9Z9-I6CY06XO-8287YQLA}: claimed 'Send', log says 'Visit' | activity mismatch on {N1L8-K4ZH97XG-7183GSOC}: claimed 'Send', log says 'Visit' | activity mismatch on {H6U6-G9DD04UN-4136YEIH}: claimed 'Send', log says 'Visit' | activity mismatch on {M1S9-N9RQ42SZ-4001ZDXE}: claimed 'Send', log says 'Visit' | activity mismatch on {Q5H9-N2CK34HU-0571HROR}: claimed 'Send', log says 'Visit' | activity mismatch on {G8M1-U2FQ35NX-6312VJXY}: claimed 'Send', log says 'Visit' | activity mismatch on {M5T2-G0WU84RG-4337GCFI}: claimed 'Send', log says 'Visit' | activity mismatch on {U7I2-Q3OE42EY-4209WJKS}: claimed 'Send', log says 'Visit' | activity mismatch on {G6C6-G6CB99GN-8447XZIC}: claimed 'Send', log says 'Visit' | activity mismatch on {E6Y9-B0GZ96LM-2336IAOF}: claimed 'Send', log says 'Visit' | activity mismatch on {L5E5-F9ZY43QH-3035SGND}: claimed 'Send', log says 'Visit' | activity mismatch on {K5Y7-R3LE24KJ-6308JDBJ}: claimed 'Send', log says 'Visit' | activity mismatch on {E6M7-O2ON07WT-7679SADD}: claimed 'Send', log says 'Visit' | activity mismatch on {P9U6-Z2EV87MS-2511XRPE}: claimed 'Send', log says 'Visit' | activity mismatch on {Z7M3-O6TM16FU-7292LWRT}: claimed 'Send', log says 'Visit' | activity mismatch on {L4C1-X2TQ76EW-1132PRKG}: claimed 'Send', log says 'Visit' | activity mismatch on {X7T5-P4SE19WB-7833HMAW}: claimed 'Send', log says 'Visit' | activity mismatch on {F5V2-B2ZB88YM-8733DAUV}: claimed 'Send', log says 'Visit' | activity mismatch on {A3R5-V0IQ04SR-5919MTTR}: claimed 'Send', log says 'Visit' | activity mismatch on {Z5A0-Z4AG58MR-7622OWPX}: claimed 'Send', log says 'Visit' | activity mismatch on {N7M0-Z9PZ08CO-9862MGIR}: claimed 'Send', log says 'Visit' | activity mismatch on {H0G5-C4GG00ZR-9365UZLY}: claimed 'Send', log says 'Visit' | activity mismatch on {J2C3-A9LC40TW-7206JWXG}: claimed 'Send', log says 'Visit' | activity mismatch on {S4M7-K1PA71AB-5312ZIQC}: claimed 'Send', log says 'Visit' | activity mismatch on {G4C1-U9IJ79YX-0965HABU}: claimed 'Send', log says 'Visit' | activity mismatch on {R3K8-L3BI76YW-1327RKTR}: claimed 'Send', log says 'Visit' | activity mismatch on {F6U6-U7DF66AA-3385MFBW}: claimed 'Send', log says 'Visit' | activity mismatch on {E7G1-T7IT13AK-2699LRAG}: claimed 'Send', log says 'Visit' | activity mismatch on {J0X8-Z3JW80VL-1068QPVN}: claimed 'Send', log says 'Visit' | activity mismatch on {J3E4-C0PI74WB-4718VQBE}: claimed 'Send', log says 'Visit' | activity mismatch on {O0V2-S6SX71QM-4890GSZH}: claimed 'Send', log says 'Visit' | activity mismatch on {I8C6-I9HB54KV-0777ZEJT}: claimed 'Send', log says 'Visit' | activity mismatch on {I3F8-Q4KH35UA-8630IOGB}: claimed 'Send', log says 'Visit' | activity mismatch on {X9X9-U5EE76DC-9721GLQQ}: claimed 'Send', log says 'Visit' | activity mismatch on {Q3Y2-Y6MQ04LH-1401PMHH}: claimed 'Send', log says 'Visit' | activity mismatch on {E0A2-Z0AL12WZ-6332UPYL}: claimed 'Send', log says 'Visit' | activity mismatch on {K4E9-C4XG94NN-5243PAYW}: claimed 'Send', log says 'Visit' | activity mismatch on {W2I7-K9GC30YB-9429RJDM}: claimed 'Send', log says 'Visit' | activity mismatch on {J9K7-J7TR23HM-1119HCUP}: claimed 'Send', log says 'Visit' | activity mismatch on {A9U3-S8LX73BC-0707QUXA}: claimed 'Send', log says 'Visit' | activity mismatch on {U1S3-S1SU66FZ-4961WUEF}: claimed 'Send', log says 'Visit' | activity mismatch on {E3B8-C5LM63HQ-9940EFLL}: claimed 'Send', log says 'Visit' | activity mismatch on {I1D9-S4GJ18UP-0314HDGR}: claimed 'Send', log says 'Visit' | activity mismatch on {O9V2-H2YH91LF-0397KRZH}: claimed 'Send', log says 'Visit' | activity mismatch on {P1W3-W6SC97EH-0397JSPV}: claimed 'Send', log says 'Visit' | activity mismatch on {O1D9-W6HN83XV-8788WOWT}: claimed 'Send', log says 'Visit' | activity mismatch on {S8X4-K8YJ65DN-6655ANTV}: claimed 'Send', log says 'Visit' | activity mismatch on {S0R8-U9SE06BX-5284HVNL}: claimed 'Send', log says 'Visit' | activity mismatch on {O6N5-X2BG34NT-4348RSOQ}: claimed 'Send', log says 'Visit' | activity mismatch on {F3Z3-I9IA63DB-4680YVFV}: claimed 'Send', log says 'Visit' | activity mismatch on {K8C7-L3CR16TI-0544FZRP}: claimed 'Send', log says 'Visit' | activity mismatch on {D2D6-J6IP20YM-0903TPBQ}: claimed 'Send', log says 'Visit' | activity mismatch on {Q5D6-F8CF10AX-6758EQXE}: claimed 'Send', log says 'Visit' | activity mismatch on {C3A5-E0HU37JV-7704JSNP}: claimed 'Send', log says 'Visit' | activity mismatch on {H9X0-K9ND99KO-3813AZDO}: claimed 'Send', log says 'Visit' | activity mismatch on {H3M9-Z5ZT02SE-4457VSBW}: claimed 'Send', log says 'Visit' | activity mismatch on {D6F9-U5OM97AH-6663MPWF}: claimed 'Send', log says 'Visit' | activity mismatch on {R1B3-S0LY93JX-0129OBUG}: claimed 'Send', log says 'Visit' | activity mismatch on {X0U1-Z2XB81BH-6131YKES}: claimed 'Send', log says 'Visit' | count says 41 but 60 distinct events are cited"
+S7365890092#3,verified,
+S7365890092#4,verified,
+S7365890092#5,verified,
+S7365890092#6,unsupported,"baseline avg_http mismatch: claimed 114.0, logs say 114.18"
+S7632c87cc1#0,verified,
+S7632c87cc1#1,interpretive,
+S7632c87cc1#2,unsupported,"source mismatch on {G6Q3-O2OT82MR-7419PNKN}: claimed 'http', log says 'device' | field 'url' does not apply to a device event ({G6Q3-O2OT82MR-7419PNKN})"
+S7632c87cc1#3,interpretive,
+S7632c87cc1#4,verified,
+S7632c87cc1#5,verified,
+S7632c87cc1#6,verified,
+S78af8668e0#0,verified,
+S78af8668e0#1,verified,
+S78af8668e0#2,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 27 but 43 distinct events are cited
+S78af8668e0#3,interpretive,
+S78af8668e0#4,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S78af8668e0#5,verified,
+S7d08aa7707#0,verified,
+S7d08aa7707#1,verified,
+S7d08aa7707#2,verified,
+S7d08aa7707#3,verified,
+S7d08aa7707#4,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+S7d08aa7707#5,interpretive,
+S7d08aa7707#6,interpretive,
+S836b4e7d66#0,verified,
+S836b4e7d66#1,verified,
+S836b4e7d66#2,unsupported,"url_contains mismatch on {J3D7-I9KE42SS-2461ZKQM}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://americanexpress.com/Storm_botnet/malware/fcrrqjnyxvatercnve1166039597.jsp' | url_contains mismatch on {I2M8-I8VH76QE-5167KONV}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://vistaprint.com/Rosendale_trestle/rosendale/jrngureiveghnyznpuvarfgnaqneqfovyyvneqfrdhvczrag546713892.php' | url_contains mismatch on {I8P8-D4ZL69CQ-5989QCRU}: claimed 'americanexpress.com|ign.com|officedepot.com', log says 'http://officedepot.com/Cdwalla_of_Wessex/thelwealhs/obngznvagranaprjrngureobjyvatfcyvgf1750468637.html'"
+S836b4e7d66#3,unsupported,"source mismatch on {B0D6-D7NT36TI-6346BQTD}: claimed 'device', log says 'file' | activity mismatch on {J5J7-E6VC62SQ-5263DMRA}: claimed 'Connect', log says 'Disconnect' | activity mismatch on {B0D6-D7NT36TI-6346BQTD}: claimed 'Connect', log says 'File'"
+S836b4e7d66#4,verified,
+S8398d8691f#0,verified,
+S8398d8691f#1,verified,
+S8398d8691f#2,verified,
+S8398d8691f#3,verified,
+S8398d8691f#4,verified,
+S8720a76d39#0,verified,
+S8720a76d39#1,verified,
+S8720a76d39#2,verified,
+S8720a76d39#3,verified,
+S8720a76d39#4,verified,
+S8720a76d39#5,unsupported,asserted fields but no cited events to check them against | count says 55 but 0 distinct events are cited
+S8cf7af2de8#0,verified,
+S8cf7af2de8#1,verified,
+S8cf7af2de8#2,unsupported,"activity mismatch on {J9I5-B7LO36SN-6104HXYE}: claimed 'Connect', log says 'Disconnect'"
+S8cf7af2de8#3,unsupported,"url_contains mismatch on {Z8Y0-S0GY52MN-4759OFUZ}: claimed 'wikileaks.org', log says 'http://reference.com/Take_Ichi_convoy/ichi/nffrzoylyvar310133008.html'"
+S8cf7af2de8#4,verified,
+S8cf7af2de8#5,interpretive,
+S8cf7af2de8#6,verified,
+S91458ace2d#0,verified,
+S91458ace2d#1,verified,
+S91458ace2d#2,verified,
+S91458ace2d#3,verified,
+S91458ace2d#4,verified,
+S91458ace2d#5,unsupported,"activity mismatch on {I1M1-G0FC29JQ-4144IAZN}: claimed 'Connect', log says 'Disconnect'"
+S91458ace2d#6,verified,
+S91458ace2d#7,verified,
+S91458ace2d#8,verified,
+S91458ace2d#9,verified,
+S91458ace2d#10,verified,
+S91458ace2d#11,verified,
+S91458ace2d#12,interpretive,
+S943765c92c#0,verified,
+S943765c92c#1,unsupported,"url_contains mismatch on {C2R0-X7DU60VG-0769NYYR}: claimed 'ynoahgevgvbayrnqrefuvctencuvpnyhfrevagresnpr1176430042.jsp', log says 'http://inbox.com/Cheadle_Hulme/hulme/yrnqrefuvcnanylfvfselvat513824541.aspx' | url_contains mismatch on {N5G9-W9SS50SL-9399ZFUG}: claimed 'ynoahgevgvbayrnqrefuvctencuvpnyhfrevagresnpr1176430042.jsp', log says 'http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php'"
+S943765c92c#2,unsupported,"source mismatch on {Y5K5-C6AF28XA-5238BVTN}: claimed 'http', log says 'device' | field 'url' does not apply to a device event ({Y5K5-C6AF28XA-5238BVTN})"
+S943765c92c#3,unsupported,"source mismatch on {S0F7-W2LZ64WJ-4108ZIKN}: claimed 'http', log says 'device' | activity mismatch on {S0F7-W2LZ64WJ-4108ZIKN}: claimed 'Visit', log says 'Disconnect' | field 'url' does not apply to a device event ({S0F7-W2LZ64WJ-4108ZIKN}) | url_contains mismatch on {J7D3-B8XN53EY-7314XUUK}: claimed 'mediafire.com|shareasale.com', log says 'http://shareasale.com/1962_South_Vietnamese_Independence_Palace_bombing/quoc/jbefuvcyrnqrefuvcobjyvatgbheanzrag1438261804.php'"
+S943765c92c#4,verified,
+S943765c92c#5,interpretive,
+S943765c92c#6,verified,
+S9ce71c79d2#0,verified,
+S9ce71c79d2#1,verified,
+S9ce71c79d2#2,unsupported,"url_contains mismatch on {B5P8-Z0MQ62FH-5273YDCQ}: claimed 'citibank.com', log says 'http://wikileaks.org/Julian_Assange/assange/The_Real_Story_About_DTAA/Gur_Erny_Fgbel_Nobhg_QGNN1528513805.php'"
+S9ce71c79d2#3,interpretive,
+S9ce71c79d2#4,unsupported,"activity mismatch on {V6V5-O2ST82KF-0038GIWI}: claimed 'Connect', log says 'Disconnect'"
+S9ce71c79d2#5,verified,
+S9ce71c79d2#6,verified,
+S9ce71c79d2#7,verified,
+S9df2cf0746#0,verified,
+S9df2cf0746#1,verified,
+S9df2cf0746#2,unsupported,factual claim has no citation | asserted fields but no cited events to check them against | count says 105 but 0 distinct events are cited
+S9df2cf0746#3,unsupported,factual claim has no citation | asserted fields but no cited events to check them against | count says 10 but 0 distinct events are cited
+S9df2cf0746#4,unsupported,"source mismatch on {B7F7-M1KD45BC-5666UOID}: claimed 'device', log says 'http' | activity mismatch on {B7F7-M1KD45BC-5666UOID}: claimed 'Connect', log says 'Visit'"
+S9df2cf0746#5,verified,
+S9df2cf0746#6,verified,
+S9df2cf0746#7,interpretive,
+S9df2cf0746#8,unsupported,unknown baseline field 'avg_duration_min'
+S9df2cf0746#9,verified,
+S9df2cf0746#10,verified,
+Sa837937482#0,verified,
+Sa837937482#1,verified,
+Sa837937482#2,verified,
+Sa837937482#3,verified,
+Sa837937482#4,verified,
+Sa837937482#5,verified,
+Sa837937482#6,verified,
+Sa837937482#7,unsupported,"source mismatch on {V6D4-L1FW91XO-8012ZVDR}: claimed 'file', log says 'http' | activity mismatch on {V6D4-L1FW91XO-8012ZVDR}: claimed 'File', log says 'Visit' | field 'filename' does not apply to a http event ({V6D4-L1FW91XO-8012ZVDR})"
+Sa837937482#8,verified,
+Sa837937482#9,interpretive,
+Sad8b99c63b#0,verified,
+Sad8b99c63b#1,verified,
+Sad8b99c63b#2,interpretive,
+Sad8b99c63b#3,verified,
+Sad8b99c63b#4,verified,
+Sad8b99c63b#5,verified,
+Sad8b99c63b#6,interpretive,
+Sb0023366cb#0,verified,
+Sb0023366cb#1,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 56 but 45 distinct events are cited
+Sb0023366cb#2,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+Sb0023366cb#3,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+Sb0023366cb#4,verified,
+Sb0023366cb#5,verified,
+Sb0023366cb#6,interpretive,
+Sb1fb61445d#0,verified,
+Sb1fb61445d#1,unsupported,"activity mismatch on {M8H1-A9QB90UI-2979JPZM}: claimed 'Connect', log says 'Disconnect' | count says 1 but 2 distinct events are cited"
+Sb1fb61445d#2,verified,
+Sb1fb61445d#3,verified,
+Sb1fb61445d#4,interpretive,
+Sb1fb61445d#5,verified,
+Sb1fb61445d#6,unsupported,unknown session field 'dev_n_usb_connect'
+Sc3294a386b#0,verified,
+Sc3294a386b#1,verified,
+Sc3294a386b#2,interpretive,
+Sc3294a386b#3,unsupported,"factual claim asserts no checkable field, count, baseline or session value | cited events are not described by any asserted field (only their existence could be checked)"
+Sc3294a386b#4,verified,
+Sc3294a386b#5,verified,
+Sc3294a386b#6,verified,
+Sc3294a386b#7,verified,
+Sc3294a386b#8,interpretive,
+Scd116b7c2f#0,verified,
+Scd116b7c2f#1,verified,
+Scd116b7c2f#2,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 27 but 35 distinct events are cited
+Scd116b7c2f#3,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+Scd116b7c2f#4,verified,
+Scd116b7c2f#5,interpretive,
+Scd116b7c2f#6,unsupported,"baseline avg_start_hour mismatch: claimed 8.2, logs say 9.54"
+Sd68110e1f8#0,verified,
+Sd68110e1f8#1,verified,
+Sd68110e1f8#2,verified,
+Sd68110e1f8#3,verified,
+Sd68110e1f8#4,interpretive,
+Sd68110e1f8#5,verified,
+Sf0bbb882b1#0,verified,
+Sf0bbb882b1#1,verified,
+Sf0bbb882b1#2,interpretive,
+Sf0bbb882b1#3,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+Sf0bbb882b1#4,unsupported,cited events are not described by any asserted field (only their existence could be checked)
+Sf0bbb882b1#5,verified,
+Sf0bbb882b1#6,verified,
+Sf29cd607ee#0,verified,
+Sf29cd607ee#1,unsupported,"activity mismatch on {H3E5-K5MS58TR-7776OUHQ}: claimed 'Connect', log says 'Disconnect' | count says 1 but 2 distinct events are cited"
+Sf29cd607ee#2,verified,
+Sf29cd607ee#3,verified,
+Sf29cd607ee#4,interpretive,
+Sf29cd607ee#5,verified,
+Sf33fcc5ef0#0,verified,
+Sf33fcc5ef0#1,verified,
+Sf33fcc5ef0#2,interpretive,
+Sf33fcc5ef0#3,verified,
+Sf33fcc5ef0#4,verified,
+Sf33fcc5ef0#5,verified,
+Sf33fcc5ef0#6,verified,
+Sf56fcf8070#0,verified,
+Sf56fcf8070#1,interpretive,
+Sf56fcf8070#2,unsupported,factual claim has no citation | asserted fields but no cited events to check them against | count says 9 but 0 distinct events are cited
+Sf56fcf8070#3,unsupported,cited events are not described by any asserted field (only their existence could be checked) | count says 27 but 39 distinct events are cited
+Sf56fcf8070#4,verified,
+Sf56fcf8070#5,verified,
+Sf56fcf8070#6,verified,
+Sf8c893b78c#0,verified,
+Sf8c893b78c#1,verified,
+Sf8c893b78c#2,verified,
+Sf8c893b78c#3,verified,
+Sf8c893b78c#4,verified,
+Sfe00321eac#0,verified,
+Sfe00321eac#1,verified,
+Sfe00321eac#2,verified,
+Sfe00321eac#3,verified,
+Sfe00321eac#4,verified,
+Sfe00321eac#5,verified,
+Sfe00321eac#6,verified,
+Sfe00321eac#7,verified,
+Sfe00321eac#8,verified,
+Sffe1ef4568#0,verified,
+Sffe1ef4568#1,unsupported,"source mismatch on {D9S5-I8AP98RJ-1303HBWK}: claimed 'file', log says 'http' | source mismatch on {Z1O0-J1QH34XQ-4354CGWO}: claimed 'file', log says 'logon' | activity mismatch on {D9S5-I8AP98RJ-1303HBWK}: claimed 'File', log says 'Visit' | activity mismatch on {Z1O0-J1QH34XQ-4354CGWO}: claimed 'File', log says 'Logoff' | unknown field 'count' | count says 11 but 12 distinct events are cited"
+Sffe1ef4568#2,verified,
+Sffe1ef4568#3,unsupported,factual claim has no citation | asserted fields but no cited events to check them against | unknown field 'session'
+Sffe1ef4568#4,verified,

@@ -19,6 +19,9 @@ if you want to update it.
 | `verifier_perturbation.json` | `eval-verifier` (v2) | Error-injection results |
 | `verifier_perturbation_v1.json` | `eval-verifier --v1` | Error injection against v1, showing the gaps that motivated v2 |
 | `judge_baseline.json` | `judge-baseline` | Deterministic verifier vs LLM-as-judge comparison |
+| `claims_to_label.csv` | `export-claims --sample 120`, then labelled by hand | Manual labelling: 120 random held-out claims. `human_label` = Wayne Lee, `human_label_2` = Oh Jia Rong, labelled independently and blind to the verifier (s / u / i) |
+| `claims_to_label_KEY.csv` | `export-claims` | The verifier's verdict for each claim, kept separate so labelling stayed blind |
+| `claims_score.json` | `score-claims results/claims_to_label.csv` | Verifier vs labeller 1 (agreement, precision/recall on unsupported claims) and inter-rater agreement / Cohen's kappa (Table VI) |
 | `reports_dev/v1` … `v5` | `investigate` with each prompt version (v1–v2 on the first 3 dev alerts, v3–v5 on alerts 1–10) | Prompt development on alerts 1–10 (not used for the held-out results) |
 
 **Detector metric note.** In `detector_metrics.json` and the original `detector_seeds.json`,
@@ -33,5 +36,5 @@ configuration after refitting on train + validation. Selection used validation l
 detectors are weakly supervised in their hyperparameters. The PyTorch autoencoder and Transformer
 have fixed architectures and were not tuned.
 
-Not included: the CERT data, the database, claim-labelling sheets and pilot responses (these
-contain participants' answers and stay local).
+Not included: the CERT data and the database. The user-study app was tested but no study with participants was run,
+so there are no pilot results.
